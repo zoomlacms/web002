@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>400</LabelID>
+    <LabelName>热门商品</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;a href="/"&gt;高考&lt;/a&gt;&lt;a href="/"&gt;中考&lt;/a&gt;&lt;a href="/"&gt;小升初考试&lt;/a&gt;&lt;a href="/"&gt;奥数&lt;/a&gt;&lt;a href="/"&gt;高考&lt;/a&gt;&lt;a href="/"&gt;作文书&lt;/a&gt;&lt;a href="/"&gt;数学&lt;/a&gt;&lt;a href="/"&gt;英语&lt;/a&gt;&lt;a href="/"&gt;同步练习&lt;/a&gt;&lt;a href="/"&gt;字典词典&lt;/a&gt;&lt;a href="/"&gt;文言文&lt;/a&gt;</LabelContent>
+    <LabelCount />
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

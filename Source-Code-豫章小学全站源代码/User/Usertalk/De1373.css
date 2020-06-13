@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+<style type="text/css">
+	body{
+		margin:0px;
+		
+		}
+	.HeadDiv{
+		width:100%;
+		}
+	.HeadDiv .ThisADiv{
+		float:right;
+		margin-top:10px;
+		}
+	.HeadDiv .ThisADiv a{
+		font-size:14px;
+		text-decoration:none;
+		color:#666;
+		}
+	.fenge{
+	    background:#AEEEEE;
+		width:100%;
+		height:40px;
+		line-height:40px;
+		margin-top:0px;
+		}
+	.commercialDiv{
+		width:200px;
+		height:650px;
+		background:#ccc;
+		margin:10px;
+		
+		}
+	.SayDiv{
+		height:auto;
+		width:95%;
+		border:#AEEEEE 1px solid;
+		margin:10px;
+		margin-top:13px;
+		}
+	.SayDiv .KeFu{
+		height:400px;
+		width:100%;
+		word-break:break-all;
+		overflow-x:visible;
+		overflow-y:scroll;
+		text-align:left;
+		}
+	.SayDiv .zhongjian{
+		width:100%;
+		height:40px;
+		background:#ccc;
+		text-align:left;
+		
+		}
+	.SayDiv .Kehu{
+		width:100%;
+		height:170px;
+		text-align:left;
+		}
+	 .fasong{
+		background-color:#69F;
+		margin-top:5px;
+		width:100%;
+		height:30px;
+		line-height:30px;
+		text-align:right;
+		}
+		
+	.MyFriend{
+		width:210px;
+		height:650px;
+		background:#ccc;
+		margin:10px;
+		}
+	.MyFriend table{
+		width:170px;
+		margin:17px;
+		}	
+	.MyFriend table td{
+		background:#ffffff;
+		}	
+	.MyFriend table td .MyFriendList{
+		width:170px;
+		overflow-x:hidden;
+		overflow-y:scroll;
+		height:520px;
+		}
+	
+	.downClass{
+		width:100%;
+		}
+	
+	
+	
+	.ContentTable{
+		text-align:center;
+		width:100%;
+		height:auto;
+		}
+	
+	.bodyDiv{
+		width:100%;
+		}
+		
+</style>

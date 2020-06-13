@@ -1,0 +1,92 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_内容正文</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<link href="{$CssDir/}page1.css" rel="stylesheet" type="text/css" />
+<SCRIPT language=javascript src="{$CssDir/}js/ajax.js"></SCRIPT>
+<style type="text/css">
+#Menu{ZL.Label id="抽取父节点ID" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /} a span:hover{ text-decoration:underline;}
+#Menu{ZL.Label id="抽取父节点ID" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /} a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+</style>
+</head>
+<body><div id="top">
+ <A onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$SiteURL/}');" href="#">设为首页</A> | 
+ <A href="javascript:window.external.addFavorite('{$SiteURL/}','{$SiteName/}');">加入收藏</A> 
+</div>
+<div class="banner">
+<img src="{$CssDir/}images/banner.jpg">
+</div>
+<div id="nav">
+<ul>
+<li><a href="#" target="_blank">首页</a></li>
+<li><a href="#" target="_blank">新闻中心</a></li>
+<li><a href="#" target="_blank">军事工作</a></li>
+<li><a href="#" target="_blank">政治工作</a></li>
+<li><a href="#" target="_blank">专题</a></li>
+<li><a href="#" target="_blank">下载</a></li>
+<li><a href="#" target="_blank">博客</a></li>
+<li><a href="#" target="_blank">论坛</a></li>                                                 
+</ul>
+</div>    
+
+<div id="WebAd001">
+<p>您的位置：<a href="/">{$SiteName/}</a>>>{ZL.Label id="抽取父节点ID名与链接" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}>><a href="{ZL:GetNodeUrl({SField sid="文章模型数据源标签" FD="NodeID" page="0"/})/}">{ZL.Label id="输出指定ID节点名" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}</a>>>{SField sid="文章模型数据源标签" FD="Title" page="0"/}</p>
+</div>
+
+<!--主体开始 -->
+
+<div id="main">
+<div id="mainL">
+<div class="mainli  mgt5">
+<div class="mainL_t">
+<span><a href="#">更多>></a></span><b>最新新闻</b>
+</div>
+<ul>  {ZL.Label id="输出指定节点标题_无时间属性" NodeID="79" TitleNum="30" ShowNum="15" /}
+<li><a href="#" target="_blank">地方第三方第三方第三方的</a></li>
+
+
+</ul>
+</div>
+</div> <!--左 -->
+
+<div id="main_r">
+<h1>{SField sid="文章模型数据源标签" FD="Title" page="0"/}</h1>
+<abbr><span id="author">作者：{SField sid="文章模型数据源标签" FD="author" page="0"/}</span> <span id="source">来源：{SField sid="文章模型数据源标签" FD="source" page="0"/}</span> <span id="CreateTime">发布时间：{ZL:FormatDate({SField sid="文章模型数据源标签" FD="CreateTime" page="0"/},yyyy-MM-dd)/}</span> <span id="Hits">点击数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}"></SCRIPT></span>
+<span>
+<img src="http://v.t.qq.com/share/images/s/weiboicon16.png" align="absmiddle"/> <a href="javascript:void(0)" onclick="postToWb();" style="height:16px;font-size:12px;line-height:16px;">转播到腾讯微博</a>
+<script type="text/javascript">
+function postToWb() {
+    var _t = encodeURI(document.title);
+    var _url = encodeURIComponent(document.location);
+    var _appkey = encodeURI("App Key：c3f7533887ef491fa82dda1144b9e3c3"); //你从腾讯获得的appkey
+    var _pic = encodeURI(''); //（例如：var _pic='图片url1|图片url2|图片url3....）
+    var _site = ''; //你的网站地址
+    var _u = 'http://v.t.qq.com/share/share.php?url=' + _url + '&appkey=' + _appkey + '&site=' + _site + '&pic=' + _pic + '&title=' + _t;
+    window.open(_u, '', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no');
+}
+</script>
+</span>
+</abbr>
+<div id="content">{SField sid="文章模型数据源标签" FD="content" page="{SField sid="文章模型数据源标签" FD="K_pages" page="0"/}"/}</div>
+<div id="T_page">{ZL.Page id="默认内容分页标签" num="{SField sid="文章模型数据源标签" FD="pages" page="0"/}"/}</div>
+<div class="edit"><span id="elit">责任编辑：{SField sid="文章模型数据源标签" FD="Edit" page="0"/}</span> <span id="pin"><a href="../../Comments/CommentFor.aspx?ID={SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}" target="_blank">发表评论>></a></div>
+<div id="begin"><span id="asc">上一篇文章：{ZL.Label id="上一篇文章"/}</span> <span id="desc">下一篇文章：{ZL.Label id="下一篇文章"/}</span></div>
+<div id="about">
+<span>相关文章</span>
+<ul>
+{ZL.Label id="相关文章列表输出" ShowNum="10" TitleNum="35" KeyWord="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" /}
+</ul>
+</div>
+</div><!--右 -->
+</div>
+<!--主体结束 -->
+
+<div style="clear:both;"></div>
+{ZL.Label id="蓝色底部"/}
+
+
+</body>
+</html>

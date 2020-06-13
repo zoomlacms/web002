@@ -1,0 +1,7 @@
+/Store/目录下
+
+店铺首页 StoreIndex.aspx?id=店铺ID
+店铺商品列表 Storelist.aspx?id=店铺ID
+店铺商品信息 StoreContent.aspx?ItemID=商品ID
+
+

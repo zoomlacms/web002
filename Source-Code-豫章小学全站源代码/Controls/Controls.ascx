@@ -1,0 +1,1 @@
+﻿<%@ control language="C#" autoeventwireup="true" inherits="Controls_Controls, App_Web_hydjudlz" %>

@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>482</LabelID>
+    <LabelName>购物车列表</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam>ShowNum,10,1,显示数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_cart on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_cart.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_CommonModel.NodeID,{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_C_cart.payMethod,{table1}.dbo.ZL_C_cart.pic,{table1}.dbo.ZL_C_cart.postType,{table1}.dbo.ZL_C_cart.price</LabelField>
+    <LabelWhere>{table1}.dbo.ZL_CommonModel.NodeID={$GetRequest(NodeID)$} And ZL_CommonModel.Inputer='{ZL.Label id="子站网站用户"/}'</LabelWhere>
+    <LabelOrder>{table1}.dbo.ZL_CommonModel.OrderID DESC</LabelOrder>
+    <LabelContent>&lt;div class="lt_main"&gt;
+&lt;div class="ltmainT"&gt;购物车&lt;/div&gt;
+&lt;table&gt;&lt;tr&gt;&lt;th&gt;购物车id&lt;/th&gt;&lt;th&gt;商品名&lt;/th&gt; &lt;th&gt;商品缩略图&lt;/th&gt;&lt;th&gt;价格&lt;/th&gt;&lt;th&gt;在线支付方式&lt;/th&gt;&lt;th&gt;配送方式 &lt;/th&gt;&lt;/tr&gt;
+{Repeate}&lt;tr&gt;&lt;td&gt;{Field="GeneralID"/}&lt;/td&gt;&lt;td&gt;{Field="Title"/}&lt;/td&gt;&lt;td&gt;{Field="pic"/}&lt;/td&gt;&lt;td&gt;{Field="price"/}&lt;/td&gt;&lt;td&gt;{Field="payMethod"/}&lt;/td&gt;&lt;td&gt;{Field="postType"/}&lt;/td&gt;&lt;/tr&gt;{/Repeate}
+&lt;/table&gt;
+{ZL.Page/}
+&lt;/div&gt;
+</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

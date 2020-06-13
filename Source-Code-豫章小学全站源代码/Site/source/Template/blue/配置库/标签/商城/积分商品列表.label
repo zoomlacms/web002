@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>399</LabelID>
+    <LabelName>积分商品列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>商城</LabelCate>
+    <LabelDesc />
+    <LabelParam>ShowNum,4,1,显示数量</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Commodities</LabelTable>
+    <LabelField>ID,Thumbnails</LabelField>
+    <LabelWhere>ProClass=3</LabelWhere>
+    <LabelOrder>AddTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;&lt;a href="{ZL:GetShopUrl({Field="ID"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="Thumbnails"/})/}" alt="积分商品"&gt;&lt;/a&gt;&lt;/li&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

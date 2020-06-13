@@ -1,0 +1,195 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <ModelID>17</ModelID>
+    <ModelName>留言文章投票的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_WZTP</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>留言</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\互动模型\留言文章投票的模型.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>16</ModelID>
+    <ModelName>评论个性设置的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_GXSZ</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\互动模型\评论个性设置的模型.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>4</ModelID>
+    <ModelName>下载模型</ModelName>
+    <Description>基于文件发布与资源共享的功能，并可进行下载收费等二次开发。</Description>
+    <TableName>ZL_C_soft</TableName>
+    <ItemIcon>Soft.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>软件</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\内容模型\下载模型.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>1</ModelID>
+    <ModelName>公告</ModelName>
+    <Description>发布简明信息</Description>
+    <TableName>ZL_C_Announce</TableName>
+    <ItemIcon>Announce.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>公告</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\内容模型\公告.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>8</ModelID>
+    <ModelName>友情链接</ModelName>
+    <Description>通过与网民交换友情链接，提升网站PR值和友好的互访机制。</Description>
+    <TableName>ZL_C_FriendSite</TableName>
+    <ItemIcon>FriendSite.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>网站</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\内容模型\友情链接.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>3</ModelID>
+    <ModelName>图库模型</ModelName>
+    <Description>可发布图文并茂的信息，并通过丰富的图片展示分享网络的乐趣。</Description>
+    <TableName>ZL_C_Photo</TableName>
+    <ItemIcon>Photo.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>图片</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\内容模型\图库模型.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>2</ModelID>
+    <ModelName>文章模型</ModelName>
+    <Description>用于装载常见的文章信息，如文章、新闻、资讯等。</Description>
+    <TableName>ZL_C_Article</TableName>
+    <ItemIcon>Article.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>文章</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\内容模型\文章模型.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>7</ModelID>
+    <ModelName>视频模型</ModelName>
+    <Description>基于FLV等类型的视频发布系统，高速视频抢占信息时代之商机。</Description>
+    <TableName>ZL_C_video</TableName>
+    <ItemIcon>video.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>视频</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\内容模型\视频模型.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>5</ModelID>
+    <ModelName>转向链接模型</ModelName>
+    <Description>访客点击此模型下信息，则跳入指定第三方链接，便于流量管理。</Description>
+    <TableName>ZL_C_RedirectLink</TableName>
+    <ItemIcon>RedirectLink.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>跳转</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\内容模型\转向链接模型.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>15</ModelID>
+    <ModelName>组件模型</ModelName>
+    <Description>组件模型</Description>
+    <TableName>ZL_C_Plugins</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>组件模型</ItemName>
+    <ModelType>功能模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\功能模型\组件模型.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>6</ModelID>
+    <ModelName>商品模型</ModelName>
+    <Description>建立起商品模型用于销售，开展网上电子业务。</Description>
+    <TableName>ZL_P_Shop</TableName>
+    <ItemIcon>Product.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>商品</ItemName>
+    <ModelType>商品模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\商品模型\商品模型.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>14</ModelID>
+    <ModelName>鲜花店申请</ModelName>
+    <Description />
+    <TableName>ZL_Store_Flower</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName />
+    <ModelType>店铺申请模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\店铺申请模型\鲜花店申请.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>12</ModelID>
+    <ModelName>个人简历</ModelName>
+    <Description>提供给个人用户录入</Description>
+    <TableName>ZL_U_jl</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>信息</ItemName>
+    <ModelType>用户模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\用户模型\个人简历.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>10</ModelID>
+    <ModelName>企业信息</ModelName>
+    <Description />
+    <TableName>ZL_U_comp</TableName>
+    <ItemIcon>Article.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>信息</ItemName>
+    <ModelType>用户模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\用户模型\企业信息.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>11</ModelID>
+    <ModelName>招聘信息</ModelName>
+    <Description>提供给企业用户发布招聘信息</Description>
+    <TableName>ZL_U_ZP</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>信息</ItemName>
+    <ModelType>用户模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\用户模型\招聘信息.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>9</ModelID>
+    <ModelName>默认申请样式</ModelName>
+    <Description>默认申请样式</Description>
+    <TableName>ZL_Reg_Page</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName />
+    <ModelType>黄页模型</ModelType>
+    <FileUrl>D:\Web\逐浪2020模板开放\Template\yzxx\配置库\模型\黄页模型\默认申请样式.model</FileUrl>
+    <CreateTime>2020/6/13 16:54:26</CreateTime>
+  </Table1>
+</NewDataSet>

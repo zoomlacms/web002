@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute"  fontSize="12"  height="716" backgroundColor="#FFFFFF" creationComplete="init()">
+	
+	<mx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;	
+			import mx.controls.Label;
+			
+			import bll.Message;
+
+			private var sharedObject:SharedObject;
+			private var netConnection:NetConnection;
+			private var netStream:NetStream;
+			
+			private var responder:Responder;		
+			//private var appServer:String="rtmp://58.215.78.182/SharedObjectApp";
+			private var command:String="rtmp://192.168.1.13/SharedObjectApp";
+			private var username:String="";
+			
+			private function init():void
+			{
+				trace(1);
+				var str:String="";			
+
+				//链接服务器
+				netConnection = new NetConnection();
+				netConnection.addEventListener(NetStatusEvent.NET_STATUS,netStatusHandler);
+				netConnection.connect(command);
+				netConnection.client = this;
+				
+				//\this.userListData.addItem(txt_username.text);
+				//this.txt_username.text="输入你的名字";
+				//用户添加到用户列表
+				//this.userListData.addItem(txt_username.text);
+			}
+			
+			private function netStatusHandler(evt:NetStatusEvent):void
+			{
+				trace(2);
+				switch(evt.info.code) 
+				{
+					case "NetConnection.Connect.Success":
+						netStream = new NetStream(netConnection);//添加**************************************
+						sharedObject = SharedObject.getRemote("talk",netConnection.uri,false);
+						//talk_so.addEventListener(SyncEvent.SYNC,talkSoSyncHandler);
+						sharedObject.connect(netConnection);
+						break;
+					case "NetConnection.Connect.Rejected":
+						Alert.show("fms连接被拒绝"+evt.info.code);
+						break;
+					case "NetConnection.Connect.Failed":
+						Alert.show("fms连接失败"+evt.info.code);
+						break;					
+					case "NetConnection.Connect.Closed":
+						Alert.show("fms连接已经关闭"+evt.info.code);
+						break;
+				}
+			}
+			//userListData			
+		]]>
+	</mx:Script>	
+	
+	<mx:List x="10" y="6" id="userList" dataProvider="{}" height="436" width="148"></mx:List>
+</mx:Application>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="955" minHeight="600"  creationComplete="init()" xmlns:s="library://ns.adobe.com/flex/spark">
+	
+	<mx:Script>
+		<![CDATA[
+			/* import bll.Message;
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			import mx.controls.Label;
+			import mx.events.FlexEvent;
+			
+			private var sharedObject:SharedObject;
+			private var netConnection:NetConnection;
+			//private var message:Message=new Message();
+			
+			[Bindable]
+			public var UserName:String;	
+			
+			private var responder:Responder;		
+			//private var appServer:String="rtmp://58.215.78.182/SharedObjectApp";
+			
+			private var command:String;
+			//private var username:String="";
+			
+			private function init():void
+			{
+				trace(11);
+				var str:String="";			
+				
+				//链接服务器
+				netConnection = new NetConnection();
+				netConnection.addEventListener(NetStatusEvent.NET_STATUS,netStatusHandler);
+				//Alert.show(parentDocument.getxmlData());
+				netConnection.connect("rtmp://192.168.1.10/SharedObjectApp");	
+				//netConnection.connect(parentDocument.getxmlData());
+				netConnection.client = this;
+				//\this.userListData.addItem(txt_username.text);
+				//this.txt_username.text="输入你的名字";
+				//用户添加到用户列表
+				//UserName = parentDocument.getParameers();
+				UserName = "aaaaaa";
+				//this.userList.addChild(UserName);
+				//userList.addItem(UserName.toString());
+				this.sendTxt();
+			}
+			
+			private function netStatusHandler(evt:NetStatusEvent):void
+			{
+				trace(20);
+				
+				//this.txt_message.addEventListener(KeyboardEvent.KEY_DOWN,sendKeyHandler);
+				
+				switch(evt.info.code) 
+				{
+					case "NetConnection.Connect.Success":
+						userList.addEventListener(FlexEvent.VALUE_COMMIT,VALUE_COMMITHandler);
+						sharedObject = SharedObject.getRemote("talk",netConnection.uri,false);
+						sharedObject.addEventListener(SyncEvent.SYNC,talkSoSyncHandler);
+						sharedObject.connect(netConnection);
+						break;
+					case "NetConnection.Connect.Rejected":
+						Alert.show("fms连接被拒绝"+evt.info.code);
+						break;
+					case "NetConnection.Connect.Failed":
+						Alert.show("fms连接失败"+evt.info.code);
+						break;					
+					case "NetConnection.Connect.Closed":
+						Alert.show("fms连接已经关闭"+evt.info.code);
+						break;
+				}
+			}
+			
+			private function talkSoSyncHandler(evt:SyncEvent):void
+			{
+				trace(211111);
+				if ( sharedObject.data.msgList!=null )
+				{				
+					var fullMsg:String=UserName.split("|")[0];
+					
+					if(userList.text=="")
+						
+						userList.text=fullMsg;
+				}
+				else
+				{
+					userList.text=userList.text+"\n"+fullMsg;
+				} 
+			}
+			}
+			
+			private function sendTxt():void
+			{
+				
+				UserName=UserName.split("|")[0];
+				
+				//Alert.show(UserName);
+				
+				//消息定义
+				var message:Message=new Message();
+				message.Sender=UserName;
+				//Alert.show(this.parentDocument.valueOf());
+				message.Receiver="aa";
+				trace(message.Receiver);
+				message.msg="";
+				message.time=new Date();
+				
+				
+				var arr:ArrayCollection = new ArrayCollection();
+				arr.addItem(message);
+				
+				//sharedObject.setProperty("msgList1",arr);
+			}  
+			
+			private function convertArrayCollection(arrNew:ArrayCollection,arrOld:ArrayCollection):void
+			{
+				arrNew.removeAll();
+				for(var i:int=0;i<arrOld.length ;i++)
+				{
+					arrNew.addItemAt(arrOld.getItemAt(i),i);
+				}
+			}
+			
+			private function VALUE_COMMITHandler(evt:FlexEvent):void
+			{
+				userList.verticalScrollPosition = userList.maxVerticalScrollPosition;
+			} */
+			//userListData		
+			private var _userInfo:Object; 
+			private function Init():void
+			{
+				_userInfo = {object_id: "userInfo",sender_id: 11,sender_name: "aa"};
+				usersListArr.addItem(_userInfo);
+			}
+			
+		]]>
+	</mx:Script>	
+	<s:List id="usersList" x="754" y="44" width="188" height="146">
+		<s:ArrayCollection id="usersListArr" />
+	</s:List>
+
+
+</mx:Application>

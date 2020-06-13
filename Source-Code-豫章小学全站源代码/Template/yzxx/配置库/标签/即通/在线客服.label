@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>459</LabelID>
+    <LabelName>在线客服</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable>{table1}.dbo.ZL_CommonModel</LabelTable>
+    <LabelField>NodeID</LabelField>
+    <LabelWhere>NodeID=1</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;link href="{$CssDir/}OKQQ/images/qq.css" rel="stylesheet" type="text/css" /&gt;
+&lt;script language="javascript" src="{$CssDir/}OKQQ/ServiceQQ.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

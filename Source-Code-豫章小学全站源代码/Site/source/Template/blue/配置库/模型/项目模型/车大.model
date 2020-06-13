@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>63</ModelID>
+    <ModelName>车大</ModelName>
+    <Description>测试</Description>
+    <TableName>ZL_C_Plugins</TableName>
+    <ItemName>测试</ItemName>
+    <ItemUnit />
+    <ItemIcon />
+    <ModelType>8</ModelType>
+    <ContentModule />
+    <MultiFlag>false</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="api_SiteCount, App_Web_yxogs14x" enableEventValidation="false" viewStateEncryptionMode="Never" %>

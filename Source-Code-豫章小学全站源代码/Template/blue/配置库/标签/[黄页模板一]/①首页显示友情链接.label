@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>88</LabelID>
+    <LabelName>①首页显示友情链接</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>[黄页模板一]</LabelCate>
+    <LabelDesc>①首页显示友情链接</LabelDesc>
+    <LabelParam>pageid,默认值,2,黄页ID|Nodeid,默认值,1,节点ID|username,默认值,1,黄页用户名</LabelParam>
+    <LabelTable>ZL_CommonModel Inner join ZL_Page_link on ZL_CommonModel.ItemID=ZL_Page_link.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_CommonModel.ModelID,ZL_CommonModel.ItemID,ZL_CommonModel.TableName,ZL_CommonModel.Title,ZL_CommonModel.Inputer,ZL_CommonModel.Hits,ZL_CommonModel.CreateTime,ZL_CommonModel.Status,ZL_CommonModel.EliteLevel,ZL_CommonModel.InfoID,ZL_CommonModel.SpecialID,ZL_CommonModel.IsCreate,ZL_CommonModel.HtmlLink,ZL_CommonModel.Template,ZL_Page_link.ID,ZL_Page_link.linkname,ZL_Page_link.linkurl</LabelField>
+    <LabelWhere>ZL_CommonModel.TableName like 'ZL_Page_%' And ZL_CommonModel.Inputer='@username' And ZL_CommonModel.Status=99 And ZL_CommonModel.NodeID=@Nodeid</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;&lt;a href="{Field="linkurl"/}" target="_blank"&gt;{Field="Title"/}&lt;/a&gt;&lt;/li&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <IsOpen>0</IsOpen>
+  </Table>
+</NewDataSet>

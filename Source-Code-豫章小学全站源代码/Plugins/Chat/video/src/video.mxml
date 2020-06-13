@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="862" height="215" creationComplete="onRecordClik()">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			
+			private var pnc:NetConnection;
+			
+			private var pns:NetStream;			//发布流
+			private var pns1:NetStream;	
+			private var pns2:NetStream;	
+			private var pns3:NetStream;
+			
+			private var rns:NetStream;
+			private var rns1:NetStream;
+			private var rns2:NetStream;
+			private var rns3:NetStream;
+			
+			private var theCamera:Camera;
+			private var microphone:Microphone;
+			private var video1:Video;
+			private var video2:Video;
+			private var video3:Video;
+			private const Width:Number = 280;			//视频输出的宽
+			private const Height:Number = 210;			//视频输出的高
+			
+			private var mark:String;						//标记1，2，3号视频框架
+			
+			
+			[Bindable]
+			public var RoomID:String;
+			public var s:String;
+			
+
+			
+			
+			private function FMSConnect():void{
+				pnc = new NetConnection();
+				pnc.connect(parentDocument.getxmlData());
+				//pnc.connect("rtmp://58.215.78.182/SharedObjectApp");
+				
+			
+			}
+			
+			private function DisConnect():void
+			{
+				//ClientVideo1.pause();
+				//ClientVideo1.stop();
+				//ClientVideo1.screen.isEmpty();
+				pns.close();
+			}
+			
+			private function ConnectServers(par:String):void //RoomID 替换 par
+			{								
+				mark = par;
+				FMSConnect();
+				pnc.addEventListener(NetStatusEvent.NET_STATUS,netStatusHandler);
+			}
+			
+			private function netStatusHandler(evt:NetStatusEvent):void
+			{
+				var info:Object = evt.info;
+				switch(info.code) 
+				{
+					case "NetConnection.Connect.Success":
+						onPublishClick();
+						break;	
+					case "NetConnection.Connect.Rejected":
+						Alert.show("fms连接被拒绝" + info.code);
+						break;
+					case "NetConnection.Connect.Failed":
+						Alert.show("fms连接失败" + evt.info.code);
+						break;				
+					case "NetConnection.Connect.Closed":
+						Alert.show("fms连接已经关闭" + evt.info.code);
+						break;
+				}
+			}
+			
+			private function onPublishClick():void
+			{
+				if (Camera.names.length==0)
+				{
+					Alert.show("没安装摄像头");
+					return;
+				}
+				
+				
+				theCamera = Camera.getCamera();
+				microphone = Microphone.getMicrophone();
+				theCamera.setMode(Width,Height,7);
+				theCamera.setQuality(4000000,0);
+				
+				pns = new NetStream(pnc);
+				pns.attachCamera(theCamera);
+				pns.attachAudio(microphone);
+				pns.addEventListener(NetStatusEvent.NET_STATUS,onErr);
+				//pns.client = this;
+				pns.publish(mark,"live");
+			}
+			
+			private function onErr(evt:NetStatusEvent):void{
+				//trace(evt.info.code);
+				if(evt.info.code=="NetStream.Publish.BadName")
+				{
+					
+					mark=(int(mark)+1).toString();
+					onPublishClick();
+					Alert.show(mark);
+				}
+			}	
+			
+			private function onRecordClik():void
+			{
+				FMSConnect();
+				pnc.addEventListener(NetStatusEvent.NET_STATUS,onReordNetStatusHandler);
+			}
+			
+			private function onReordNetStatusHandler(evt:NetStatusEvent):void
+			{
+				if(evt.info.code == "NetConnection.Connect.Success")
+				{
+					s=parentDocument.getParameers();
+					RoomID=s.split("|")[1];
+					
+					rns1 = new NetStream(pnc);			//在fms上创建一个NetStream
+					//rns1.client = this;
+					video1 = new Video();
+					video1.width = Width;
+					video1.height = Height;
+					video1.attachNetStream(rns1);
+					ClientVideo1.addChild(video1);
+					rns1.play(RoomID+"_1");
+					
+					//rns1.addEventListener(NetStatusEvent.NET_STATUS,test);
+					
+					rns2 = new NetStream(pnc);
+					//rns2.client = this;
+					video2 = new Video();
+					video2.width = Width;
+					video2.height = Height;
+					video2.attachNetStream(rns2);
+					ClientVideo2.addChild(video2);
+					rns2.play(RoomID+"_2");
+					
+					rns3 = new NetStream(pnc);
+					//rns3.client = this;
+					video3 = new Video();
+					video3.width = Width;
+					video3.height = Height;
+					video3.attachNetStream(rns3);
+					ClientVideo3.addChild(video3);
+					rns3.play(RoomID+"_3"); 
+				}
+				
+			}			
+			private function test(evt:NetStatusEvent):void
+			{
+				if(evt.info.code=="NetStream.Play.UnpublishNotify"){				
+					/* 					rns1 = new NetStream(pnc);			//在fms上创建一个NetStream
+					//rns1.client = this;
+					video1 = new Video();
+					video1.width = Width;
+					video1.height = Height;
+					video1.attachNetStream(rns1);
+					ClientVideo1.addChild(video1); */
+					//ClientVideo1.styleChanged("backgroundImage=clip_image001.jpg");
+					//video1=null;
+					ClientVideo1.removeChild(video1);
+									
+					/* 		m_camera= Camera.getCamera(null);
+					m_camera=null;
+					m_localVideo.attachCamera(null);
+					camera.removeChild(m_localVideo); */
+					//rns1.play("2");
+					//trace("abc");
+				}
+				//trace(evt.info.code);
+			}			
+		]]>
+	</mx:Script>
+	<mx:VideoDisplay x="3" y="3" width="280" height="210" id="ClientVideo1" />
+	<mx:VideoDisplay  x="292" y="3" width="280" height="210" id="ClientVideo2" />
+	<mx:VideoDisplay  x="580" y="3" width="276" height="210" id="ClientVideo3" />
+	<!--<mx:Button x="10" y="10" id="MyPublish1" height="22" width="127" label="排麦" click="ConnectServers(RoomID+'_1')" />
+	<mx:Button x="310" y="10" id="MyPublish2" height="22" width="127" label="排麦" click="ConnectServers(RoomID+'_2')" />
+	<mx:Button x="610" y="10" id="MyPublish3" height="22" width="127" label="排麦" click="ConnectServers(RoomID+'_3')" />
+	<mx:Button x="610" y="40" id="disPublish3" height="22" width="127" label="放麦" click="DisConnect()" />-->
+</mx:Canvas>

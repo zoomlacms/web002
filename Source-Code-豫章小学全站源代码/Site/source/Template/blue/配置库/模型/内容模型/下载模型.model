@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>4</ModelID>
+    <ModelName>下载模型</ModelName>
+    <Description>基于文件发布与资源共享的功能，并可进行下载收费等二次开发。</Description>
+    <TableName>ZL_C_soft</TableName>
+    <ItemName>软件</ItemName>
+    <ItemUnit>个</ItemUnit>
+    <ItemIcon>Soft.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>/内容页/默认下载模型内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,148 @@
+
+/*		------	Basic style	------		*/
+#menu {
+	/*
+	height: ??;
+	Since we are floating all LIs, then you need to set height in the make-up part, if you want to place some background on the menu
+	*/
+	display: block;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+}
+
+#menu li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+#menu a {
+	display: block;
+}
+
+* html #menu li a {
+	position: relative;/* Fix IE6's inability to expand clickable area */
+}
+
+#menu li ul {
+	visibility: hidden;
+	position: absolute;
+	z-index: 10;
+}
+
+/* using display is better (no scrollbars when page loads), but IE can't handle it, so only good browsers should see this */
+html>body #menu li ul {
+	display: none;
+}
+
+#menu li li {
+	width: 100%;
+}
+
+/* fix the position */
+#menu li li ul {
+	top: 0;
+	left: 100%;
+}
+
+/* simulate child selector for IE */
+div#menu li:hover ul,
+#menu li:hover li:hover ul,
+#menu li:hover li:hover li:hover ul {
+	visibility: visible;
+}
+div#menu li:hover li ul,
+#menu li:hover li:hover li ul,
+#menu li:hover li:hover li:hover li ul {
+	visibility: hidden;
+}
+
+/* do the normal show, with increased specificity, for good browsers */
+#menu ul#menuList li:hover>ul {
+	display: block;
+	visibility: visible;
+}
+
+
+/*		------   Make-up	--------			*/
+
+#menu {
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+	color: #000;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+
+	border-bottom:2px solid #069;
+	height: 28px;/* 	Height mentioned above	 */
+}
+
+#menu a {
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	padding: 4px 5px 5px;
+}
+
+#menu li {
+	margin: 2px;
+	padding: 1px;
+}
+#menu li:hover {
+	background-color: #ddd;
+	padding: 0;
+	border: 1px solid #ccc;
+}
+
+
+#menu li li {
+	width: 124px;/* 	we can't use 100% because LIs have margin and padding (although latter is more important) */
+}
+
+#menu li ul {
+	color: #000;
+	background-color: #fff;
+	background-image: url(images/iconbg.gif);
+	background-repeat: repeat-y;
+	border: 1px solid #ccc;
+	width: 130px;
+}
+
+#menu li ul a  {
+	text-align: left;
+	padding-left: 29px;
+}
+
+#menu li ul a.submenu {
+	background-image: url(images/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 5px;
+}
+
+/*		------   Specific fixes	(thank to W3C for these) --------			*/
+/* 
+		I'm gonna move the submenus 5px up
+		5px works fine here and it is roughly calculated as:
+			padding-bottom + margin-bottom + border-bottom of the LI
+			+
+			*-top values of the LI
+			
+		Mostly it needs a bit of trial and error.
+		Basic idea is to remove the scrollbar when menu re-positioning is perfomed. Of course, script could take care of that, but that takes too much code - this is easier.
+*/
+#menu li li ul {
+	margin-top: -5px;
+}
+
+
+

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserGroups>
+  <QYHY>
+    <Manner ID="1" Articles="50" Byear="12" />
+  </QYHY>
+  <PTHY>
+    <Manner ID="1" Articles="20" Byear="11" />
+  </PTHY>
+  <VIPHY>
+    <Manner ID="1" Articles="1" Byear="55" />
+  </VIPHY>
+</UserGroups>

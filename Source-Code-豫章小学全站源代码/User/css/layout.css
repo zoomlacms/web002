@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+body {}
+a { color:#05a; text-decoration:none;}
+a:hover { text-decoration:underline;}
+
+#bodymain { margin:0 auto; width:750px;}
+#content { background:url(images/side_bg.gif) 0 0 repeat-y; overflow:auto;zoom:1; margin-bottom:5px;}
+#side { float:left; width:200px;}
+.sidebox { margin-bottom:6px;}
+.sidebox h2 { height:25px; padding:8px 5px 0 30px; font-size:14px; background:url(images/sidebox_bg.gif);}
+.sidebox ul { border:1px solid #d0d1d2; padding:6px 8px;}
+.sidebox ul li {height:19px; overflow:hidden;}
+.sidebox ul li a { background:url(images/search_bgg.gif) -304px -150px no-repeat; padding-left:12px; color:#333;}
+.sidebox ul li p { margin:8px 5px 0 12px; padding-top:8px; border-top:1px dashed #ccc;}
+.sidebox ul li span{ float:right; color:#F30;}
+#main { float:right; width:750px;}
+#main_top { height:100px; margin-bottom:6px;}
+#main_top1 { float:left; width:394px; height:167px; }
+#main_top2 { float:right; width:347px; height:167px;}
+.main_box .youshi { background:url(images/icon.gif) 20px 16px no-repeat; margin:0 10px; padding-left:130px;}
+.youshi li { height:80px; border-bottom:1px dashed #ccc; padding-top:14px;}
+.youshi li strong { font-size:14px; display:block; padding-bottom:6px; }
+.youshi li a { display:block;color:#000;}
+.youshi li a:hover { text-decoration:none; color:#05a;}
+#policy { font-size:14px; line-height:180%;}
+#side_link { padding-top:18px;}
+#side_link li a { display:block; background:none;}
+.main_box dl { padding:10px 30px;}
+.main_box dl dt { padding:20px 0; font-size:14px;}
+.main_box dl dd { padding-bottom:20px; text-align:center;}
+
+/*list*/
+#list { margin:8px;}
+#list li { font-size:13px; line-height:200%;}
+#list li a { background:url(images/search_bg.gif) -304px -150px no-repeat; padding-left:12px;}
+#list li span { float:right; color:#888; font-size:12px; line-height:150%;}
+#list_pic { overflow:auto; zoom:1;}
+#list_pic li { float:left; width:164px; margin:8px 0 0 12px; height:145px; overflow:hidden; display:inline; font-size:14px;}
+#list_pic li a { display:block; text-align:center;}
+#list_pic li a img { border:2px solid #999; margin-bottom:3px; display:block;}
+#list_pic li a:hover img { border:2px solid #444;}
+#article { padding:0 20px;}
+#article h1 { font-size:20px; font-weight:normal; text-align:center; padding:20px 0; border-bottom:1px solid #ccc; font-family:"黑体";}
+#article {}
+#news { font-size:14px; line-height:180%; padding:10px 0 5px 0; width:100%px; overflow:hidden;}
+#news p { margin:8px 0;}
+#contact { padding:38px 80px; font-size:18px; font-weight:bold; line-height:200%; text-align:center; font-family:Arial;}
+#contact h1 { font-size:30px;}
+.undown { background:url(images/sigline.gif) no-repeat; padding-top:10px; line-height:200%;}
+.undown a { color:#000;}
+
+/*user*/
+#user_content { background:#d8e8fa url(images/user_bg.gif) 0 0 repeat-y; overflow:auto;zoom:1; padding:3px 0 5px 3px; margin-bottom:5px;}
+#side_user { float:left; width:17%; border-top:1px solid #b8d2f7;}
+#side_user h2 { height:26px; padding:6px 0 0 40px; background:url(images/user_nav_bg.gif); font-size:12px;}
+#side_user ul li a { display:block; height:23px; padding:5px 0 0 40px; background:url(images/user_nav_bg.gif) 0 -88px; color:#000;}
+#side_user ul li a:hover { background:url(images/user_nav_bg.gif) 0 -32px; text-decoration:none;}
+#side_user ul li a#user_current { height:23px; padding:5px 0 0 40px; background:url(/images/user_nav_bg.gif) 0 -60px; text-decoration:none;}
+#main_user { float:right; width:82%; padding-right:4px;}
+.main_user_bg { background:url(images/user_bg1.gif); height:5px; overflow:hidden;}
+.main_user_bg1 { background:url(images/user_bg1.gif) 0 -5px; height:5px; overflow:hidden;}
+.user_con { background:#fff; border-left:1px solid #bcd5f7; border-right:1px solid #bcd5f7; padding:3px 9px 3px 8px; height:auto !important; height:560px; min-height:560px;}
+.user_con h2 { background:url(images/title_bg.gif) no-repeat; height:34px; padding:7px 8px 0 8px;}
+.user_table { border-collapse:collapse;}
+.user_table tr td, .user_table tr th { padding:5px; border:1px solid #e6ecfa;}
+.user_table tr td span { color:#777;}
+.user_table1 tr th { background:#f5f8fd;}
+.user_table2 tr th { background:#f5f8fd;}
+.user_table2 tr td { text-align:center;}
+.code_input { width:64px;}
+.code_textdiv { margin:10px 0;}
+.code_text1 { font-size:14px; padding:10px 0 5px 0;}
+.code_text2 { padding:2px 0 0 24px;}
+.code_text3 { border:1px solid #ccc; width:100%; height:50px; overflow:auto; font-size:12px; }
+.code_area { border:1px solid #ccc; width:100%; height:100px; overflow:auto; font-size:12px;}
+.pre_module { padding:10px; background:url(images/preview_bg.gif) ; width:100%px; overflow:auto;}
+
+#zoom_pic { width:100%px; overflow:hidden;}
+
+.todayinfo { position:relative; height:96px;}
+.todayinfo1 { background:#FFC; border:1px solid #fd9; padding:6px;}
+#todaytips { position:absolute; top:26px; width:220px; height:34px; padding:30px 0 0 10px; background:url(/user/css/images/today_bg.gif); left: 1px; }
+.todayinfo2 { margin-top:24px; text-align:right;}
+.todayinfo2 input { margin-top:6px;}
+.todayinfo2 em { color:#f60;}
+
+#reg {}
+#reg tr td { padding:6px;}
+#reg tr td span { color:#777;}
+#reg tr td em { color:#f00; font-style:normal;}
+.user_text { width:160px;}
+.sms_top { border:1px solid #b8d2f7; background:#dbecfa; margin-bottom:6px; height:28px;}
+.sms_top a { float:left; display:block; height:23px; padding:5px 14px 0 14px; border-right:1px solid #b8d2f7; color:#000;}
+.sms_top a#sms_current { background:#fff; font-weight:bold;}
+
+.code_top { border:1px solid #d4dff8; background:#F5F8FD; margin-bottom:6px; height:25px; padding:3px 8px 0 8px;}
+
+#pages { text-align:center; margin-bottom:8px; /*background:url(/images/page_bg.gif) center center no-repeat; height:21px; padding-top:3px;*/}
+#pages a { padding:3px 6px; margin:0 3px; color:#000;}
+#pages a.current { color:#f00; font-weight:bold;}
+
+.tixian { padding:0px;}
+.sidebox.tixian ul { border:none; padding:0;}
+.sidebox.tixian ul li {color:#333; padding-left:-30px;}
+.sidebox.tixian ul li span { float:right; color:#F30;}

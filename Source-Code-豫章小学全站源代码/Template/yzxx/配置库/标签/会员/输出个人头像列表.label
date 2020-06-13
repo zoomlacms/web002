@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>523</LabelID>
+    <LabelName>输出个人头像列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>会员</LabelCate>
+    <LabelDesc />
+    <LabelParam>ShowNum,10,1,显示数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_User left join {table1}.dbo.ZL_UserBase on {table1}.dbo.ZL_User.UserID={table1}.dbo.ZL_UserBase.UserID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_User.UserID,{table1}.dbo.ZL_User.UserName,{table1}.dbo.ZL_UserBase.UserFace,level,class</LabelField>
+    <LabelWhere />
+    <LabelOrder>{table1}.dbo.ZL_User.RegTime DESC</LabelOrder>
+    <LabelContent>&lt;ul&gt;{Repeate}
+&lt;li&gt;&lt;p style=" float:right;"&gt;{Field="class"/}&lt;br/&gt;{ZL:CutText({Field="userName"/},8,..)/}&lt;br/&gt;{Field="level"/}&lt;/p&gt;&lt;a href="/ShowList.aspx?Id={Field="UserID"/}" target="_blank"&gt;&lt;img src="{ZL:Replace({Field="UserFace"/},~,)/}" name="face"&gt;&lt;/a&gt;&lt;/li&gt;
+{/Repeate}
+&lt;/ul&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

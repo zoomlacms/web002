@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>7</ModelID>
+    <ModelName>视频模型</ModelName>
+    <Description>基于FLV等类型的视频发布系统，高速视频抢占信息时代之商机。</Description>
+    <TableName>ZL_C_video</TableName>
+    <ItemName>视频</ItemName>
+    <ItemUnit>个</ItemUnit>
+    <ItemIcon>video.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>/内容页/默认视频模型内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

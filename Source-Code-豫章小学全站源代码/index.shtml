@@ -1,0 +1,24 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎进入_豫章小学官方网站</title>
+<link href="/Template/yzxx/style/global.css" rel="stylesheet" type="text/css">
+</head>
+<body style=" background:none;">
+<div class="guide_bg">
+<div id="guide">
+<div class="guide_t"><img src="/Template/yzxx/style/images/gui_logo.jpg"></div>
+<div class="guide_m">
+<ul>
+<li><a href="/Class_1/Default.aspx" title="创建和雅的校风——和谐雅正的氛围，和平雅正的教风，温和文雅的学风"><img src="/Template/yzxx/style/images/mpic1.jpg"></a></li>
+<li><a href="/Class_2/Default.aspx" title="崇尚美好的人生——引领雅言，规范雅行，推行雅制，鼓励雅作，培养雅趣"><img src="/Template/yzxx/style/images/mpic2.jpg"></a></li>
+</ul>
+</div>
+<div class="guide_b"> &copy;copyright2012 南昌市豫章小学</div>
+</div>
+</div>
+<EMBED src="http://XXX.com/XXX.mp3" width="0" height="0" border=0 autostart="ture" loop="ture"></EMBED>
+<bgsound src="1.mid" loop=3>
+</body>
+</html>

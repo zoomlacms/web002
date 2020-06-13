@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>72</LabelID>
+    <LabelName>调用黄页ID</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>黄页</LabelCate>
+    <LabelDesc>调用黄页参数</LabelDesc>
+    <LabelParam>pageid,默认值,2,参数说明</LabelParam>
+    <LabelTable>ZL_CommonModel</LabelTable>
+    <LabelField>*</LabelField>
+    <LabelWhere>GeneralID=@pageid</LabelWhere>
+    <LabelOrder />
+    <LabelContent>{Field="GeneralID"/}</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <IsOpen>0</IsOpen>
+  </Table>
+</NewDataSet>

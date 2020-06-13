@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>12</ModelID>
+    <ModelName>个人简历</ModelName>
+    <Description>提供给个人用户录入</Description>
+    <TableName>ZL_U_jl</TableName>
+    <ItemName>信息</ItemName>
+    <ItemUnit />
+    <ItemIcon />
+    <ModelType>3</ModelType>
+    <ContentModule />
+    <MultiFlag>false</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

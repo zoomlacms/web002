@@ -1,0 +1,76 @@
+﻿<html>
+<head>
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=6" />
+<script type="text/javascript" src="/JS/ajaxrequest.js"></script>
+<script type="text/javascript"  src="/Images/style3D/fun.js"></script>
+</head>
+<style>
+    v\:*{
+        behavior: url(#default#VML);}
+    body{
+        font: 12px;
+        overflow: hidden;
+        margin: 0;
+        border: none;}
+    table, font{
+        font: 12px;}
+    .unit_air{
+        filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=30, Color='#88000000', Positive='true');}
+    .unit_ground{}
+    .hpbar{
+        font: 0px;
+        height: 15px;
+        border: 1px solid black;
+        background: #585858;}
+    .bd{
+        border: 1px solid red;}
+    a, div, img, hr, span, table{
+        position: absolute;}
+</style>
+<body oncontextmenu="return false" onmousemove="try{main_mousemove();}catch(e){}" onresize="bdy_resize()" id="bdy" bgcolor="black"  onselectstart="return false" ondragstart="return false">
+<div id="map_data"></div>
+<div id="map_safeid"></div>
+<div id="divMain" onmouseup="main_mouseup()" oncontextmenu="main_rclick(event.x,event.y)"
+        onmousedown="main_rclick(event.x,event.y)" onmouseout="divMain.mx=100;divMain.my=100" style="overflow: hidden;
+        width: 100%; position: absolute; height: 100%;"><!--main_mousedown()-->        
+	<div id="divSize" name="main" style="background: url('/Images/style3D/bg.jpg'); width: 100%; position: absolute; height: 100%"></div>
+	<div id="divModel" style="display: none; z-index: 255; background: #088008; filter: alpha(opacity=75); overflow: hidden"></div>
+</div>
+    <v:rect id="selRect" onmouseup="main_mouseup()" style="display: none; z-index: 255;
+        position: absolute" coordsize="21600,21600" strokecolor="#10fc18"><v:fill opacity = "0" ></v:fill></v:rect>
+    <div id="divSysInfo" style="width: 100%; color: white; top: 10px; text-align: center"></div>
+    <div id="divPanel" style="display:inherit; visibility:hidden; z-index: 256; background: url(panel/main.gif);
+        width: 148px; top: 0px; height: 284px; display:none;">
+        <div id="mini_map" onmouseup="mini_mouseup()" style="left: 10px; width: 128px; top: 20px; height: 128px">
+            <span id="mini_range" style="border-right: white 1px solid; border-top: white 1px solid;
+                left: 0px; border-left: white 1px solid; border-bottom: white 1px solid; top: 0px">
+            </span>
+        </div>
+        <div id="menu_build" style="display: none; left: 10px; top: 155px">
+            <div onclick="buildUnit(event.srcElement)" style="left: 4px; top: 4px"></div>
+            <div style="display: none; background: url(panel/build.gif); left: 1px; width: 122px; top: 42px; height: 41px">
+                <img style="border-right: #0c48cc 1px solid; border-top: #0c48cc 1px solid; left: 2px;
+                    border-left: #0c48cc 1px solid; border-bottom: #0c48cc 1px solid; top: 3px" onclick="cancelBuild(this)" src="ico/0_scv.gif">
+                <hr color="black" size="3" style="left: 48px; width: 71px; top: 29px">
+            </div>
+        </div>
+        <div id="menu_work" style="display: none; left: 10px; top: 155px">
+            <div onclick='showModel(event.srcElement)' style="left: 4px; top: 4px">
+                <img style="border-right: #0c48cc 1px solid; border-top: #0c48cc 1px solid; border-left: #0c48cc 1px solid;
+                    border-bottom: #0c48cc 1px solid" src="ico/0_supply.gif" name="0_supply">
+                <img style="border-right: #0c48cc 1px solid; border-top: #0c48cc 1px solid; left: 40px;
+                    border-left: #0c48cc 1px solid; border-bottom: #0c48cc 1px solid" src="ico/0_refinery.gif"
+                    name="0_refinery">
+                <img style="border-right: #0c48cc 1px solid; border-top: #0c48cc 1px solid; left: 80px;
+                    border-left: #0c48cc 1px solid; border-bottom: #0c48cc 1px solid" src="ico/0_barrack.gif"
+                    name="0_barrack">
+                <img style="border-right: #0c48cc 1px solid; border-top: #0c48cc 1px solid; filter: gray;
+                    border-left: #0c48cc 1px solid; border-bottom: #0c48cc 1px solid; top: 40px"
+                    src="ico/0_academy.gif" name="0_academy">
+            </div>
+        </div>
+    </div>
+<script src="/Images/style3D/ShowScript.js"></script>
+</body>
+</html>

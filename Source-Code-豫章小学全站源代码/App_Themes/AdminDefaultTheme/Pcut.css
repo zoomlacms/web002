@@ -1,0 +1,77 @@
+﻿body { }
+.div { float: left; margin: 0px; padding: 0px; }
+.divBorder { border: 1px #bbd5e4 solid; }
+.divBg { background-color: #e6f2f8; }
+.divCut { width: 100%; height: auto; border: 1px #bbd5e4 solid; margin-bottom: 5px; }
+.divCutdno { width: 100%; height: auto; border: 1px #bbd5e4 solid; margin-bottom: 5px; display:none; }
+.divTitle { width: 100%; height: 30px; background-color: #e6f2f8; }
+.divUrl { width: 100%; height: auto; margin: auto; overflow: hidden; overflow-x: scroll; text-align: center; }
+.divUrlminW { width: 100%; height: auto; margin: auto; overflow: hidden; text-align: center; }
+.divUrlno { width: 100%; height: auto; margin: auto; overflow: hidden; text-align: center; }
+.bgImg1 { background: url(images/operator.gif) no-repeat 0px 0px; }
+.bgImg2 { background: url(images/operator.gif) no-repeat 0px -30px; }
+.bgImg3 { background: url(images/operator.gif) no-repeat 0px -60px; }
+.bgImg4 { background: url(images/operator.gif) no-repeat 0px -90px; }
+.bgImg5 { background: url(images/operator.gif) no-repeat 0px -120px; }
+.bgImg6 { background: url(images/operator.gif) no-repeat 0px -156px; }
+.bgImg7 { background: url(images/operator.gif) no-repeat 0px -180px; }
+.bgImg8 { background: url(images/operator.gif) no-repeat 0px -210px; }
+#left { width: 20%; height: 1480px; }
+#center { width: 58%; height: 1480px; float: left; margin: 0px 5px 0px 4px; padding: 0px; }
+#right { width: 20%; height: 1480px; margin: 0px; }
+.aPic { width:15px; height:15px; line-height:30px; display:inline-block; margin:8px 2px; border-width:0px; text-decoration:none; }
+.aPic:hover { text-decoration:none; }
+.atitle { line-height:30px; font-size:13px; font-weight:bold; vertical-align:top; }
+.acolse { display:block; width:35px; height:28px; float:right; line-height:30px; font-size:13px; font-weight:normal; color:#000; text-decoration:none; vertical-align:top; }
+.acolse:hover { display:block; width:35px; height:28px; float:right; line-height:30px; font-size:13px; color:Red; text-decoration:none; vertical-align:top; }
+.titlespan { width:200px; line-height:30px; height:30px; display:block; float:left; }
+.editspan { width:60px; line-height:30px; height:30px; display:block; float:right; }
+.minspan { width:30px; line-height:30px; height:30px; display:block; float:right; }
+.ediText { width:120px; height:20px; line-height:20px; border:1px #666 solid; }
+.divUrlMax { width: 1000px; height: 768px; margin: auto; text-align: center; }
+/**Pcuting.aspx**/
+   #cover { background: none repeat scroll 0 0 #CCCCCC; height: 100%; left: 0; opacity: 0; position: absolute; top: 0; width: 1200px; z-index: 100; cursor: crosshair; filter: alpha(opacity=1); }
+#webtitle { border-bottom: #0e439c 1px solid; border-left: #0e439c 1px solid; padding-bottom: 3px; padding-left: 3px; width: 150px; padding-right: 3px; color: #3d6969; border-top: #0e439c 1px solid; border-right: #0e439c 1px solid; padding-top: 3px; }
+.barButton { border-bottom: medium none; border-left: medium none; width: 58px;  background: (searchButton.gif) no-repeat 0px 0px;
+height: 27px; color: #fff; color:Red; border-top: medium none; cursor: pointer; border-right: medium none; }
+#menu { padding-top:3px; width:100%; float:none; padding-left:20px; background-color:#0288C5; }
+#menu div { float:left; width:95px; overflow:hidden; cursor:pointer; background:url(images/nav_bg.gif) no-repeat; height:18px; padding-top:5px; padding-left:5px; display:inline; position:relative; }
+#menu div a { float:left; height:20px; display:block; overflow:hidden; }
+#menu div.on { float:left; width:95px; background:url(images/nav_bg.gif) no-repeat; }
+#menu div img { float:right; width:9px; height:9px; position:absolute; right:10px; top:5px; }
+#menu div.on input { float:left; }
+#menu span { font-size:14px; cursor:pointer; color:White; }
+#menu span:hover { color:Black; }
+#menu a { text-decoration:none; color:#FFF; }
+#menu a:hover { color:#000; }
+#addnew a { font-size:12px; }
+#addnew img { border:none; }
+#nav { background:url(images/bg.jpg) repeat-x; height:25px; line-height:28px; padding-top:3px; }
+#nav a { float:left; border:1px solid #0166A0; width:71px; height:20px; margin-left:15px; line-height:20px; text-align:center; color:#FFF; }
+#nav a:hover { text-decoration:none; }
+#nav_jq { height:40px; background-color:#595F5F; display:none; padding-top:7px; padding-left:15px; }
+#nav_jq span { float:left; margin-right:10px; }
+#font_jq { height:40px; line-height:35px; font-weight:bold; color:#A4A4A4; }
+#input_jq { height:35px; padding-top:5px; }
+#input_jq input { width:500px; height:22px; background-color:#2E3233; border:none; line-height:22px; text-indent:10px; color:#808080; }
+#bt_jq { height:35px; padding-top:5px; }
+#bt_jq input { height:22px; background-color:#3E4448; border:1px solid #6B7176; width:46px; margin-right:10px; color:#CDD0D3; }
+#close_jq { float:right; height:15px; padding-top:20px; margin-right:30px; cursor:pointer; color:#A4A4A4; }
+#nav_add { height:100px; background-color:#595F5F; display:none; }
+#font_add { float:left; width:30px; background-color:#292D31; height:90px; font-size:16px; color:#A4A4A4; text-align:center; padding-top:10px; }
+#content_add { float:left; width:900px; padding-top:5px; }
+#address, #title_add, #bt_add { width:800px; margin-top:8px; padding-left:20px; color:#A4A4A4; }
+#address input, #title_add input { width:500px; height:22px; background-color:#2E3233; border:none; line-height:22px; text-indent:10px; color:#808080; }
+#bt_add { padding-left:80px; }
+#bt_add input { height:22px; background-color:#3E4448; border:1px solid #6B7176; width:46px; margin-right:10px; color:#CDD0D3; }
+#close_add { float:right; height:15px; padding-top:70px; margin-right:30px; cursor:pointer; color:#A4A4A4; }
+.clear { clear:both; font-size:1px; visibility:hidden; width:1px; line-height:0px; }
+.newInput { border:1px solid #ccc; width:60px; }
+#pcut_menu { padding-top:3px; width:100%; float:none; padding-left:20px; border:1px solid #BCE4E4; height:30px; margin-bottom:5px; }
+#grzy, #hdzj { float:left; width:80px; overflow:hidden; cursor:pointer; height:18px; padding-top:5px; padding-left:5px; display:inline; position:relative; }
+#grzy a { float:left; height:20px; display:block; overflow:hidden; text-decoration:none; }
+#grzy a:hover { color:#F00; }
+#hdzj a { float:left; height:20px; display:block; overflow:hidden; text-decoration:none; }
+#hdzj a:hover { color:#F00; }
+#pcut_mm { width:100%; height:35px; }
+#pcut_gr { width:100%; height:30px; background-color:#F00; }

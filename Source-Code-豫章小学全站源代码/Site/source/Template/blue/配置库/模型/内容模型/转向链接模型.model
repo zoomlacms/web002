@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>5</ModelID>
+    <ModelName>转向链接模型</ModelName>
+    <Description>访客点击此模型下信息，则跳入指定第三方链接，便于流量管理。</Description>
+    <TableName>ZL_C_RedirectLink</TableName>
+    <ItemName>跳转</ItemName>
+    <ItemUnit>个</ItemUnit>
+    <ItemIcon>RedirectLink.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>/内容页/默认转向链接模型内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>2</ModelID>
+    <ModelName>文章模型</ModelName>
+    <Description>用于装载常见的文章信息，如文章、新闻、资讯等。</Description>
+    <TableName>ZL_C_Article</TableName>
+    <ItemName>文章</ItemName>
+    <ItemUnit>篇</ItemUnit>
+    <ItemIcon>Article.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>/内容页/两列式标准内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>true</Islotsize>
+  </Table>
+</NewDataSet>

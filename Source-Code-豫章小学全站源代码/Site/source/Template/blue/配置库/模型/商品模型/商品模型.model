@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>6</ModelID>
+    <ModelName>商品模型</ModelName>
+    <Description>建立起商品模型用于销售，开展网上电子业务。</Description>
+    <TableName>ZL_P_Shop</TableName>
+    <ItemName>商品</ItemName>
+    <ItemUnit>件</ItemUnit>
+    <ItemIcon>Product.gif</ItemIcon>
+    <ModelType>2</ModelType>
+    <ContentModule>/内容页/默认商品模型内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

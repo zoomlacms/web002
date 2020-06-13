@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<NodeSites>
+  <Node nid="109" st="1">
+    <NodeID>109</NodeID>
+    <NodeName>1234</NodeName>
+    <limit>3</limit>
+    <SiteType>4</SiteType>
+    <SiteID>5</SiteID>
+    <ReadOnly>1</ReadOnly>
+    <ArticleSite>2</ArticleSite>
+    <Model mid="71">
+      <ModeID>71</ModeID>
+      <ModelName>文章模型</ModelName>
+      <TableName>ZL_C_Article</TableName>
+      <ModelType>1</ModelType>
+    </Model>
+    <Model mid="72">
+      <ModeID>72</ModeID>
+      <ModelName>文章模型</ModelName>
+      <TableName>ZL_C_Article</TableName>
+      <ModelType>1</ModelType>
+    </Model>
+    <Model mid="73">
+      <ModeID>73</ModeID>
+      <ModelName>文章模型</ModelName>
+      <TableName>ZL_C_Article</TableName>
+      <ModelType>1</ModelType>
+    </Model>
+  </Node>
+  <Node nid="110">
+    <NodeID>110</NodeID>
+    <NodeName>ffffffff</NodeName>
+    <limit>0</limit>
+    <SiteType>0</SiteType>
+    <SiteID>0</SiteID>
+    <ReadOnly>0</ReadOnly>
+    <ArticleSite>1</ArticleSite>
+  </Node>
+  <Node nid="122">
+    <NodeID>122</NodeID>
+    <NodeName>222</NodeName>
+    <limit>5</limit>
+    <SiteType>5</SiteType>
+    <SiteID>6</SiteID>
+    <ReadOnly>3</ReadOnly>
+    <ArticleSite>4</ArticleSite>
+  </Node>
+</NodeSites>                                                                                                                                                                                                                                                                                                                                                                                                                                                        

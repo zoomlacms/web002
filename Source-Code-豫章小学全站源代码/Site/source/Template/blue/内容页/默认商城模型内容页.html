@@ -1,0 +1,174 @@
+﻿{ZL.Source id="常规商品数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="常规商品数据源" FD="Proname" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="常规商品数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="常规商品数据源" FD="Meta_Description" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#Menu{SField sid="常规商品数据源" FD="NodeID" page="0"/} a span:hover{ text-decoration:underline;}
+#Menu{SField sid="常规商品数据源" FD="NodeID" page="0"/} a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+</style>
+</head>
+<body>
+{ZL.Label id="蓝色头部"/}
+
+<div id="WebAd001">
+    <p>您的位置：<a href="/">{$SiteName/}</a>>>{ZL.Label id="输出指定ID节点名" NodeID="{SField sid="常规商品数据源" FD="Nodeid" page="0"/}" /}>>商品介绍</p>
+    <!--这里还可以放一个通栏广告位 -->
+</div>
+<!--内容主体开始 -->
+<div id="main">
+<div id="main_l">
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多文章..</a></span>最近更新</div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="{SField sid="常规商品数据源" FD="NodeID" page="0"/}" TitleNum="30" ShowNum="5" /}
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_ad"><img src="{$CssDir/}Images/213X70.gif" /></div>
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多推荐..</a></span>最新推荐</div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="{SField sid="常规商品数据源" FD="NodeID" page="0"/}" TitleNum="30" ShowNum="5" /}
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多热门..</a></span>最新热门</div>
+<ul>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_ad"><img src="{$CssDir/}Images/213X70-2.gif" /></div>
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多会员..</a></span>热门会员</div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" TitleNum="30" ShowNum="5" /}
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多问券..</a></span>问券调查</div>
+<ul>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_ad"><img src="{$CssDir/}Images/213X70-3.gif" /></div>
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">进入SNS社区..</a></span>新开空间</div>
+<ul>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+</ul>
+</div><!--循环块之一结束 -->
+
+</div><!--左 -->
+
+<div id="ShopCon_r">
+ <div id="ShopImg">
+ <img src="{$CssDir/}Images/213X70.gif" />
+ </div>
+ 
+ <div id="Shoptxt">{SField sid="常规商品数据源" FD="Proname" page="0"/}<br />
+    <br />
+   <form id="form" name="form" method="post" action="../UserCart.aspx" runat="server">
+ {SField sid="常规商品数据源" FD="LinPrice" page="0"/}<br />
+    {SField sid="常规商品数据源" FD="ShiPrice" page="0"/}<br />
+    {SField sid="常规商品数据源" FD="Thumbnails" page="0"/}
+   <input type="hidden" id="id" name="id" value="{$GetRequest(Itemid)$}" />  
+   <input type="text" size="10" name="Pronum" id="Pronum" />
+    {SField sid="常规商品数据源" FD="ProUnit" page="0"/}
+         {$GetRequest(Itemid)$}
+<input type="image" name="submit" id="submit" src="../../../Skin/caijing/img/yuue.gif" style="position:absolute;" />
+    </form>
+    </div>
+
+ 
+</div><!--右 -->
+
+</div>
+<!--内容主体结束 -->
+
+<div style="clear:both;"></div>
+{ZL.Label id="蓝色底部"/}
+</body>
+</html>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="常规商品数据源" FD="Title" page="0"/}</title>
+<link href="/skin/style.css" rel="stylesheet" type="text/css" />
+<meta name="Keywords" content="{SField sid="常规商品数据源" FD="Tagkey" page="0"/}">
+<style>
+#Menu0 a span:hover{ text-decoration:underline;}
+#Menu0 a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+</style>
+
+</head>
+<body>
+<div id="global">
+{ZL.Label id="顶部标签"/}
+<div id="main">
+
+<div id="main_lie">
+<div id="main_b_l">
+<div id="main_b_l_t">
+<span><a href="{ZL:GetNodeListUrl(29)/} " target="{ZL:GetNodeOpen(29)/}">更多...</a></span>最新游戏活动
+</div>
+<div id="main_b_l_m">
+<ul>
+ggg
+</ul>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<div id="main_lie_r">
+<div id="main_lie_rt">
+您的位置:>><a  href="/">首页</a>>><a href="#" target="_blank">{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</a>
+
+</div>
+<div id="main_lie_rb" >
+<ul>
+aaaa
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+<div style="clear:both;"></div>
+{ZL.Label id="蓝色底部"/}
+
+</body>
+</html>

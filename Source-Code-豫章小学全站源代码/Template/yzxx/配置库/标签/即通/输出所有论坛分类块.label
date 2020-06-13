@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>464</LabelID>
+    <LabelName>输出所有论坛分类块</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam>Diccate,4,1,类|NodeName,1,1,节点名|UserID,1,1,用户ID</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Datadic</LabelTable>
+    <LabelField>Dicid,Dicname</LabelField>
+    <LabelWhere>Diccate=@Diccate </LabelWhere>
+    <LabelOrder>Dicid ASC</LabelOrder>
+    <LabelContent>&lt;div class="lt_main"&gt;
+&lt;div class="ltmainT"&gt;论坛分类版块&lt;/div&gt;
+{Repeate}
+&lt;div class="dbtopic"&gt;
+&lt;div id="dbtopTit"&gt;&lt;span&gt;&lt;a href="/dev/{$SiteID/}/ColumnList.aspx?NodeID={ZL.Label id="输出栏目ID" NodeName="@NodeName" /}&amp;type={Field="Dicid"/}"&gt;more..&lt;/a&gt;&lt;/span&gt;{Field="Dicname"/}&lt;/div&gt;
+&lt;ul&gt;{ZL.Label id="分类论坛列表" type="{Field="Dicname"/}" ShowNum="5" /}&lt;/ul&gt;
+&lt;/div&gt;
+{/Repeate}
+&lt;/div&gt;</LabelContent>
+    <LabelCount>0</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="70" height="60" fontSize="12" backgroundColor="#F7FAFB">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			
+			private var pnc:NetConnection;
+			private var pns:NetStream;					//发布流
+			private var theCamera:Camera;
+			private var microphone:Microphone;
+			private const Width:Number = 280;			//视频输出的宽
+			private const Height:Number = 210;			//视频输出的高
+			private var isExistsCamera:Boolean = false; 
+			private var isBusyCamera:Boolean = false; 
+			private var intervalId:uint; 
+			private var mark:String;					//标记1，2，3号视频框架
+			//[Bind]private var s:String=new String("@Embed(source='../pm.gif')");
+			
+			[Bindable]
+			public var RoomID:String;
+			public var s:String;
+			public var n:String;
+			public var m:String;
+			public var UserName:String;
+			
+			private function FMSConnect():void{
+				pnc = new NetConnection();				
+				pnc.connect(parentDocument.getxmlData());
+			
+			}
+			
+			private function DisConnect():void
+			{
+				pns.close();
+			}
+			
+			private function ConnectServer():void
+			{				
+				FMSConnect();
+				m=parentDocument.VideoState();
+				mark =m;
+				pnc.addEventListener(NetStatusEvent.NET_STATUS,netStatusHandler);
+			}
+			
+			private function netStatusHandler(evt:NetStatusEvent):void
+			{
+				var info:Object = evt.info;
+				switch(info.code) 
+				{
+					case "NetConnection.Connect.Success":
+						
+						onPublishClick();
+						break;	
+					case "NetConnection.Connect.Rejected":
+						Alert.show("fms连接被拒绝" + info.code);
+						break;
+					case "NetConnection.Connect.Failed":
+						Alert.show("fms连接失败" + evt.info.code);
+						break;				
+					case "NetConnection.Connect.Closed":
+						Alert.show("fms连接已经关闭" + evt.info.code);
+						break;
+				}
+			}
+			
+			private function onPublishClick():void
+			{
+				if(int(mark)>=1&&int(mark)<=3){
+					if (Camera.names.length==0)
+					{
+						Alert.show("没安装摄像头");
+						return;
+					}
+					
+					theCamera = Camera.getCamera();
+					microphone = Microphone.getMicrophone();
+					theCamera.setMode(Width,Height,7);
+					theCamera.setQuality(4000000,0);
+					
+					pns = new NetStream(pnc);
+					pns.attachCamera(theCamera);
+					pns.attachAudio(microphone);
+					pns.addEventListener(NetStatusEvent.NET_STATUS,onErr);
+					
+					s=parentDocument.getParameers();
+					RoomID=s.split("|")[1];
+					//pns.client = this;
+					pns.publish(RoomID+"_"+mark,"live");
+					
+				}
+			}
+			
+			//*********************** xsm 02.13***************************************
+			private function chengButtonLabel():void 
+			{		
+				if(MyPublish1.label == "排麦") {
+					mai.source="../room/fm.gif";
+					MyPublish1.label = "放麦";
+					ConnectServer();
+					
+					s=parentDocument.getParameers();
+					UserName=s.split("|")[0];
+					//n=parentDocument.MicOrderlist(UserName);
+					n=parentDocument.VideoState();
+					
+				}
+				else {
+					mai.source="../room/pm.gif";
+					MyPublish1.label = "排麦";
+					DisConnect();
+				}
+			
+				
+			}
+			//*********************** end xsm 02.13***************************************
+			
+			private function onErr(evt:NetStatusEvent):void
+			{
+				if(evt.info.code=="NetStream.Publish.BadName")
+				{
+					mark=(int(mark)+1).toString();
+					onPublishClick();
+					//Alert.show(mark);
+				}
+			}				
+		]]>
+	</mx:Script>
+	<mx:Button x="0" y="0" id="MyPublish1" height="60" width="69" fontSize="1" fontFamily="boder" label="排麦" click="chengButtonLabel()"/>
+	<mx:Image id="mai" x="1" y="0" width="69" height="60" source="../room/pm.gif" click="chengButtonLabel()"/>
+	<!--<mx:Button x="96" y="1" id="disPublish3" height="100" width="95" label="放麦" click="DisConnect()" />-->
+</mx:Canvas>

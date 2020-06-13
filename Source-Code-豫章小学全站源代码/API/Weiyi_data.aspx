@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="API_Weiyi_data, App_Web_nisqlgme" enableEventValidation="false" viewStateEncryptionMode="Never" %>

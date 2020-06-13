@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>395</LabelID>
+    <LabelName>商品名</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>商城</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>{SField sid="常规商品数据源" FD="Proname" page="0"/}</LabelContent>
+    <LabelCount />
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

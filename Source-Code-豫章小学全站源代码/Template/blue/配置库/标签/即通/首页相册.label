@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>448</LabelID>
+    <LabelName>首页相册</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel</LabelTable>
+    <LabelField>NodeID</LabelField>
+    <LabelWhere>NodeID=@NodeID</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;div id="xm1"&gt;
+&lt;div class="mainL_t"&gt;
+&lt;span&gt;&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}"&gt;更多&gt;&gt;&lt;/a&gt;&lt;/span&gt;&lt;b&gt;最新图片&lt;/b&gt;
+&lt;/div&gt;
+&lt;div class="cpliudong"&gt;
+              &lt;div class="scrollbg"&gt;
+                &lt;ul id="showpic_move"&gt;{ZL.Label id="图库模型列表输出" NodeID="85" ShowNum="100" TitleNum="30" /}
+                  &lt;div class="clear"&gt;&lt;/div&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;!-- showpic_moveto end --&gt;
+              &lt;div id="bn1" &gt;上一页&lt;/div&gt;
+              &lt;div id="bn2" &gt;下一页&lt;/div&gt;
+              &lt;div class="clear"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

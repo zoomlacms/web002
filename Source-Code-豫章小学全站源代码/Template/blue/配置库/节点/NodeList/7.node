@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <NodeID>7</NodeID>
+    <NodeName>友情链接</NodeName>
+    <NodeType>1</NodeType>
+    <NodeDir>Friensite</NodeDir>
+    <NodeUrl />
+    <Tips />
+    <ParentID>0</ParentID>
+    <OrderID>12</OrderID>
+    <Child>0</Child>
+    <Depth>1</Depth>
+    <NodePicUrl />
+    <Description />
+    <Meta_Keywords />
+    <Meta_Description />
+    <OpenType>false</OpenType>
+    <PurviewType>false</PurviewType>
+    <CommentType>true</CommentType>
+    <HitsOfHot>0</HitsOfHot>
+    <ListTemplateFile>/通用栏目模板.html</ListTemplateFile>
+    <IndexTemplate />
+    <ContentModel>4</ContentModel>
+    <ItemOpenType>false</ItemOpenType>
+    <ContentHtmlRule>2</ContentHtmlRule>
+    <ListPageHtmlEx>2</ListPageHtmlEx>
+    <ContentFileEx>2</ContentFileEx>
+    <HtmlPosition>1</HtmlPosition>
+    <NodeListType>0</NodeListType>
+    <ConsumePoint>0</ConsumePoint>
+    <ConsumeType>0</ConsumeType>
+    <ConsumeTime>0</ConsumeTime>
+    <ConsumeCount>0</ConsumeCount>
+    <Shares>0</Shares>
+    <Custom />
+    <NodeListUrl>/Friensite/listpage.html</NodeListUrl>
+    <LastinfoTemplate />
+    <HotinfoTemplate />
+    <ProposeTemplate />
+    <OpenTypeTrue>_blank</OpenTypeTrue>
+    <ItemOpenTypeTrue>_blank</ItemOpenTypeTrue>
+    <NodeBySite>0</NodeBySite>
+    <SiteConfige />
+    <SafeGuard>0</SafeGuard>
+    <Contribute>0</Contribute>
+    <SiteContentAudit>0</SiteContentAudit>
+    <AuditNodeList />
+    <AddPoint>0</AddPoint>
+    <AddMoney>0.0000</AddMoney>
+    <ClickTimeout>0</ClickTimeout>
+    <Purview>&lt;View&gt;allUser&lt;/View&gt;&lt;ViewGroup&gt;&lt;/ViewGroup&gt;&lt;ViewSunGroup&gt;&lt;/ViewSunGroup&gt;&lt;input&gt;&lt;/input&gt;&lt;forum&gt;1,2&lt;/forum&gt;</Purview>
+    <AddUserExp>0</AddUserExp>
+    <DeducUserExp>0</DeducUserExp>
+    <ListPageEx>2</ListPageEx>
+    <LastinfoPageEx>2</LastinfoPageEx>
+    <HotinfoPageEx>2</HotinfoPageEx>
+    <ProposePageEx>2</ProposePageEx>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SiteConfig>
+  <SiteOption>
+    <UploadDir>/UploadFiles</UploadDir>
+    <UploadFileExts>gif|jpg|jpeg|jpe|bmp|png|rar</UploadFileExts>
+    <UploadFileMaxSize>2048</UploadFileMaxSize>
+    <UploadPicExts>gif|jpg|jpeg|jpe|bmp|png</UploadPicExts>
+    <UploadPicMaxSize>2048</UploadPicMaxSize>
+    <UploadMdaExts>avi|rm|real|mpge|mpg</UploadMdaExts>
+    <UploadMdaMaxSize>2048</UploadMdaMaxSize>
+    <UploadFlhMaxSize>2048</UploadFlhMaxSize>
+  </SiteOption>
+</SiteConfig>                                      

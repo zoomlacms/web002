@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>117</LabelID>
+    <LabelName>兼容FF六图轮循_输出广告链接</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>广告代码</LabelCate>
+    <LabelDesc>232</LabelDesc>
+    <LabelParam>NodeID,0,1,节点ID</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_Article on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_Article.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID</LabelField>
+    <LabelWhere>nodeid in(select nodeid from zl_node
+where parentid=@NodeID or nodeid=@NodeID or parentid in (select nodeid from zl_node where 
+parentid=@NodeID)  or  parentid in (select nodeid  from zl_node 
+where parentid in (select nodeid from zl_node where parentid=@NodeID))
+) and status=99 And ZL_C_Article.pic like '%.jpg%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC,{table1}.dbo.ZL_CommonModel.because_back DESC</LabelOrder>
+    <LabelContent>{Repeate}{ZL:GetInfoUrl({Field="GeneralID"/})/}{/Repeate}</LabelContent>
+    <LabelCount>6</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <IsOpen>0</IsOpen>
+  </Table>
+</NewDataSet>

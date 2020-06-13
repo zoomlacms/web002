@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Promotion>
+  <!--佣金-->
+  <IsCPM>True</IsCPM>
+  <!--CPM-->
+  <IsClick>True</IsClick>
+  <!--点击-->
+  <IsSale>True</IsSale>
+  <!--销售-->
+  <IsGuide>True</IsGuide>
+  <!--引导-->
+  <!--Cookie 期限-->
+  <CookieDeadline>1</CookieDeadline>
+  <!--销售层次start-->
+  <SLayerNum>1</SLayerNum>
+  <SaleMethod>%</SaleMethod>
+  <SaleMethod2>%</SaleMethod2>
+  <SLayer_1>100</SLayer_1>
+  <SLayer_2>100</SLayer_2>
+  <SLayer_3>100</SLayer_3>
+  <SLayer_4>100</SLayer_4>
+  <SLayer_5>100</SLayer_5>
+  <SLayer_6>100</SLayer_6>
+  <SLayer_7>100</SLayer_7>
+  <SLayer_8>100</SLayer_8>
+  <SLayer_9>100</SLayer_9>
+  <SLayer_10>100</SLayer_10>
+  <!--销售层次end-->
+  <!--点击层次start-->
+  <CLayerNum>10</CLayerNum>
+  <CLayer_1>100</CLayer_1>
+  <CLayer_2>100</CLayer_2>
+  <CLayer_3>100</CLayer_3>
+  <CLayer_4>100</CLayer_4>
+  <CLayer_5>100</CLayer_5>
+  <CLayer_6>100</CLayer_6>
+  <CLayer_7>100</CLayer_7>
+  <CLayer_8>100</CLayer_8>
+  <CLayer_9>100</CLayer_9>
+  <CLayer_10>100</CLayer_10>
+  <!--点击层次end-->
+  <!--引导-->
+  <GuideMoney>1</GuideMoney>
+</Promotion>

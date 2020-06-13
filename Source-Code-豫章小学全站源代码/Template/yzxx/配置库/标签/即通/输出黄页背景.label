@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>383</LabelID>
+    <LabelName>输出黄页背景</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam>UserID,1,1,用户ID</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Zone_Site left join {table1}.dbo.ZL_PageSkins on {table1}.dbo.ZL_Zone_Site.SkinID={table1}.dbo.ZL_PageSkins.id</LabelTable>
+    <LabelField>{table1}.dbo.ZL_Zone_Site.SkinID,{table1}.dbo.ZL_PageSkins.Css</LabelField>
+    <LabelWhere>{table1}.dbo.ZL_Zone_Site.UserID=@UserID</LabelWhere>
+    <LabelOrder />
+    <LabelContent>{Field="Css"/}</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

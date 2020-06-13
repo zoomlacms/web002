@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" fontSize="12" creationComplete="init()" height="80" borderColor="#FFFFFF" backgroundColor="#FFFFFF" width="315">
+	<mx:Script>
+		<![CDATA[
+			import bll.GetPara;
+			import bll.Message;
+			
+			[Bindable]
+			public var UserName:String;
+			//public var RoomID:String ="";
+			//public var UserID:String ="";	
+			public var s:String;
+			
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			import mx.controls.Label;
+			import mx.events.FlexEvent;
+			
+			private var netConnection:NetConnection;
+			private var sharedObject:SharedObject;
+			private var sharedO:SharedObject;
+			private var message:Message=new Message();
+			private var command:String;
+			
+			private function init():void
+			{
+				//链接服务器
+				netConnection = new NetConnection();
+				netConnection.addEventListener(NetStatusEvent.NET_STATUS,netStatusHandler);
+				command=parentDocument.getxmlData();
+				netConnection.connect(command);
+				netConnection.client = this;	
+				//this.sendTxtaa();
+				
+			}			
+			
+			private function netStatusHandler(evt:NetStatusEvent):void
+			{
+				switch(evt.info.code) 
+				{
+					case "NetConnection.Connect.Success":
+						//消息 发送框侦听 keyboard事件
+						this.txt_message.addEventListener(KeyboardEvent.KEY_DOWN,sendKeyHandler);
+						
+						sharedObject=SharedObject.getRemote("talk",netConnection.uri,false);
+						sharedObject.connect(netConnection);
+						break;
+					case "NetConnection.Connect.Rejected":
+						Alert.show("fms连接被拒绝"+evt.info.code);
+						break;
+					case "NetConnection.Connect.Failed":
+						Alert.show("fms连接失败"+evt.info.code);
+						break;
+					case "NetConnection.Connect.Closed":
+						Alert.show("fms连接已经关闭"+evt.info.code);
+						break;
+				}
+			}
+			
+			private function sendKeyHandler(evt:KeyboardEvent):void
+			{
+				if(evt.keyCode == 13)
+				{
+					this.sendTxt();
+				}
+			}
+			
+			private function btnSenClickHandler(evt:MouseEvent):void
+			{
+				trace(8);
+				
+				this.sendTxt();
+			}
+			
+			private function sendTxt():void
+			{
+				s=parentDocument.getParameers();
+				UserName=s.split("|")[0];
+				//Alert.show(UserName);
+				
+				trace(9);
+				if (txt_message.text == "")
+				{
+					Alert.show("请输入发言内容");
+					return;
+				}
+				
+				//消息定义
+				message.Sender=UserName;
+				//Alert.show(this.parentDocument.valueOf());
+				message.Receiver=parentDocument.GetReceiver();
+				message.msg=txt_message.text;
+				message.time=new Date();
+				
+				var arr:ArrayCollection = new ArrayCollection();
+				arr.addItem(message);
+				
+				sharedObject.setProperty("msgList",arr);
+				this.txt_message.text="";
+			}
+			private function sendTxtaa():void
+			{
+				s=parentDocument.getParameers();
+				UserName=s.split("|")[0];
+				//Alert.show(UserName);
+
+				
+				//消息定义
+				message.Sender=UserName;
+				//Alert.show(this.parentDocument.valueOf());
+				message.Receiver=parentDocument.GetReceiver();
+				message.msg=UserName;
+				message.time=new Date();
+				
+				var arr:ArrayCollection = new ArrayCollection();
+				arr.addItem(message);
+				
+				sharedO.setProperty("UserList",arr);
+			}
+			
+		]]>
+	</mx:Script>	
+	<mx:TextInput width="315" id="txt_message" text="" focusIn="txt_message.text=''" toolTip="请输入发言内容,回车即可发言" height="80" fontSize="12"/>
+	<mx:Button x="232" y="19" label="发送" id="btn_send" width="60" enabled="true" click="btnSenClickHandler(event)" height="40" fontSize="16" icon="@Embed(source='../send.jpg')"/>
+</mx:Canvas>

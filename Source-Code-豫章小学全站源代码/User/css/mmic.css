@@ -1,0 +1,36 @@
+@charset "gb2312";
+
+/** CSS基类 **/
+
+table { margin: 0px auto; padding: 0px; font: 12px 宋体; border-width: 0px }
+div { margin: 0px auto; padding: 0px; font: 12px 宋体; border-width: 0px }
+img { margin: 0px auto; padding: 0px; font: 12px 宋体; border-width: 0px }
+td { margin: 0px auto; padding: 0px; font: 12px 宋体; border-width: 0px }
+dt { margin: 0px auto; padding: 0px; font: 12px 宋体; border-width: 0px }
+div { list-style-type: none }
+td { list-style-type: none }
+
+
+/*公共样式*/
+
+.addinput {height: 18px; width: 90%; border: #B6B2A4 1px solid;}
+.editinput {height: 18px; width: 90%; border: #B6B2A4 1px solid;}
+.labinput {height: 16px; padding-top: 3px; width: 90%; border: #B6B2A4 1px solid; font-family: "宋体"}
+.green { background-color: #F4FFEE; border: #81C91F 1px solid }
+.red { background-color: #FFF9E8; border: #FFAFAF 1px solid }
+
+/*通用表格样式*/
+.commtable td { height: 26px; padding-left:8px; text-overflow:ellipsis;overflow:hidden;white-space: nowrap;}
+.commtable th { HEIGHT: 21px; text-align: left; }
+.commtable th div { padding: 2px 0 0 8px;}
+.commtable .checkbox div {padding-top:0; }
+.commtable .note { padding-left: 18px; color: #666666}
+.commtable .blank { clear: both; height: 25px;}
+.addtable td {height: 30px;}
+.addtable th{ background: #E5F4FB; border-bottom: #D7EEF9 1px solid; height: 22px; padding-top: 2px; text-align: left; }
+
+
+
+/*常用列样式*/
+.checkbox {width: 4%;}
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>151</LabelID>
+    <LabelName>蓝色头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;!-- 网站顶部 --&gt;
+&lt;div id="WebTop"&gt;
+    &lt;p id="logo"&gt;&lt;a href="/" target="_blank"&gt;  &lt;img src="{$LogoUrl/}" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;ul id="TopNavBar"&gt;
+    	&lt;li&gt;&lt;iframe src="../Search/indexSearch.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" frameborder="0" width="480px" height="28px"&gt;&lt;/iframe&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="../../User/Register.aspx" target="_blank"&gt;&lt;strong&gt;注册会员&lt;/strong&gt;&lt;/a&gt;|&lt;/li&gt;
+        &lt;li&gt;&lt;a href="../../User/Login.aspx" target="_blank"&gt;&lt;strong&gt;用户登陆&lt;/strong&gt;&lt;/a&gt;|&lt;/li&gt;
+        &lt;li&gt;&lt;a href='#' onclick="javascript:window.open('{$SiteURL/}','_blank','left=280,top=250,width=439,height=282,scrollbars=yes')"&gt;设为首页&lt;/a&gt;|&lt;/li&gt;
+        &lt;li&gt;&lt;a href="{$SiteURL/}" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage(document.location.href);"&gt;加入收藏&lt;/a&gt;|&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul id="Menu"&gt;
+        &lt;li id="Menu0"&gt;&lt;a href="{$SiteURL/}" target="_blank"&gt;&lt;span&gt;首页&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        {ZL.Label id="蓝色经典_顶部节点列表" ParentID="0" ShowNum="7" /}
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- 网站搜索 --&gt;
+&lt;div id="WebSer"&gt;
+&lt;a href="/user/" target="_blank"&gt;社区空间精彩导航：&lt;/a&gt;
+&lt;a href="/User/UserZone/Parking/Default.aspx"&gt;抢车位&lt;/a&gt;
+&lt;a href="/User/UserZone/Book/BookList.aspx"&gt;读书&lt;/a&gt;
+&lt;a href="/User/UserZone/LogManage/SelfLogManage.aspx"&gt;日记&lt;/a&gt;
+&lt;a href="/User/UserZone/Memo/MemoList.aspx"&gt;备忘&lt;/a&gt;
+&lt;a href="/User/UserZone/Pic/CategList.aspx"&gt;相册&lt;/a&gt;
+&lt;a href="/User/UserFriend/Index.aspx"&gt;好友&lt;/a&gt;
+&lt;a href="/User/UserZone/Book/MusicList.aspx"&gt;音乐&lt;/a&gt;
+&lt;a href="/User/UserZone/Book/MovieList.aspx"&gt;电影&lt;/a&gt;
+&lt;a href="/User/UserZone/Home/MyHome.aspx"&gt;小屋&lt;/a&gt;
+&lt;a href="/User/userzone/GatherStrainManage/GSManage.aspx"&gt;族群&lt;/a&gt;
+&lt;a href="/User/UserZone/Message/MyMessage.aspx"&gt;留言板&lt;/a&gt;
+&lt;a href="/User/UserZone/ChitChat.aspx"&gt;蒙面聊&lt;/a&gt;
+&lt;a href="/User/UserZone/Book/ItineraryList.aspx"&gt;旅途&lt;/a&gt;
+&lt;a href="/User/UserZone/School/MySchoolList.aspx"&gt;班级&lt;/a&gt;
+&lt;a href="/guestbook/"&gt;问答&lt;/a&gt;
+&lt;a href="/User/UserZone/School/AddRessList.aspx"&gt;通讯录&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- 广告位 --&gt;
+</LabelContent>
+    <LabelCount />
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

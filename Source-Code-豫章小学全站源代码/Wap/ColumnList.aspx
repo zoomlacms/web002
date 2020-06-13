@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="wap_ColumnList, App_Web_e5odawuu" enableEventValidation="false" viewStateEncryptionMode="Never" %>

@@ -1,0 +1,162 @@
+﻿{ZL.Source id="视频数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="视频数据源标签" FD="Title" page="0"/}</title>
+<meta name="Keywords" content="{SField sid="视频数据源标签" FD="Tagkey" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/skin/blue/js/flv.js"></script>
+<style type="text/css">
+#Menu{SField sid="视频数据源标签" FD="NodeID" page="0"/} a span:hover{ text-decoration:underline;}
+#Menu{SField sid="视频数据源标签" FD="NodeID" page="0"/} a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+</style>
+</head>
+<body>
+<div id="WebTop">
+    <p id="logo"><a href="/" target="_blank">  <img src="{$LogoUrl/}" border="0" /></a></p>
+    <ul id="TopNavBar">
+    	<li><iframe src="../Search/indexSearch.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" frameborder="0" width="480px" height="28px"></iframe></li>
+        <li><a href="../../User/Register.aspx" target="_blank"><strong>注册会员</strong></a>|</li>
+        <li><a href="../../User/Login.aspx" target="_blank"><strong>用户登陆</strong></a>|</li>
+        <li><a href='#' onclick="javascript:window.open('{$SiteURL/}','_blank','left=280,top=250,width=439,height=282,scrollbars=yes')">设为首页</a>|</li>
+        <li><a href="{$SiteURL/}" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage(document.location.href);">加入收藏</a>|</li>
+    </ul>
+    <ul id="Menu">
+        <li id="Menu0"><a href="{$SiteURL/}" target="_blank"><span>首页</span></a></li>
+		{ZL.Label id="蓝色经典_顶部节点列表" ParentID="0" ShowNum="7" /}
+    </ul>
+</div>
+
+<div id="WebSer">
+<a href="/user/" target="_blank">社区空间精彩导航：</a>
+<a href="/User/UserZone/Parking/Default.aspx">抢车位</a>
+<a href="/User/UserZone/Book/BookList.aspx">读书</a>
+<a href="/User/UserZone/LogManage/SelfLogManage.aspx">日记</a>
+<a href="/User/UserZone/Memo/MemoList.aspx">备忘</a>
+<a href="/User/UserZone/Pic/CategList.aspx">相册</a>
+<a href="/User/UserFriend/">好友</a>
+<a href="/User/UserZone/Book/MusicList.aspx">音乐</a>
+<a href="/User/UserZone/Book/MovieList.aspx">电影</a>
+<a href="/User/UserZone/Home/MyHome.aspx">小屋</a>
+<a href="/User/userzone/GatherStrainManage/GSManage.aspx">族群</a>
+<a href="/User/UserZone/Message/MyMessage.aspx">留言板</a>
+<a href="/User/UserZone/ChitChat.aspx">蒙面聊</a>
+<a href="/User/UserZone/Book/ItineraryList.aspx">旅途</a>
+<a href="/User/UserZone/School/MySchoolList.aspx">班级</a>
+<a href="/guestbook/">问答</a>
+<a href="/User/UserZone/School/AddRessList.aspx">通讯录</a>
+</div>
+<!-- 广告位 -->
+<div id="WebAd001">
+<p>您的位置：<a href="/">{$SiteName/}</a>>>{ZL.Label id="抽取父节点ID名与链接" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" /}>><a href="{ZL:GetNodeUrl({SField sid="视频数据源标签" FD="NodeID" page="0"/})/}">{ZL.Label id="输出指定ID节点名" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" /}</a>>>{SField sid="视频数据源标签" FD="Title" page="0"/}</p>
+</div>
+<!--内容主体开始 -->
+<div id="main">
+<div id="main_l">
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多文章..</a></span>最近更新</div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" TitleNum="30" ShowNum="5" /}
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_ad"><img src="{$CssDir/}Images/213X70.gif" /></div>
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多推荐..</a></span>最新推荐</div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" TitleNum="30" ShowNum="5" /}
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多热门..</a></span>最新热门</div>
+<ul>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_ad"><img src="{$CssDir/}Images/213X70-2.gif" /></div>
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多会员..</a></span>热门会员</div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" TitleNum="30" ShowNum="5" /}
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">更多问券..</a></span>问券调查</div>
+<ul>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+</ul>
+</div><!--循环块之一结束 -->
+
+<div class="main_l_ad"><img src="{$CssDir/}Images/213X70-3.gif" /></div>
+
+<div class="main_l_show">
+<div class="main_l_title"><span><a href="{ZL:GetNodeUrl(78)/}">进入SNS社区..</a></span>新开空间</div>
+<ul>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+<li><a href="">文章标题文章标题</a></li>
+</ul>
+</div><!--循环块之一结束 -->
+
+</div><!--左 -->
+
+<div id="main_r">
+<h1>{SField sid="视频数据源标签" FD="Title" page="0"/}</h1>
+<abbr><span id="author">作者：{SField sid="视频数据源标签" FD="author" page="0"/}</span> <span id="source">来源：{SField sid="视频数据源标签" FD="source" page="0"/}</span> <span id="CreateTime">发布时间：{ZL:FormatDate({SField sid="视频数据源标签" FD="CreateTime" page="0"/},yyyy-MM-dd)/}</span> <span id="Hits">点击数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="视频数据源标签" FD="GeneralID" page="0"/}"></SCRIPT></span></abbr>
+<div id="content">
+<div id="player{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" style="width:500px;height:380px;;color:#ffffff; margin-top:20px;"></div>
+<script type="text/javascript">
+	var s5 = new SWFObject("/skin/blue/swf/FlvPlayer201002.swf","playlist","500","380","7");
+	s5.addParam("allowfullscreen","true");
+	s5.addVariable("autostart","false");
+	s5.addVariable("image","{$UploadDir/}{SField sid="视频数据源标签" FD="pic" page="0"/}");
+	s5.addVariable("file","{ZL:GetPicUrl({SField sid="视频数据源标签" FD="url" page="0"/})/}");
+	s5.addVariable("width","500");
+	s5.addVariable("height","380");
+	s5.write("player{SField sid="视频数据源标签" FD="GeneralID" page="0"/}");
+</script>
+<div style="clear:both"></div>
+视频说明：
+{SField sid="视频数据源标签" FD="content" page="0"/}
+</div>
+<div class="edit"><span id="elit">责任编辑：{SField sid="视频数据源标签" FD="Edit" page="0"/}</span> <span id="pin"><a href="../../Comments/CommentFor.aspx?ID={SField sid="视频数据源标签" FD="GeneralID" page="0"/}" target="_blank">发表评论>></a></div>
+<div id="begin"><span id="asc">上一篇文章：{ZL.Label id="上一篇文章"/}</span> <span id="desc">下一篇文章：{ZL.Label id="下一篇文章"/}</span></div>
+<div id="about">
+<span>相关文章</span>
+<ul>
+{ZL.Label id="相关文章列表输出" ShowNum="10" TitleNum="35" KeyWord="{SField sid="视频数据源标签" FD="Tagkey" page="0"/}" /}
+</ul>
+</div>
+</div><!--右 -->
+</div>
+<!--主体结束 -->
+<div style="clear:both;"></div>
+
+<div id="Class_showpic">
+<div class="main_title">最新图文</div>
+{ZL.Label id="输出指定节点缩略图与标题列表" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" TitleNum="26" ShowNum="10" /}</div>
+<div id="bottom">
+
+<div style="clear:both;"></div>
+{ZL.Label id="蓝色底部"/}
+
+
+</body>
+</html>

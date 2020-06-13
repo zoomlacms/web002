@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute"  fontSize="12"  height="716" creationComplete="getParameers()" >
+
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.core.Application;
+			
+			public var RoomID:String ="";
+			public var UserID:String ="";
+			public var UserName:String = "";
+			//ZL_User
+			//id,name,head,设备，vip
+			//Data Source=win100;Initial Catalog=ZoomLaCMS20111012;User ID=ZoomLaCMS20111012;Password=ZoomLaCMS20111012
+					
+			private function init():void  
+			{   
+				Alert.show(Application.application.parameters["id"]);//输出undefined证明获取参数失败   
+			}   
+			private function initApp():void  
+			{   
+				Alert.show(Application.application.parameters["id"]);  
+				//Alert.show(this.parameters["id"]);// 这样写也行   
+			}   
+	
+			//从文件的链接 里面得到参数
+			public function getParameers():void{
+				var searchString:String = ExternalInterface.call("document.location.search.toString");
+				searchString = searchString.substring(1,searchString.length);
+				var searchStrings:Array = searchString.split("?");
+				if(searchString == null || searchString.length < 1)
+				{
+					Alert.show("parameters less than 1");
+				}else{
+					//RoomID = (searchStrings[0] as String).split("=")[1];
+					//UserID = (searchStrings[1] as String).split("=")[1];
+					UserName = (searchStrings[0] as String).split("=")[1];
+					//Alert.show("RoomID= " + RoomID + " UserID= " + UserID+ " UserName= " + UserName);
+					Alert.show(" UserName= " + UserName);
+				}
+			}
+			
+		]]>
+	</mx:Script>
+
+</mx:Application>

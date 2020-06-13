@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>457</LabelID>
+    <LabelName>网站背景音乐</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;embed src=”http://www.yue365.com/2006_9205/23041/19.mp3” quality=high pluginspage=”http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash” type=”application/x-shockwave-flash” width=”1″ height=”1″&gt;&lt;/embed&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

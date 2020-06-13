@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="955" minHeight="600">
+	<mx:Panel x="10" y="10" width="475" height="400" layout="absolute" title="用户信息">
+		<mx:DataGrid x="20" y="20" id="dgPosts" width="400" dataProvider="{feedRequest.lastResult.Schema1.school}">
+			<mx:columns>
+				<mx:DataGridColumn headerText="用户名" dataField="UserName"/>
+			</mx:columns>
+			
+		</mx:DataGrid>
+		<mx:Button fontSize="12" x="185" y="186" label="填充" click="feedRequest.send()"/>
+		
+	</mx:Panel>
+	<mx:HTTPService id="feedRequest" url="http://localhost:2912/Default.aspx" useProxy="false"/>
+	
+</mx:Application>

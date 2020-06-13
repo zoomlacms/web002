@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>1</ModelID>
+    <ModelName>公告</ModelName>
+    <Description>发布简明信息</Description>
+    <TableName>ZL_C_Announce</TableName>
+    <ItemName>公告</ItemName>
+    <ItemUnit>条</ItemUnit>
+    <ItemIcon>Announce.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>/内容页/默认公告内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

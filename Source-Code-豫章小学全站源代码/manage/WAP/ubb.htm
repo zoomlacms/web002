@@ -1,0 +1,134 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<style>
+body{ font-size:12px;}
+table{font-size:12px;}
+a{ text-decoration:"none";}
+</style>
+<title> UBB 语言</title>
+</head>
+ 
+<body bgcolor="#CCCCCC">
+<script> 
+function show(ubb){
+parent.addubb(ubb);
+}
+function addpic(){
+    window.open("WapFileUp.aspx?CID=tx_info&ftype=1", "addclasswindow", "height=150, width=360, toolbar= no, menubar=no, scrollbars=yes, resizable=no, location=no, status=no") 
+ 
+}
+function addfile(){
+    window.open("WapFileUp.aspx?CID=tx_info&ftype=2", "addclasswindow", "height=150, width=360, toolbar= no, menubar=no, scrollbars=yes, resizable=no, location=no, status=no") 
+ 
+}
+function setpic(temp){
+show(temp);
+}
+function daoru() { 
+window.open ("../picture/systemindex.asp?site=69&classid=00&seq=1", "daoruwindow", "height=520, width=790, toolbar= no, menubar=no, scrollbars=yes, resizable=no, location=no, status=no") 
+}
+function addimg(a,b){
+show('[img]'+a+'[/img]');
+}
+function wap2(){
+	window.location="ubb2.htm";
+	
+}
+</script>
+<table border="0" width="363" cellspacing="1">
+                                <TR class="tdbg" > 
+                                  <TD class="TD3" width="353" rowspan="2" bgcolor="#CCCCCC"> 
+                              
+
+                                    <p align="left">【<a href="javascript:addpic()">上传图片</a>】        
+                                    【<a href="javascript:addfile()">上传文件</a>】 <br> 
+                                    此处可写UBB语言，广告代码等，例：<br> 
+                                    直接拨号：<a href="javascript:show('[call]手机号码[/call]');" >[call]手机号码[/call]</a><br>
+                                
+                                    换行：<a href="javascript:show('[br]')" >[br]</a><br>    
+                                    空格：<a href="javascript:show('[tab]')" >[tab]</a><br>                                
+                                    链接：<a href="javascript:show('[url=URL地址]链接标题[/url]');" >[url=URL地址]链接标题[/url]</a><br>
+                                    <font color=red>注意：如果链接站内地址，请在"URL地址"后面加上<br>
+                                    "&sid=[sid]"，以防手机掉线情况发生。</font>
+                                    <br>  
+                                        
+                                    图片：<a href="javascript:show('[img]图片URL地址[/img]');" >[img]图片URL地址[/img]</a><br>       
+                                    居左：<a href="javascript:show('[left]')" >[left]</a><br> 
+                                    居中：<a href="javascript:show('[center]')" >[center]</a><br> 
+                                    居右：<a href="javascript:show('[right]')" >[right]</a><br> 
+                                    加粗：<a href="javascript:show('[b]要加粗字符[/b]')" >[b]要加粗字符[/b]</a><br>
+                                    斜体：<a href="javascript:show('[i]要斜体字符[/i]')" >[i]要斜体字符[/i]</a><br>
+                                    下划线：<a href="javascript:show('[u]要下划线字符[/u]')" >[u]要下划线字符[/u]</a><br>
+                                    当前系统日期和时间：<a href="javascript:show('[now]')" >[now]</a><br>
+                                    显示年份：<a href="javascript:show('[year]')" >[year]</a><br>
+                                    显示当前月份：<a href="javascript:show('[month]')" >[month]</a><br>
+                                    显示当天数：<a href="javascript:show('[day]')" >[day]</a><br>
+                                    显示时钟数：<a href="javascript:show('[hour]')" >[hour]</a><br>
+                                    显示分钟数：<a href="javascript:show('[minute]')" >[minute]</a><br>
+                                    显示秒钟数：<a href="javascript:show('[second]')" >[second]</a><br>
+                                    显示当前系统日期：<a href="javascript:show('[date]')" >[date]</a><br>
+                                    显示当前系统时间：<a href="javascript:show('[time]')" >[time]</a><br>
+                                    显示当日星期：<a href="javascript:show('[weekday]')" >[weekday]</a><br>
+                                 
+                                    显示问候语：<a href="javascript:show('[hello]')" >[hello]</a><font color="#FF0000"><br>
+                                    -----<b>登入转换</b>---<br></font> 
+                                        用户登入（登入即不可见）：<a href="javascript:show('[userlogin]')" >[userlogin]</a><br> 
+                                        (以下用户登录后有效)<br>
+                                        用户积分：<a href="javascript:show('[golds]')" >[golds]</a><br>
+                                        
+                                        
+                                        
+                                           
+                                  <font color="#FF0000">-----<b>显示最新栏目内容</b>---<br>
+                                    </font> 
+                                    (以下随机返回栏目最新标题链接)N为栏目ID即地址栏上看到的classid值，---<br>
+                                    </font> 
+                                        (以下随机返回栏目最新标题链接)N为栏目ID即地址栏上看到的classid值，M为返回条数，最多10条，X为0或1,0为随机，1为不随机    <br>              
+                                        
+                                    文章功能：<a href="javascript:show('[article=N_M_X]')">[article=N_M_X]</a><br>
+                         
+                                    例如您新增了一个栏目指向了文章功能，且这个栏目你已经增加了内容，那么输入[article=12_3_0]，12为你的栏目ID（即classid），在界面上将显示随机显示3条标题链接。NM输入错误返回空。</p>
+                                    <p align="left"><b><font color="#FF0000">-------显示搜索框------
+                                    </font></b>输入框：<a href="javascript:show('[input=15]输入关键字[/input]')">[input=长度大小]说明[/input]</a><br>
+                                    例：[input=15]输入关键字[/input]<br>
+                                    <br>
+                                    搜索按钮：[ancho=功能模块标识]说明[/ancho]<br>
+                                    目前16个功能模块搜索按钮如下：<br>
+                                    <a href="javascript:show('[ancho=article]文章搜索[/ancho]')">[ancho=article]文章搜索[/ancho]</a><br>
+                                  
+                                 
+                                    <br>
+                               
+                                  
+                                    <font color="#FF0000">
+                                    ------<b>显示特殊内容</b>------<br>
+                                    </font>登录可见内容:<a href="javascript:show('[login]输入内容[/login]')" >[login]输入内容[/login]</a><br>
+                              
+                                  
+                                 
+                               
+                                    ---------高级API--------<br>
+                                
+                                    (以下用户登录后有效)<br>
+                                    取用户ID:<a href="javascript:show('[userid]')" >[userid]</a><br>
+                                    取用户名:<a href="javascript:show('[username]')" >[username]</a><br>
+                                 
+                                    取用户MD5密码:<a href="javascript:show('[password]')" >[password]</a><br>
+                                    (终端不支持Cookies时有效)<br>
+                                
+                                    </strong>
+                                    <br><br><a name="wap2"></a>
+                                    <br>
+                                    </p>
+                                  </TD>
+                                </TR>
+</table>
+ 
+</body>
+ 
+</html>
+

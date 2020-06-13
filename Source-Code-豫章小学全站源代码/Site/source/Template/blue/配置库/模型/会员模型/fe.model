@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>83</ModelID>
+    <ModelName>fe</ModelName>
+    <Description>fefe</Description>
+    <TableName>ZL_U_feef</TableName>
+    <ItemName>feef</ItemName>
+    <ItemUnit />
+    <ItemIcon />
+    <ModelType>3</ModelType>
+    <ContentModule />
+    <MultiFlag>false</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

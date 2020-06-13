@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>456</LabelID>
+    <LabelName>子站产品列表分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam>TitleNum,25,1,标题长|SysNum,50,1,简介数|ShowNum,10,1,显示数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel</LabelTable>
+    <LabelField>NodeID</LabelField>
+    <LabelWhere>(NodeID={$GetRequest(NodeID)$} or firstNodeID={$GetRequest(NodeID)$}) and status=99</LabelWhere>
+    <LabelOrder>NodeID DESC</LabelOrder>
+    <LabelContent>&lt;div id="mainR" class="mgt5"&gt;
+&lt;div class="mainR_t"&gt;
+&lt;span&gt;&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}"&gt;更多&gt;&gt;&lt;/a&gt;&lt;/span&gt;&lt;b&gt;推荐产品&lt;/b&gt;
+&lt;/div&gt;
+&lt;div class="mainRpic"&gt;
+&lt;ul&gt;
+{ZL.Label id="文章缩略图列表_带标题简介" NodeID="@NodeID" TitleNum="@TitleNum" ShowNum="@ShowNum" SysNum="@SysNum" /}
+&lt;/ul&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>8</ModelID>
+    <ModelName>友情链接</ModelName>
+    <Description>通过与网民交换友情链接，提升网站PR值和友好的互访机制。</Description>
+    <TableName>ZL_C_FriendSite</TableName>
+    <ItemName>网站</ItemName>
+    <ItemUnit>个</ItemUnit>
+    <ItemIcon>FriendSite.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>/内容页/默认友情链接内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

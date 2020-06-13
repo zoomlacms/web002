@@ -1,0 +1,155 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>85</LabelID>
+    <LabelName>①首页显示(View)</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>[黄页模板一]</LabelCate>
+    <LabelDesc>首页显示(View)</LabelDesc>
+    <LabelParam>pageid,默认值,2,参数说明</LabelParam>
+    <LabelTable>ZL_CommonModel Inner join ZL_Reg_User on ZL_CommonModel.ItemID=ZL_Reg_User.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_CommonModel.ModelID,ZL_CommonModel.ItemID,ZL_CommonModel.TableName,ZL_CommonModel.Title,ZL_CommonModel.Inputer,ZL_CommonModel.Hits,ZL_CommonModel.CreateTime,ZL_CommonModel.Status,ZL_CommonModel.EliteLevel,ZL_CommonModel.InfoID,ZL_CommonModel.SpecialID,ZL_CommonModel.IsCreate,ZL_CommonModel.HtmlLink,ZL_CommonModel.Template,ZL_Reg_User.ID,ZL_Reg_User.UserID,ZL_Reg_User.UserName,ZL_Reg_User.Styleid,ZL_Reg_User.local,ZL_Reg_User.Proname,ZL_Reg_User.logo,ZL_Reg_User.licence,ZL_Reg_User.Createdate,ZL_Reg_User.proinfo,ZL_Reg_User.contact</LabelField>
+    <LabelWhere>GeneralID=@pageid</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;title&gt;{$SiteName/}:黄页系统-{Field="Proname"/}&lt;/title&gt;
+&lt;link href="page.css" rel="stylesheet" type="text/css" /&gt;
+&lt;SCRIPT LANGUAGE="JavaScript"&gt; 
+&lt;!-- 
+function gettimes(times)
+{
+var a,aD,aS;
+var b,bD,bS;
+var c,cD,cS;
+var myDate = new Date(); 
+b=myDate.getYear();//现在的年份
+c=myDate.getMonth()+1;//现在的月份
+a=times; //输入的时间
+
+if(a.indexOf(" ")&gt;0)
+{
+var ss= a.split(" ");
+if(ss[0].indexOf("-")&gt;0)
+{
+ass=ss[0].split("-");
+aD=new Date(ass[0],ass[1],ass[2]); 
+}		
+}
+
+aS=b-aD.getYear();
+cS=c-aD.getMonth();
+
+if(aS&lt;0){
+aS=0;
+}
+
+if(aS==0 &amp;&amp; cS&gt;0)
+{
+document.write(cS+'月');
+}else
+{
+document.write(aS+'年');
+}
+}
+//--&gt; 
+&lt;/SCRIPT&gt;
+
+
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="din"&gt;&lt;/div&gt;
+&lt;div id="top"&gt;
+&lt;div id="top_logo"&gt;&lt;img src="images/c3495.jpg" width="100" height="80" /&gt;&lt;/div&gt;
+&lt;div id="top_title"&gt;{Field="Proname"/}&lt;/div&gt;
+&lt;div id="top_url"&gt;网址：&lt;a href="{$SiteURL/}/page/index.aspx?pageid={Field="GeneralID"/}"&gt;{$SiteURL/}/page/index.aspx?pageid={Field="GeneralID"/}&lt;/a&gt;&lt;/div&gt;
+&lt;div id="top_sitename"&gt;&lt;a href="{$SiteURL/}" target="_blank"&gt;{$SiteName/}&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--导航开始 --&gt;
+&lt;div id="nav"&gt;
+&lt;div id="nav_left"&gt;【&lt;img src="images/icon_b.gif" /&gt;上有名第&lt;script&gt;gettimes("{Field="Createdate"/}");&lt;/script&gt;】&lt;/div&gt;
+&lt;div id="nav_right"&gt;
+&lt;ul&gt;
+{ZL.Label id="①显示栏目列表" username="{Field="Inputer"/}" Styles="{Field="InfoID"/}" /}
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--导航结束 --&gt;
+
+&lt;!--主体开始 --&gt;
+&lt;div id="main"&gt;
+&lt;!--左边开始 --&gt;
+&lt;div id="main_left"&gt;
+&lt;div class="left_tite"&gt;栏目导航&lt;/div&gt;
+&lt;ul&gt;
+{ZL.Label id="①显示栏目列表" username="{Field="Inputer"/}" Styles="{Field="InfoID"/}" /}
+&lt;/ul&gt;
+&lt;div class="left_tite"&gt;友情链接&lt;/div&gt;
+&lt;ul&gt;
+{ZL.Label id="①首页显示友情链接" Nodeid="145" username="{Field="Inputer"/}" /}
+&lt;/ul&gt;
+&lt;div class="left_tite"&gt;联系方式&lt;/div&gt;
+&lt;div class="main_txt"&gt;
+{Field="contact"/}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--左边结束 --&gt;
+&lt;!--右边开始 --&gt;
+&lt;div id="main_right"&gt;
+&lt;div id="main_right_path"&gt;您现在的位置：黄页名&gt;&gt;栏目名或功能名&lt;/div&gt;
+&lt;div class="right_tite"&gt;公司介绍&lt;/div&gt;
+&lt;div class="right_main"&gt;
+{Field="proinfo"/}
+&lt;/div&gt;
+&lt;div class="main_txt"&gt;
+&lt;ul&gt;
+&lt;li style="width:23%"&gt;&lt;/li&gt;
+&lt;li style="width:23%"&gt;&lt;/li&gt;
+&lt;li style="width:23%"&gt;&lt;/li&gt;
+&lt;li style="width:23%"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="right_bottom"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--右边结束 --&gt;
+
+
+&lt;/div&gt;
+&lt;!--主体结束 --&gt;
+&lt;!--底部开始 --&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div id="bottom"&gt;
+&lt;div id="bootom_nav"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#"&gt;展台首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;公司介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;产品展示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;最新供应&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;公司动态&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;询价留言&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;联系我们&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;会员管理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div id="bottom_left"&gt;&lt;a href="#" target="_blank"&gt;&lt;img src="images/b.gif" /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div id="bottom_right"&gt;中国包装印刷展览网 设计制作，未经允许翻录必究.Copyright(C) &lt;script LANGUAGE="JavaScript"&gt; &lt;!-- var year="";mydate=new Date();myyear=mydate.getYear();year=(myyear &gt; 200) ? myyear : 1900 + myyear;document.write(year); --&gt; &lt;/script&gt; http://www.zoomla.cn, All rights reserved. &lt;br /&gt;
+联系电话：0791-8303707 7532723  E-mail:web@hx008.cn。&lt;br /&gt;
+以上信息由企业自行提供，信息内容的真实性、准确性和合法性由相关企业负责，中国包装印刷展览网网对此不承担任何保证责任。 &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!--底部结事 --&gt;
+&lt;!--参照http://www.ppzhan.com/st3495 --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

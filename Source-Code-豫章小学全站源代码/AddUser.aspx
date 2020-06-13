@@ -1,0 +1,2 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="AddUser, App_Web_faqyczhv" enableEventValidation="false" viewStateEncryptionMode="Never" %>
+<!DOCTYPE html><html><head runat="server"><title></title></head><body></body></html>

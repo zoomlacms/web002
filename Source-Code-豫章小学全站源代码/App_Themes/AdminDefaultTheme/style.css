@@ -1,0 +1,57 @@
+@charset "utf-8";
+body {font-size:12px;margin:0px; padding:0px; color:#4E4E4E}
+a{text-decoration: none; color:#4E4E4E}
+li{list-style-type:none;}
+
+#top{ height:75px; background-image:url(images/l_topbg.jpg); background-repeat: repeat-x;}
+#main{ margin:auto; height:460px; background-image:url(images/login_bg.jpg); background-repeat: repeat-x; }
+#login {margin:auto; width:565px; height:355px; background-image:url(images/login.jpg)}
+#login ul{margin:0px; padding:0px;padding-top:120px; margin-left:180px;}
+#login li{height:30px; line-height:30px; width:200px;}
+#login span{float:right;}
+
+#bottom{ margin:auto; width:930px; height:2px; background-color:#1370B5; border: 1px solid #1370B5; margin-top:10px }
+#copyright{margin:auto; width:930px; height:60px; line-height:28px; text-align:center; margin-top:20px;}
+
+input.username { background:#FFFFFF url("images/input_username.gif") 2px 2px no-repeat; padding-left:18px;border:1px solid #8EC1EE;width: 129px; }
+input.password { background:#FFFFFF url("images/input_password.gif") 2px 2px no-repeat; padding-left:18px; border:1px solid #8EC1EE;width: 129px;}
+input.Safeword { background:#FFFFFF url("images/input_safeword.gif") 2px 2px no-repeat; padding-left:18px; border:1px solid #8EC1EE;width: 129px;}
+input.vercode { background:#FFFFFF url("images/input_vercode.gif") 2px 2px no-repeat; padding-left:18px;border:1px solid #8EC1EE;;width: 129px; }
+input.ValidateCode{width: 52px;}
+input.username:hover,input.password:hover,input.Safeword:hover,input.vercode:hover{ background-color:#E8F4FF;}
+
+#error{margin:auto; width:930px; height:100%;border:0px solid #0c6;}
+
+#error_top { width:930px; height:50px; background-image:url(../../manage/images/error_top.jpg); background-repeat: no-repeat; }
+#error_mid{ width:930px; height:400px; background-image:url(../../manage/images/error_mid.gif); background-repeat: repeat-y; text-indent:10px; }
+#error_end{width:930px; height:5px; background-image:url(../../manage/images/error_end.gif); background-repeat:no-repeat;}
+#error {margin:auto; width:565px; height:355px; background-image:url(images/error.jpg)}
+#error ul{margin:0px; padding:0px;padding-top:120px; margin-left:100px; line-height:18px;}
+#error li{ width:380px; margin-top:8px; font-weight:bold; }
+
+#back{width:450px;text-align:right; margin-top:18px;}
+
+/*5.5版login UI*/
+.login5_body{background:url(images/5_bg.jpg) repeat-x #1370B5;}
+.login5_box{margin:auto; width:960px; height:420px; margin-top:92px;background:url(images/5_mlogin.jpg);}
+.login5_box_l{float:left; width:200px; margin-top:118px;_margin-top:110px; padding-left:260px;}
+.login5_box_l img{width:200px;height:50px;}
+.login5_box_r{float:left; width:280px; margin-left:60px; margin-top:100px; _margin-top:110px;}
+.login5_box_r h2{ text-align:left; text-indent:76px;font-size:20px; color:#052B76; font-family:微软雅黑;}
+.login5_box_r table{line-height:30px;}
+.login5_box_r th{ text-align:left;width:60px;font-weight:normal}
+
+.login5_box_r ul{ padding-top:92px;}
+.login5_box_r li{ width:100%;height:30px; line-height:30px; clear:both;}
+.login5_box_r li strong{font-size:14px;}
+.login5_box_r li span{float:left; width:60px;}
+.login5_box_r li input{float:left;}
+.login5_box_r p{ margin-left:30px;}
+.login5_box_r p input{ margin-left:22px;}
+
+.login5_bot_l{float:left; width:190px;}
+.login5_bot_r{float:right;width:80px; height:20px;}
+.login5_bot_r a{display:block; float:left; margin-right:5px; width:20px; height:20px;}
+.login5_bot_r a span{display:block;width:20px; height:20px;cursor: pointer; }
+
+.login5_bottom{margin:auto; width:960px;height:30px; line-height:30px; text-align:center; margin-top:60px;}

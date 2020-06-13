@@ -1,0 +1,20 @@
+@charset "utf-8";
+.leftdl{  padding-top:10px; padding:5px;}
+.leftdl dt{ height:30px; line-height:30px; padding-top:20px;  padding-left:50px; color:#996600; font-size:14px; font-weight:bold; margin-top:10px; border-bottom:1px solid #ccc; cursor:pointer;}
+.leftdl a{ display:block; line-height:25px; background:url(images/develop/org_disc.jpg) no-repeat; padding-left:15px; }
+.leftdl b{ display:block;  background:url(images/develop/dt02.png) no-repeat; height:50px; line-height:25px; font-size:14px; font-weight:bold; padding-left:50px;}
+#dt0{  background:url(images/develop/dt05.png) no-repeat;}
+#dt1{  background:url(images/develop/dt01.png) no-repeat;}
+#dt2{  background:url(images/develop/dt04.png) no-repeat;}
+#dt3{  background:url(images/develop/dt03.png) no-repeat;}
+#dt4{  background:url(/User/Images/qu.png) no-repeat;}
+
+.uuser{ width:980px; height:600px; margin:0 auto;}
+.siteopen{ padding-bottom:10px; border:1px solid #333;}
+.siteopen input{ border:none; border:1px;}
+.siteopen .button{ border: 1px solid #999; padding:0 5px; height:25px; margin-left:10px;}
+.webOpenSet{ hanging-punctuation:50px; margin:10px; }
+.siteopen table{ border-collapse:collapse;  }
+.siteopen td,.VISubContentDiv th{ padding:5px; border:1px solid #ccc; }
+.mtop10{ margin-top:10px;}
+.VITitleText{border-bottom:1px solid #c6c6c6;  margin:10px;padding-bottom:5px; text-align:left;font-weight:bold;}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="182" height="167" creationComplete="init()">
+	<mx:Script>
+		<![CDATA[
+			import bll.Message;
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			import mx.controls.Label;
+			import mx.events.FlexEvent;
+			
+			private var sharedObject:SharedObject;
+			private var netConnection:NetConnection;
+			private var netStream:NetStream;
+			
+			[Bindable]
+			public var UserName:String;	
+			
+			private var responder:Responder;		
+			//private var appServer:String="rtmp://58.215.78.182/SharedObjectApp";
+			private var command:String="rtmp://192.168.1.10/SharedObjectApp";
+			//private var username:String="";
+			
+			private function init():void
+			{
+				trace(11);
+				var str:String="";			
+				
+				//链接服务器
+				netConnection = new NetConnection();
+				netConnection.addEventListener(NetStatusEvent.NET_STATUS,netStatusHandler);
+				netConnection.connect(command);
+				netConnection.client = this;
+				
+				//\this.userListData.addItem(txt_username.text);
+				//this.txt_username.text="输入你的名字";
+				//用户添加到用户列表
+				UserName = parentDocument.getParameers();
+				//this.userList.addChild(UserName);
+				//userList.addItem(UserName.toString());
+				userList.addEventListener(FlexEvent.VALUE_COMMIT,VALUE_COMMITHandler);
+				
+			}
+			
+			private function netStatusHandler(evt:NetStatusEvent):void
+			{
+				trace(2);
+				
+				//this.txt_message.addEventListener(KeyboardEvent.KEY_DOWN,sendKeyHandler);
+				
+				
+				switch(evt.info.code) 
+				{
+					case "NetConnection.Connect.Success":
+						userList.addEventListener(FlexEvent.VALUE_COMMIT,VALUE_COMMITHandler);
+						netStream = new NetStream(netConnection);//添加**************************************
+						sharedObject = SharedObject.getRemote("talk",netConnection.uri,false);
+						sharedObject.addEventListener(SyncEvent.SYNC,talkSoSyncHandler);
+						//talk_so.addEventListener(SyncEvent.SYNC,talkSoSyncHandler);
+						sharedObject.connect(netConnection);
+						break;
+					case "NetConnection.Connect.Rejected":
+						Alert.show("fms连接被拒绝"+evt.info.code);
+						break;
+					case "NetConnection.Connect.Failed":
+						Alert.show("fms连接失败"+evt.info.code);
+						break;					
+					case "NetConnection.Connect.Closed":
+						Alert.show("fms连接已经关闭"+evt.info.code);
+						break;
+				}
+			}
+			private function talkSoSyncHandler(evt:SyncEvent):void
+			{
+				trace(2);
+				if ( sharedObject.data.msgList!=null )
+				{
+					var tmp:ArrayCollection = new ArrayCollection();
+					//convertArrayCollection(tmp,sharedObject.data.msgList as ArrayCollection);
+					//trace(tmp.length);
+					
+					
+					//*************************** XSM 02.15 修改**************************************			
+					
+					//*************************** END XSM 02.15 修改**********************************	
+					
+					var fullMsg:String=UserName.split("|")[0];
+					//var fullMsg:String=message.Sender+" 对 "+message.Receiver+" 说:"+message.msg;								
+					//加这个判断的目的是为了修正:txt_content.text为空时，第一行会空一行		
+					userList.text=fullMsg;
+				}
+			}
+			private function convertArrayCollection(arrNew:ArrayCollection,arrOld:ArrayCollection):void
+			{
+				arrNew.removeAll();
+				for(var i:int=0;i<arrOld.length ;i++)
+				{
+					arrNew.addItemAt(arrOld.getItemAt(i),i);
+				}
+			}
+			private function VALUE_COMMITHandler(evt:FlexEvent):void
+			{
+				userList.verticalScrollPosition = userList.maxVerticalScrollPosition;
+			}
+			//userListData			
+		]]>
+	</mx:Script>	
+	<mx:TextArea  id="userList"  height="167" width="182"  borderColor="#F8FAFB" horizontalScrollPolicy="off" verticalScrollPolicy="off"></mx:TextArea>
+</mx:Canvas>

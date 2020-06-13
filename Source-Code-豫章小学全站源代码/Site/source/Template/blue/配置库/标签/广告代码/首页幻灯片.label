@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>379</LabelID>
+    <LabelName>首页幻灯片</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>广告代码</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,NodeID|ShowNum,5,1,ShowNum</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_RedirectLink on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_RedirectLink.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_C_RedirectLink.pic,{table1}.dbo.ZL_C_RedirectLink.RedirectLink</LabelField>
+    <LabelWhere>{table1}.dbo.ZL_CommonModel.NodeID=@NodeID And {table1}.dbo.ZL_CommonModel.Status=99 And {table1}.dbo.ZL_C_RedirectLink.pic&lt;&gt;''</LabelWhere>
+    <LabelOrder>{table1}.dbo.ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;a href="{Field="RedirectLink"/}" target="_blank"&gt;
+&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" alt="{Field="Title"/}"/&gt;&lt;/a&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

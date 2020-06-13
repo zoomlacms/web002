@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>94</LabelID>
+    <LabelName>bottom</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>	&lt;!--友情链接--&gt;
+	&lt;div id="friend"&gt;
+		&lt;ul&gt;
+		{ZL.Label id="友情链接" NodeID="20" ShowNum="10" /}
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	
+	&lt;!--footer--&gt;
+	&lt;div id="footer"&gt;
+		&lt;a href="/Content.aspx?ItemID=656"&gt;关于我们&lt;/a&gt;|
+		&lt;a href="/Content.aspx?ItemID=306"&gt;网络联盟&lt;/a&gt;|
+		&lt;a href="/Content.aspx?ItemID=307"&gt;商务合作&lt;/a&gt;|
+		&lt;a href="/Content.aspx?ItemID=308"&gt;广告服务&lt;/a&gt;|
+		&lt;a href="/Content.aspx?ItemID=300"&gt;汇款认领&lt;/a&gt;|
+		&lt;a href="/Content.aspx?ItemID=296"&gt;物流快递&lt;/a&gt;|
+		&lt;a href="/Content.aspx?ItemID=298"&gt;付款方式&lt;/a&gt;|
+		&lt;a href="/Content.aspx?ItemID=303"&gt;零购须知&lt;/a&gt;|
+		&lt;a href="/Content.aspx?ItemID=310"&gt;联系我们&lt;/a&gt;
+	&lt;/div&gt;
+	
+	&lt;!--Copyright--&gt;
+	&lt;div id="copyright"&gt;
+{$Copyright/}
+	&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

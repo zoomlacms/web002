@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>406</LabelID>
+    <LabelName>AppStore列表</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable>ZL_page_app</LabelTable>
+    <LabelField>Alias,ID,Img,Lname</LabelField>
+    <LabelWhere>1=1</LabelWhere>
+    <LabelOrder>ID ASC</LabelOrder>
+    <LabelContent>&lt;div id="appList" style="width:800px;"&gt;
+&lt;ul&gt;
+{ZL.Page/}
+{Repeate}
+&lt;li&gt;&lt;a href="#"&gt;&lt;div style="text-align:center;"&gt;&lt;img src="../../{Field="Img"/}
+"/&gt;&lt;/div&gt;&lt;div style="text-align:center;"&gt;{Field="Alias"/}&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+{/Repeate}
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+{ZL.Page id="AppStore列表分页"/}&lt;/ul&gt;
+
+&lt;/div&gt;</LabelContent>
+    <LabelCount>4</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

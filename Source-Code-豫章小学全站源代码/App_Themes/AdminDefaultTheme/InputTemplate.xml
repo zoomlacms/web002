@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<inputtemp>
+  <id>1</id>
+  <template>
+    <![CDATA[
+  <tr onmouseover="this.className='tdbgmouseover'" onmouseout="this.className='tdbg'">
+                                            <td style="width: 15%" class="tdbgleft">
+                                                <strong>{FieldAlias/}：</strong>
+                                            </td>
+                                            <td>
+                                                {inputhtml/}
+     </td>
+  </tr>
+  ]]></template>
+  
+</inputtemp>

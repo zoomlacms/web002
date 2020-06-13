@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>11</ModelID>
+    <ModelName>招聘信息</ModelName>
+    <Description>提供给企业用户发布招聘信息</Description>
+    <TableName>ZL_U_ZP</TableName>
+    <ItemName>信息</ItemName>
+    <ItemUnit />
+    <ItemIcon />
+    <ModelType>3</ModelType>
+    <ContentModule />
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

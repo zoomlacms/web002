@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<user>
+  <infor>
+  <IpAddresser text="IP地址" Value="192.168.1.14" />
+  <Port text="端口号" Value="86" />
+  <Keyname text="站点名称" Value="ZoomLaCMS5.0" />
+  </infor>
+  </user>

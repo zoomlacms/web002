@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="content-type" content="text/html; charset=GB2312" />
+<title>ZoomLaCMS 3D展厅</title>
+<style>
+    *{-moz-user-select: none;}
+    *{cursor: default;}
+    li{list-style-type: none;}
+    body{
+        background: url('/Images/style3D/bg.jpg');
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        text-align: left;
+        font: normal 12px Arial, 宋体;}
+    body > div{
+        margin-right: auto;
+        margin-left: auto;}
+    #smenu{
+        position: absolute;
+        overflow: hidden;
+        filter: alpha(Opacity=60, style=0);
+        opacity: 0.6;
+        height: 30px;
+        width: 100%;
+        left: 0px;
+        bottom: -1px;
+        background: url('/Images/style3D/menubg.jpg');
+        padding: 0px;
+        padding-left: 3px;}
+    .Menu{
+        margin-top: 2px;
+        float: left;
+        margin-right: 4px;
+        color: #fff;
+        overflow: hidden;
+        cursor: pointer;
+        background: url('/Images/style3D/Menu.gif');
+        height: 27px;
+        width: 116px;
+        border: 0;
+        padding-top: 6px !important;
+        padding-top: 6px;
+        text-align: center;}
+    .win{
+        position: absolute;
+        overflow: hidden;
+        padding: 0px;}
+    .wmin{
+        position: absolute;
+        background: url('/Images/style3D/c.gif');
+        top: 8px !important;
+        overflow: hidden;
+        width: 26px;
+        height: 17px;
+        top: 7px;
+        right: 82px;}
+    .wmax{
+        position: absolute;
+        background: url('/Images/style3D/c.gif') -26px;
+        top: 8px !important;
+        overflow: hidden;
+        width: 24px;
+        height: 17px;
+        top: 7px;
+        right: 58px;}
+    .wclo{
+        position: absolute;
+        background: url('/Images/style3D/c.gif') -50px;
+        top: 8px !important;
+        overflow: hidden;
+        width: 43px;
+        height: 17px;
+        top: 7px;
+        right: 15px;}
+    .tie{
+        overflow: hidden;
+        height: 30px;
+        width: 100%;}
+    .boy{
+        overflow: hidden;
+        width: 100%;}
+    .bom{
+        overflow: hidden;
+        height: 30px;
+        width: 100%;}
+    .ChatMenu{
+        float: left;
+        margin-right: 4px;
+        margin-left: 4px;
+        margin-top: 2px;
+        color: #fff;
+        overflow: hidden;
+        cursor: pointer;
+        background: url('/Images/style3D/button.gif');
+        height: 20px;
+        width: 59px;
+        border: 0;
+        padding-top: 6px !important;
+        padding-top: 6px;
+        text-align: center;
+        z-index: 4;}
+</style>
+<script type="text/javascript" src="/JS/ajaxrequest.js"></script>
+</head>
+<body >
+<div id="smenu" style="z-index: 2">
+   <div class="Menu" onclick="showwin();" onmouseover="SetBg(this,'menu1','000')" onmouseout="SetBg(this,'menu','fff')" id="naa">会员登入</div>
+                <div class="ChatMenu" id="quitdiv" onclick="closewindow()" onmouseover="SetBg(this,'button1','000')"
+                    onmouseout="SetBg(this,'button','fff')" style="float: right; display: none; margin-right: 6px">退 出</div>
+                <ul style="width: 400px; display: none" id="chatul">
+                    <li style="float: left; margin-top: 2px;"><input type='text' name='txtchat' id='txtchat' style='width: 200px' maxlength="100"	 autoComplete=off></li>
+                    <li class="ChatMenu" onclick="subminBUT()" onmouseover="SetBg(this,'button1','000')"
+                        onmouseout="SetBg(this,'button','fff')">发&nbsp;&nbsp; 言</li>
+                    <li class="Menu" id="closechat" onclick="closechat()" onmouseover="SetBg(this,'menu1','000')"
+                        onmouseout="SetBg(this,'menu','fff') " style="display: none">隐藏聊天窗口 </li>
+                </ul>
+                <div class="Menu" id="butshowchat" onclick="showchat()" onmouseover="SetBg(this,'menu1','000')"
+                    onmouseout="SetBg(this,'menu','fff') " style="display: none">打开聊天窗口</div>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+    var Url = "/Config/ShowXML.xml";
+    var xmlDoc;
+    var b = true;
+    var nodeLength = 0;
+    if (window.ActiveXObject) {
+        xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async = "false"
+        xmlDoc.load(Url);
+        if (xmlDoc.documentElement != null) {
+        
+            getvalue();
+        }
+    }
+    // 创建AJAXRequest实例
+    var ajax = new AJAXRequest();
+    var di;
+    function getvalue() {
+        var nodes = xmlDoc.documentElement.childNodes;
+        var now = new Date();
+        var s = "";
+        if (b) {
+            nodeLength = nodes.length;
+            for (di = 0; di < nodes.length; di++) {
+                if (nodes.item(di).childNodes.item(0).text == "0") {
+                    SetConte(nodes.item(di).childNodes.item(3).text, nodes.item(di).childNodes.item(4).text)
+                }
+                document.write("<div id=\"Layer_" + nodes.item(di).childNodes.item(0).text + "\" style=\"position:absolute; margin-left:" + nodes.item(di).childNodes.item(3).text + "px; margin-top:" + nodes.item(di).childNodes.item(4).text + "px; z-index:100" + di + " ; height:205px; width: 260px;background-image:url('" + nodes.item(di).childNodes.item(5).text + "')\">Y:" + nodes.item(di).childNodes.item(3).text + "X:" + nodes.item(di).childNodes.item(4).text + "</div>\n");
+            }
+            b = false;
+        }
+        MoveXmlDoc();
+    }
+    function getvalueff() {
+        var nodes = xmlDoc.documentElement.childNodes;
+        var now = new Date();
+        for (di = 0; si < nodes.length; si++) {
+            document.write("<div id=\"Layer_" + xmlDoc.getElementsByTagName("ShopID")[di].childNodes[0].nodeValue + "\" style=\"position:absolute; margin-left:" + xmlDoc.getElementsByTagName("D_Left")[di].childNodes[0].nodeValue + "px; margin-top:" + xmlDoc.getElementsByTagName("D_Top")[di].childNodes[0].nodeValue + "px; z-index:" + si + "\"><img src=\"" + xmlDoc.getElementsByTagName("Dimg")[di].childNodes[0].nodeValue + "\" height=\"176px \" > </div>\n");
+        }
+        MoveXmlDoc();
+    }
+</script>

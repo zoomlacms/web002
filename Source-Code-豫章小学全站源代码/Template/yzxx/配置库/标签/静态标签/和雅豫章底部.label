@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>517</LabelID>
+    <LabelName>和雅豫章底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div id="mainf"&gt;
+&lt;div class="l_title"&gt;&lt;img src="{$CssDir/}images/link.jpg" class="link"&gt;&lt;b&gt;友情链接&lt;/b&gt;&lt;/div&gt;
+&lt;div class="c_link"&gt;&lt;select onChange="javascript:location.href=this.value;"&gt;{ZL.Label id="输出友情链接网站名称列表" NodeID="25" ShowNum="10" TitleNum="24" /}&lt;/select&gt;&lt;/div&gt;
+&lt;div class="c_link"&gt;&lt;select onChange="javascript:location.href=this.value;"&gt;{ZL.Label id="输出友情链接网站名称列表" NodeID="26" ShowNum="10" TitleNum="24" /}&lt;/select&gt;&lt;/div&gt;
+&lt;div class="c_link"&gt;&lt;select onChange="javascript:location.href=this.value;"&gt;{ZL.Label id="输出友情链接网站名称列表" NodeID="25" ShowNum="10" TitleNum="24" /}&lt;/select&gt;&lt;/div&gt;
+&lt;div class="c_link"&gt;&lt;select onChange="javascript:location.href=this.value;"&gt;{ZL.Label id="输出友情链接网站名称列表" NodeID="26" ShowNum="10" TitleNum="24" /}&lt;/select&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="footer"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(1)/}"&gt;和雅豫章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(32)/}"&gt;学校简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(4)/}"&gt;校园新闻&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(5)/}"&gt;办学特色&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}"&gt;学校管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(7)/}"&gt;党建园地&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="down_bg"&gt;
+&lt;p&gt;南昌豫章小学 学校地址：南昌市南东湖区豫章路33号 邮编：330006&lt;br&gt;
+&amp;copy copyright 2012 南昌市豫章小学&lt;/p&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

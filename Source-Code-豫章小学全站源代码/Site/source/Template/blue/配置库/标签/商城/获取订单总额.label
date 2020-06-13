@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>401</LabelID>
+    <LabelName>获取订单总额</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>商城</LabelCate>
+    <LabelDesc />
+    <LabelParam>OrderNo,0,1,订单号</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Orderinfo</LabelTable>
+    <LabelField>Delivery,Specifiedprice</LabelField>
+    <LabelWhere>OrderNo='{$GetRequest(OrderCode)$}'</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;span id="Specifiedprice"&gt;{ZL:GetMoney({Field="Specifiedprice"/},2,1)/}&lt;/span&gt; + &lt;span id="Delivery"&gt;{ZL.Label id="订单运费" Delivery="{Field="Delivery"/}" /}&lt;/span&gt;
+
+
+
+
+
+</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

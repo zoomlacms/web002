@@ -1,0 +1,65 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}_频道首页</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" /> 
+<link href="{$CssDir/}page1.css" rel="stylesheet" type="text/css" />
+<link href="../style/page1.css" rel="stylesheet" type="text/css" />
+{ZL:HTML5()/} 
+</head>
+
+<body>
+<div id="top">
+ <A onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$SiteURL/}');" href="#">设为首页</A> | 
+ <A href="javascript:window.external.addFavorite('{$SiteURL/}','{$SiteName/}');">加入收藏</A> 
+</div>
+<div class="banner">
+<img src="{$CssDir/}images/banner.jpg">
+</div>
+<div id="nav">
+<ul>
+<li><a href="#" target="_blank">首页</a></li>
+<li><a href="#" target="_blank">新闻中心</a></li>
+<li><a href="#" target="_blank">军事工作</a></li>
+<li><a href="#" target="_blank">政治工作</a></li>
+<li><a href="#" target="_blank">专题</a></li>
+<li><a href="#" target="_blank">下载</a></li>
+<li><a href="#" target="_blank">博客</a></li>
+<li><a href="#" target="_blank">论坛</a></li>                                                 
+</ul>
+</div> 
+<div id="WebAd001">
+<p>您的位置：<a href="/">{$SiteName/}</a>>>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}>>栏目列表</p>
+</div>
+<div id="main">
+<div id="mainL">
+<div class="mainli  mgt5">
+<div class="mainL_t">
+<span><a href="#">更多>></a></span><b>最新新闻</b>
+</div>
+<ul>  {ZL.Label id="输出指定节点标题_无时间属性" NodeID="79" TitleNum="30" ShowNum="15" /}
+<li><a href="#" target="_blank">地方第三方第三方第三方的</a></li>
+
+
+</ul>
+</div>
+</div> 
+<div id="main_r">
+<div class="main_title"><span><a href="{ZL:GetNodeListUrl({SField sid="节点栏目信息数据源" FD="NodeID" page="0"/})/}">显示更多...</a></span>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}：</div>
+<div class="ctt" style="width:100%">
+{ZL.Label id="图库模型列表输出_分页" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="20" TitleNum="24" /}
+</div>
+</div><!--右 --><div style="clear:both"></div>
+</div>
+
+<!--内容主体结束 -->
+
+
+<div style="clear:both;"></div>
+{ZL.Label id="蓝色底部"/}
+
+</body>
+</html>

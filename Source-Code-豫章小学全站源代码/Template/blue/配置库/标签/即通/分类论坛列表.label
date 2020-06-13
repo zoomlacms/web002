@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>463</LabelID>
+    <LabelName>分类论坛列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam>type,1,1,论坛分类|ShowNum,5,1,显示数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Pub_LT</LabelTable>
+    <LabelField>ID,PubAddTime,PubTitle,PubUserName</LabelField>
+    <LabelWhere> PubContentid={$GetRequest(NodeID)$}  And type like '@type'</LabelWhere>
+    <LabelOrder>PubAddTime DESC</LabelOrder>
+    <LabelContent>{Repeate}&lt;li&gt;&lt;span class="grey"&gt;&lt;b class="blue"&gt;{Field="PubUserName"/}&lt;/b&gt;{Field="PubAddTime"/}&lt;/span&gt;&lt;A href="/dev/{$SiteID/}/ColumnList.aspx?NodeID={ZL.Label id="输出栏目ID" NodeName="帖子内容" /}&amp;pubid={Field="ID"/}"&gt;{ZL:CutText({Field="PubTitle"/},25,..)/}&lt;/a&gt;&lt;/li&gt;{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,118 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <FieldID>926</FieldID>
+    <ModelId>15</ModelId>
+    <FieldName>erer</FieldName>
+    <FieldAlias>sdfs</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>ListBoxType</FieldType>
+    <Content>3=1|1$0||2|2$0</Content>
+    <OrderId>0</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>10</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>927</FieldID>
+    <ModelId>15</ModelId>
+    <FieldName>erew</FieldName>
+    <FieldAlias>sdfs</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>ListBoxType</FieldType>
+    <Content>3=1|1$0||2|2$0</Content>
+    <OrderId>1</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>10</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>928</FieldID>
+    <ModelId>15</ModelId>
+    <FieldName>23ed</FieldName>
+    <FieldAlias>sdfs32</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>ListBoxType</FieldType>
+    <Content>1=1||2</Content>
+    <OrderId>2</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>10</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>929</FieldID>
+    <ModelId>15</ModelId>
+    <FieldName>84565</FieldName>
+    <FieldAlias>445</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>ListBoxType</FieldType>
+    <Content>3=1|1$0||2|2$0</Content>
+    <OrderId>3</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>10</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>935</FieldID>
+    <ModelId>15</ModelId>
+    <FieldName>444</FieldName>
+    <FieldAlias>555</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>False</IsNotNull>
+    <IsSearchForm>False</IsSearchForm>
+    <FieldType>ListBoxType</FieldType>
+    <Content>3=1|1$0||2|2$0</Content>
+    <OrderId>4</OrderId>
+    <ShowList>True</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>True</IsShow>
+    <IsView>True</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>False</Islotsize>
+  </Table>
+</NewDataSet>

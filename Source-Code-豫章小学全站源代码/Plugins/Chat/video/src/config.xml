@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<servers value="1">
+  <host>rtmp://58.215.78.182/SharedObjectApp</host>
+  <host>rtmp://192.168.1.10/SharedObjectApp</host>
+  <host>rtmp://192.168.1.13/SharedObjectApp</host>
+  <host>rtmp://192.168.1.16/SharedObjectApp</host>
+</servers>

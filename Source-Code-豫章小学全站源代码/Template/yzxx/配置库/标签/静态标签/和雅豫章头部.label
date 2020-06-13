@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>515</LabelID>
+    <LabelName>和雅豫章头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div id="top"&gt;
+&lt;div id="logo"&gt;&lt;a href="/"&gt;&lt;img src="{$CssDir/}images/logo.gif"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div id="topr"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/user/"&gt;登录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Register.aspx"&gt;注册&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$SiteURL/}');" href="#"&gt;设为首页&lt;/A&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="javascript:void(0);" onClick="window.external.AddFavorite(document.location.href,document.title)"&gt;加入收藏&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;div class="search" style=" margin-top:15px;"&gt;
+&lt;iframe src="/Search/indexSearch.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" frameborder="0" width="225px" height="25px"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!--top end--&gt;
+&lt;div id="nav"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(1)/}" class="color1"&gt;和雅豫章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(27)/}" class="color27"&gt;学校简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}" class="color6"&gt;学校管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(8)/}" class="color8"&gt;教育教学&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(7)/}" class="color7"&gt;党建园地&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;div id="elite_ad"&gt;&lt;img src="{$CssDir/}images/homead.jpg" /&gt;&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

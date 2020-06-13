@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /Manage/
+Disallow: /App_Code/
+Disallow: /App_Data/
+Disallow: /App_Themes/
+Disallow: /bin/
+Disallow: /Images/
+Disallow: /Web.config
+Disallow: /Config
+Disallow: /Template
+Disallow: /User
+Disallow: /ManageSite

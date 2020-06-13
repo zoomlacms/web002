@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>370</LabelID>
+    <LabelName>头部导航栏</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div id="nav"&gt;
+		&lt;ul id="sddm"&gt;
+			&lt;li&gt;&lt;a href="/"&gt;首 页&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(14)/}" onmouseover="mopen('m1')" onmouseout="mclosetime()"&gt;学 前&lt;/a&gt;
+				&lt;div id="m1" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="14" ShowNum="100" /}
+				&lt;/div&gt;				
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(15)/}" onmouseover="mopen('m2')" onmouseout="mclosetime()"&gt;小 学&lt;/a&gt;
+				&lt;div id="m2" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="15" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(16)/}" onmouseover="mopen('m3')" onmouseout="mclosetime()"&gt;初 中&lt;/a&gt;
+				&lt;div id="m3" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="16" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(17)/}" onmouseover="mopen('m4')" onmouseout="mclosetime()"&gt;高 中&lt;/a&gt;
+				&lt;div id="m4" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="17" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(18)/}" onmouseover="mopen('m5')" onmouseout="mclosetime()"&gt;大 学&lt;/a&gt;
+				&lt;div id="m5" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="18" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(19)/}" onmouseover="mopen('m6')" onmouseout="mclosetime()"&gt;工具书&lt;/a&gt;
+				&lt;div id="m6" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="19" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}" onmouseover="mopen('m7')" onmouseout="mclosetime()"&gt;学生用品&lt;/a&gt;
+				&lt;div id="m7" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="3" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(4)/}" onmouseover="mopen('m8')" onmouseout="mclosetime()"&gt;教学仪器&lt;/a&gt;
+				&lt;div id="m8" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="4" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

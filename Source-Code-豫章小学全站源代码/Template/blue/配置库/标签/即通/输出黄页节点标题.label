@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>393</LabelID>
+    <LabelName>输出黄页节点标题</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam>UserName,用户名,1,用户名|NodeID,1,1,节点ID</LabelParam>
+    <LabelTable>ZL_PageTemplate</LabelTable>
+    <LabelField>TemplateID,TemplateName,TemplateUrl,TemplateType,OpenType,UserGroup,Addtime,IsTrue,Userid,UserName</LabelField>
+    <LabelWhere>UserName='@UserName' And TemplateID='@NodeID'</LabelWhere>
+    <LabelOrder />
+    <LabelContent>{Field="TemplateName"/}</LabelContent>
+    <LabelCount>1</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

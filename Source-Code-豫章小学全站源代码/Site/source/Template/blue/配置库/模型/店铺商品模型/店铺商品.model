@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>69</ModelID>
+    <ModelName>店铺商品</ModelName>
+    <Description />
+    <TableName>ZL_S_shop</TableName>
+    <ItemName>商品</ItemName>
+    <ItemUnit>件</ItemUnit>
+    <ItemIcon>Default.gif</ItemIcon>
+    <ModelType>5</ModelType>
+    <ContentModule />
+    <MultiFlag>false</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>外币支付</title>
+<script type="text/javascript">
+	function $G() {
+		var Url = top.window.location.href;
+		var u, g, StrBack = '';
+		if (arguments[arguments.length - 1] == "#")
+			u = Url.split("#");
+		else
+			u = Url.split("?");
+		if (u.length == 1) g = '';
+		else g = u[1];
+
+		if (g != '') {
+			gg = g.split("&");
+			var MaxI = gg.length;
+			str = arguments[0] + "=";
+			for (i = 0; i < MaxI; i++) {
+				if (gg[i].indexOf(str) == 0) {
+					StrBack = gg[i].replace(str, "");
+					break;
+				}
+			}
+		}
+		return StrBack;
+	}
+	function catchId() {
+		var Code = $G("OrderCode");
+		var Money = $G("money");
+		var Rate = $G("rate");
+		document.getElementById("code").value = Code;
+		document.getElementById("money").value = (Number(Money) * Number(Rate)).toFixed(2) ;
+	}
+</script>
+
+</head>
+<body onload="catchId();">
+    线下汇款帐号的静态页： 您的订单号：<input type="text" id="code" /><br />
+    金额：<input type="text" id="money" />￡
+</body>
+<!--<body onload="catchId();">
+    汇款帐号的静态页： 您的订单号：<input type="text" id="code" /><br />
+    金额：<input type="text" id="money" />￡
+</body>---->
+</html>

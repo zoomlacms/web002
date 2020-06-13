@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="955" minHeight="600"
+				creationComplete="Init()">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			
+			private var pnc:NetConnection;
+			
+			private var pns:NetStream;			//发布流
+			
+			private var rns:NetStream;
+			private var rns1:NetStream;
+			private var rns2:NetStream;
+			
+			private var theCamera:Camera;
+			private var microphone:Microphone;
+			private var video1:Video;
+			private var video2:Video;
+			private const Width:Number = 280;			//视频输出的宽
+			private const Height:Number = 210;			//视频输出的高
+			
+			private var mark:String;						//标记1，2，3号视频框架
+			
+			
+			[Bindable]
+			public var RoomID:String;
+			[Bindable]
+			public var UserName:String;
+			public var s:String;
+			public var MID:String;
+			public var UID:String;
+			
+			
+			private function Init():void
+			{
+				FMSConnect();
+				s=getParameers();				
+				//Alert.show(s);
+				//RoomID=s.split("|")[1];
+				MID=s.split("|")[0];
+				UID=s.split("|")[1];
+				ConnectServers(MID);
+				pnc.addEventListener(NetStatusEvent.NET_STATUS,onReordNetStatusHandler);
+	}
+			
+			private function FMSConnect():void
+			{
+				pnc = new NetConnection();
+				//pnc.connect(getxmlData());
+				//Alert.show(getxmlData());
+				pnc.connect("rtmp://192.168.1.10/SharedObjectApp");				
+				
+			}
+			
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			private var responder:String;	
+	
+			public  function getxmlData():String
+			{
+				var i:int=0;
+				//服务器配置信息
+				for each(var value:XML in servers.host)
+				{
+					if(servers.attribute("value")==(i+1).toString())
+					{
+						responder=value;
+					}
+					i++;
+				}
+				//Alert.show(responder);
+				return responder;
+			}
+			
+			private function DisConnect():void
+			{
+				//ClientVideo1.pause();
+				//ClientVideo1.stop();
+				//ClientVideo1.screen.isEmpty();
+				pns.close();
+			}
+			
+			private function ConnectServers(par:String):void //RoomID 替换 par
+			{								
+				mark = par;
+				FMSConnect();
+				pnc.addEventListener(NetStatusEvent.NET_STATUS,netStatusHandler);
+			}
+			
+			private function netStatusHandler(evt:NetStatusEvent):void
+			{
+				var info:Object = evt.info;
+				switch(info.code) 
+				{
+					case "NetConnection.Connect.Success":
+						onPublishClick();
+						break;	
+					case "NetConnection.Connect.Rejected":
+						Alert.show("fms连接被拒绝" + info.code);
+						break;
+					case "NetConnection.Connect.Failed":
+						Alert.show("fms连接失败" + evt.info.code);
+						break;				
+					case "NetConnection.Connect.Closed":
+						Alert.show("fms连接已经关闭" + evt.info.code);
+						break;
+				}
+			}
+			
+			private function onPublishClick():void
+			{
+				if (Camera.names.length==0)
+				{
+					Alert.show("没安装摄像头");
+					return;
+				}
+				
+				theCamera = Camera.getCamera();
+				microphone = Microphone.getMicrophone();
+				theCamera.setMode(Width,Height,7);
+				theCamera.setQuality(4000000,0);
+				
+				pns = new NetStream(pnc);
+				pns.attachCamera(theCamera);
+				pns.attachAudio(microphone);
+				pns.client = this;
+				pns.publish(mark,"live");
+			}
+			
+			private function onReordNetStatusHandler(evt:NetStatusEvent):void
+			{
+				if(evt.info.code == "NetConnection.Connect.Success")
+				{
+					s=getParameers();				
+					//Alert.show(s);
+					//RoomID=s.split("|")[1];
+					MID=s.split("|")[0];
+					UID=s.split("|")[1];
+					
+					rns1 = new NetStream(pnc);			//在fms上创建一个NetStream
+					//rns1.client = this;
+					video1 = new Video();
+					video1.width = Width;
+					video1.height = Height;
+					video1.attachNetStream(rns1);
+					ClientVideo1.addChild(video1);
+					rns1.play(MID);
+					
+					//rns1.addEventListener(NetStatusEvent.NET_STATUS,test);
+					
+					rns2 = new NetStream(pnc);
+					//rns2.client = this;
+					video2 = new Video();
+					video2.width = Width;
+					video2.height = Height;
+					
+					video2.attachNetStream(rns2);
+					ClientVideo2.addChild(video2);
+					rns2.play(UID);				
+					
+				}
+				
+			}	
+			
+			public function getParameers():String{
+				var searchString:String = ExternalInterface.call("document.location.search.toString");
+				
+				searchString = searchString.substring(1,searchString.length);
+				var searchStrings:Array = searchString.split("&");
+				
+				if(searchString == null || searchString.length < 1)
+				{
+					//	Alert.show("parameters less than 1aa");
+					
+				}else{
+					MID = (searchStrings[0] as String).split("=")[1];
+					UID = (searchStrings[1] as String).split("=")[1];										
+				}
+				s=MID+"|"+UID;
+				//Alert.show(UserName);
+				return s;						
+			}		
+		]]>
+	</mx:Script>
+	<mx:XML id="servers" source="../config.xml"/>
+	<mx:VideoDisplay x="3" y="3" width="280" height="210" id="ClientVideo1" />
+	<mx:VideoDisplay  x="292" y="3" width="280" height="210" id="ClientVideo2" />
+<!--	<mx:Button x="10" y="10" id="MyPublish1" height="22" width="127" label="打开" click="ConnectServers(MID)" />
+	<mx:Button x="310" y="10" id="MyPublish2" height="22" width="127" label="打开" click="ConnectServers(UID)" />
+	<mx:Button x="610" y="40" id="disPublish3" height="22" width="127" label="关闭" click="DisConnect()" />-->
+	
+</mx:Application>

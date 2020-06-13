@@ -1,0 +1,28 @@
+input, select { line-height: 15px; height: 20px; }
+.nav_link a:link, .nav_link a:visited, .nav_link a:active { color: #000000; text-decoration: none; }
+.nav_link a:hover { color: #000000; text-decoration: underline; }
+.nav_top { background-image: url(/App_Themes/AdminDefaultTheme/images/Counter/nav_top_bg.gif); height: 9px; }
+.nav_bottom { background-image: url(/App_Themes/AdminDefaultTheme/images/Counter/nav_bottom_bg.gif); height: 9px; }
+.nav_menu { background-image: url(/App_Themes/AdminDefaultTheme/images/Counter/nav_menu_bg.gif); height: 22px; }
+.nav_middle { border-top-width: 0px; border-bottom-width: 0px; border-left-width: 1px; border-right-width: 1px; border-style: solid; border-color: #6595D6; }
+.title { background-color: #2F87CE; height: 25px; color: #FFFFFF; }
+.trRow:hover { background-color: #C7E0F6; }
+.divCall:hover { cursor:pointer; }
+.tabBorder { border:1px solid #2F87CE; }
+.title a:link, .title a:visited, .title a:active { color: #FFFFFF; text-decoration: none; }
+.title a:hover { color: #FFFFFF; text-decoration: underline; }
+.title_link { color: #FFFFFF; font-weight: bold; }
+.title_link a:link, .title_link a:visited, .title_link a:active { color: #FFFFFF; font-weight: bold; text-decoration: none; }
+.title_link a:hover { color: #FFFFFF; font-weight: bold; text-decoration: underline; }
+
+.tables { margin-top:2px;border-collapse: collapse; width:100%;}
+.board { border-top-width: 0px; }
+.boardmsg { line-height: 130%; }
+.boardstate { border-width: 1px;  border-st  yle: none;
+border-right-style: solid; border-color: #6595D6; }
+.asp600bg { background-image: url(/App_Themes/AdminDefaultTheme/images/Counter/asp600menu.gif); background-repeat: repeat-y; background-position: left top; }
+.paginator { font: 12px Arial, Helvetica, sans-serif; padding:10px 20px 10px 0; margin: 0px; }
+.paginator a { padding: 1px 6px; border: solid 1px #8DC0ED; background:#1370B5; text-decoration: none; margin-right:2px }
+.paginator a:visited { color:#FFFFFF; padding: 1px 6px; border: solid 1px #8DC0ED; background-color:#1370B5; text-decoration: none; }
+.paginator .cpb { padding: 1px 6px; font-weight: bold; font-size: 13px; border:none; color:#FFFFFF }
+.paginator a:hover { color: #fff; background: #8EC1EE; border-color:#1370B5; text-decoration: none; }

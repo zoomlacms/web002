@@ -1,0 +1,98 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>93</LabelID>
+    <LabelName>top</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>	&lt;div id="top"&gt;
+	&lt;div class="top_c"&gt;
+&lt;div class="top_r"&gt;&lt;a href="/UserCartOne.aspx"&gt;查看购物车&lt;/a&gt;|&lt;a href="/User"&gt;用户中心&lt;/a&gt;|&lt;a href="/UserCartOne.aspx"&gt;选购中心&lt;/a&gt;|&lt;a href="/ColumnList.aspx?NodeID=61"&gt;图书介绍&lt;/a&gt;|&lt;a href="/ColumnList.aspx?NodeID=67"&gt;积分兑换&lt;/a&gt;|&lt;a href="/Content.aspx?ItemID=298"&gt;付款方式&lt;/a&gt;|&lt;a href="/Content.aspx?ItemID=310"&gt;联系我们&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;img src="../../skin/edu/images/ico1.jpg" align="absmiddle"/&gt; 欢迎光临本站 &lt;span class="top_login"&gt;{ZL.Label id="判断用户登录"/}&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+	&lt;div id="logo"&gt;
+	&lt;img src="../../skin/edu/images/logoico.jpg" class="logoico"/&gt;
+	&lt;h1&gt;&lt;a href="/"&gt;&lt;img src="../../skin/edu/images/logo.jpg" alt="江西辅教网" title="江西辅教网"/&gt;&lt;/a&gt;&lt;/h1&gt;
+	&lt;span class="logoads"&gt;{ZL.Label id="导航栏广告" NodeID="64" /}&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div id="nav"&gt;
+		&lt;ul id="sddm"&gt;
+			&lt;li&gt;&lt;a href="/"&gt;首 页&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(14)/}" onmouseover="mopen('m1')" onmouseout="mclosetime()"&gt;学 前&lt;/a&gt;
+				&lt;div id="m1" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="14" ShowNum="100" /}
+				&lt;/div&gt;				
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(15)/}" onmouseover="mopen('m2')" onmouseout="mclosetime()"&gt;小 学&lt;/a&gt;
+				&lt;div id="m2" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="15" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(16)/}" onmouseover="mopen('m3')" onmouseout="mclosetime()"&gt;初 中&lt;/a&gt;
+				&lt;div id="m3" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="16" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(17)/}" onmouseover="mopen('m4')" onmouseout="mclosetime()"&gt;高 中&lt;/a&gt;
+				&lt;div id="m4" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="17" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(18)/}" onmouseover="mopen('m5')" onmouseout="mclosetime()"&gt;大 学&lt;/a&gt;
+				&lt;div id="m5" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="18" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(19)/}" onmouseover="mopen('m6')" onmouseout="mclosetime()"&gt;工具书&lt;/a&gt;
+				&lt;div id="m6" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="19" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}" onmouseover="mopen('m7')" onmouseout="mclosetime()"&gt;学生用品&lt;/a&gt;
+				&lt;div id="m7" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="3" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(4)/}" onmouseover="mopen('m8')" onmouseout="mclosetime()"&gt;教学仪器&lt;/a&gt;
+				&lt;div id="m8" onmouseover="mcancelclosetime()"  onmouseout="mclosetime()"&gt; 
+					{ZL.Label id="父节点下子节点列表（导航）" ParentID="4" ShowNum="100" /}
+				&lt;/div&gt;	
+			&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(67)/}"&gt;积分兑换&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;div id="search"&gt;
+&lt;form action="/NodePage.aspx?Nodeid=66" method="post" name="Serachform"&gt;
+		&lt;div class="input"&gt;
+		&lt;span&gt;商品搜索&lt;/span&gt;
+		&lt;select&gt;
+			&lt;option&gt;所有分类&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/option&gt;
+		&lt;/select&gt;
+		&lt;input type="text" id="Keyword" name="Keyword" class="inputtext"/&gt;
+		&lt;input type="image" src="../../skin/edu/images/btn_search.gif" id="submit"/&gt;
+		&lt;span&gt;高级搜索&lt;/span&gt;
+		&lt;/div&gt;
+&lt;/form&gt;
+		&lt;div class="hot"&gt;
+			&lt;span&gt;热门商品：&lt;/span&gt;
+{ZL.Label id="热门商品"/}
+			&lt;div class="cart"&gt;
+				&lt;img src="../../skin/edu/images/cart.gif" align="absmiddle" style="width:20px"/&gt;
+				{ZL.Label id="购物车统计"/}
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

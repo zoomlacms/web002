@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>125</LabelID>
+    <LabelName>标准黄页申请信息数据源_内容页</LabelName>
+    <LabelType>3</LabelType>
+    <LabelCate>数据源标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable>ZL_CommonModel left join ZL_Reg_Page on ZL_CommonModel.Inputer=ZL_Reg_Page.UserName</LabelTable>
+    <LabelField>ZL_CommonModel.*,ZL_Reg_Page.*</LabelField>
+    <LabelWhere>GeneralID={$GetRequest(ItemID)$}</LabelWhere>
+    <LabelOrder />
+    <LabelContent />
+    <LabelCount>10</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <IsOpen>0</IsOpen>
+  </Table>
+</NewDataSet>

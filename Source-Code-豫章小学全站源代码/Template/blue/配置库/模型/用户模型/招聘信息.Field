@@ -1,0 +1,95 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <FieldID>255</FieldID>
+    <ModelId>11</ModelId>
+    <FieldName>name</FieldName>
+    <FieldAlias>职位名称</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>TextType</FieldType>
+    <Content>TitleSize=35,IsPassword=text,DefaultValue=</Content>
+    <OrderId>0</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>10</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>256</FieldID>
+    <ModelId>11</ModelId>
+    <FieldName>menoy</FieldName>
+    <FieldAlias>薪资待遇</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>OptionType</FieldType>
+    <Content>1=1500以下|1500以下||1500-2000|1500-2000||2000-3000|2000-3000||3000-4000|3000-4000||4000-5000|4000-5000||5000以上|5000以上||面议|面议,Property=True,Default=</Content>
+    <OrderId>1</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>10</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>257</FieldID>
+    <ModelId>11</ModelId>
+    <FieldName>edu</FieldName>
+    <FieldAlias>学历要求</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>OptionType</FieldType>
+    <Content>1=不限学历|不限学历||高中以上|高中以上||中专以上|中专以上||大学以上|大学以上||更高学历|更高学历,Property=True,Default=</Content>
+    <OrderId>2</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>10</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+  <Table>
+    <FieldID>258</FieldID>
+    <ModelId>11</ModelId>
+    <FieldName>shi</FieldName>
+    <FieldAlias>就职形式</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>OptionType</FieldType>
+    <Content>1=全职|全职||兼职|兼职||家政|家政||临时工|临时工,Property=True,Default=</Content>
+    <OrderId>3</OrderId>
+    <ShowList>false</ShowList>
+    <ShowWidth>10</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsView>false</IsView>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <Sys_type>false</Sys_type>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

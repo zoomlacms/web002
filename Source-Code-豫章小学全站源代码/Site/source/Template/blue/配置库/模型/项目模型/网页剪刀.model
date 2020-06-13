@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>72</ModelID>
+    <ModelName>网页剪刀</ModelName>
+    <Description>上的</Description>
+    <TableName>ZL_C_Plugins</TableName>
+    <ItemName>上的</ItemName>
+    <ItemUnit />
+    <ItemIcon />
+    <ModelType>8</ModelType>
+    <ContentModule />
+    <MultiFlag>false</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

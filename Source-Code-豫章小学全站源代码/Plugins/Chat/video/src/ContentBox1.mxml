@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"  creationComplete="init()" fontSize="12"  backgroundColor="#FFFFFF">
+	<mx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+			
+			[Bindable]
+			public var userListData:ArrayCollection = new ArrayCollection();
+			
+			import bll.Message;
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;	
+			import mx.controls.Label;
+			
+			private var talk_so:SharedObject;
+			private var netConnection:NetConnection;
+
+			private var responder:Responder;
+			private var command:String;
+			private var username:String="";
+			
+			private function init():void
+			{
+				//链接服务器
+				netConnection = new NetConnection();
+				netConnection.addEventListener(NetStatusEvent.NET_STATUS,netStatusHandler);
+				command=parentDocument.getxmlData();
+				netConnection.connect(command);
+				netConnection.client = this;
+			}
+			
+			private function netStatusHandler(evt:NetStatusEvent):void
+			{
+				trace(evt.info.code);
+				trace(1);			
+				var info:Object = evt.info;
+				switch(info.code) 
+				{
+					case "NetConnection.Connect.Success":
+						this.txt_content.addEventListener(FlexEvent.VALUE_COMMIT,VALUE_COMMITHandler);
+						//this.txt_message.addEventListener(KeyboardEvent.KEY_DOWN,sendKeyHandler);
+						
+
+						talk_so = SharedObject.getRemote("talk",netConnection.uri,false);
+						talk_so.addEventListener(SyncEvent.SYNC,talkSoSyncHandler);
+						talk_so.connect(netConnection);
+					
+						break;
+					case "NetConnection.Connect.Rejected":
+						Alert.show("fms连接被拒绝"+info.code);
+						break;
+					case "NetConnection.Connect.Failed":
+						Alert.show("fms连接失败"+evt.info.code);
+						break;					
+					case "NetConnection.Connect.Closed":
+						Alert.show("fms连接已经关闭"+evt.info.code);
+						break;
+				}
+			}
+			
+			private function talkSoSyncHandler(evt:SyncEvent):void
+			{
+				trace(2);
+				if ( talk_so.data.msgList!=null )
+				{
+					var tmp:ArrayCollection = new ArrayCollection();
+					convertArrayCollection(tmp,talk_so.data.msgList as ArrayCollection);
+					trace(tmp.length);
+					for(var i:int=tmp.length-1;i<tmp.length ;i++)
+					{
+						var message:Object = tmp.getItemAt(i);
+						var time:Date= message.time;
+			//*************************** XSM 02.15 修改**************************************			
+						
+			//*************************** END XSM 02.15 修改**********************************				
+						var fullMsg:String=message.Sender+" 对 "+message.Receiver+" 说:"+message.msg;
+						//var fullMsg:String=message.Sender+" 对 "+message.Receiver+" 说:"+message.msg;
+					}
+					
+					//加这个判断的目的是为了修正:txt_content.text为空时，第一行会空一行
+					if(txt_content.text=="")
+					{
+						txt_content.text=fullMsg;
+					}
+					else
+					{
+						txt_content.text=txt_content.text+"\n"+fullMsg;
+					}
+				}
+			}
+			
+			
+			private function convertArrayCollection(arrNew:ArrayCollection,arrOld:ArrayCollection):void
+			{
+				arrNew.removeAll();
+				for(var i:int=0;i<arrOld.length ;i++)
+				{
+					arrNew.addItemAt(arrOld.getItemAt(i),i);
+				}
+			}
+			
+			
+			private function VALUE_COMMITHandler(evt:FlexEvent):void
+			{
+				txt_content.verticalScrollPosition = txt_content.maxVerticalScrollPosition;
+			}
+			
+			
+			
+		]]>
+	</mx:Script>	
+	<mx:Style>
+		/* 		Application {
+		backgroundColor:#FFFFF0;
+		fontSize: 20;
+		fontWeight: nomal;
+		}
+		ToolTip {
+		backgroundColor:#FFFFFF;
+		color: red;
+		fontSize: 12;
+		fontWeight: nomal;
+		}		
+		TextArea {
+		dropShadowEnabled: true;
+		}
+		TextInput {
+		dropShadowEnabled: true;
+		}
+		List {
+		borderStyle: solid;
+		borderThickness: 5;
+		dropShadowEnabled: true;
+		fontWeight: nomal;
+		cornerRadius: 20;
+		} */
+	</mx:Style>
+	<mx:TextArea showScrollTips="true"   editable="false" x="0" y="0" id="txt_content" width="400" height="194"/>	
+</mx:Canvas>

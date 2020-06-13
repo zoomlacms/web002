@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>115</LabelID>
+    <LabelName>兼容FF六图轮循_输出广告图片</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>广告代码</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,0,1,节点ID</LabelParam>
+    <LabelTable>ZL_CommonModel left join ZL_C_Article on ZL_CommonModel.ItemID=ZL_C_Article.ID</LabelTable>
+    <LabelField>ZL_CommonModel.ItemID,ZL_C_Article.pic</LabelField>
+    <LabelWhere>nodeid in(select nodeid from zl_node
+where parentid=@NodeID or nodeid=@NodeID or parentid in (select nodeid from zl_node where 
+parentid=@NodeID)  or  parentid in (select nodeid  from zl_node 
+where parentid in (select nodeid from zl_node where parentid=@NodeID))
+) and status=99 And ZL_C_Article.pic like '%.jpg%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}{$UploadDir/}{Field="pic"/}|{/Repeate}</LabelContent>
+    <LabelCount>6</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <IsOpen>0</IsOpen>
+  </Table>
+</NewDataSet>

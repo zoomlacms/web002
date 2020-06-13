@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="348" height="310" 
+		   backgroundColor="#B0DEF6" borderColor="#7A9E83" borderStyle="solid">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.events.ColorPickerEvent;
+			import mx.events.FlexEvent;
+			import mx.events.ListEvent;
+			import mx.managers.PopUpManager;
+			
+			private var UserName:String;
+			
+			public function valid():void
+			{
+				PopUpManager.removePopUp(this);//关闭这个窗体
+			}
+			
+			protected function input_keyDownHandler(event:KeyboardEvent):void
+			{
+				
+				/* UserName=parentDocument.getParameers();
+				if(this.yulan.text=="")
+				{
+				this.yulan.text=UserName.split("|")[0]+":";
+				} 
+				else
+				{ */
+				this.yulan.text=this.input.text;
+				//}
+				
+			}
+
+
+		]]>
+	</mx:Script>
+	<mx:Label text="小喇叭" x="10" y="5"  fontSize="14" />
+	<mx:Canvas backgroundColor="#ffffff" height="277" id="content" y="31" width="346">				
+		<mx:Button x="271" y="245" label="Button" click="valid()"/>
+		<mx:TextInput x="10" y="172" width="224" height="95" id="input" keyDown="input_keyDownHandler(event)"/>
+		<mx:ColorPicker x="10" y="142" id="colorpicker1" />
+		<mx:TextArea x="10" y="32" width="159" height="102" editable="false" id="yulan" fontSize="{(parseInt(fontsize.selectedLabel))}" color="{colorpicker1.selectedColor}"
+					 />
+		<mx:Label x="7" y="10" text="预览效果" fontSize="13"/>
+		<mx:ComboBox x="49" y="142" id="fontsize">
+			<mx:String>12</mx:String>		
+			<mx:String>13</mx:String>
+			<mx:String>14</mx:String>
+			<mx:String>15</mx:String>
+			<mx:String>16</mx:String>
+			<mx:String>17</mx:String>
+			<mx:String>18</mx:String>
+		</mx:ComboBox>
+		
+	</mx:Canvas>
+</mx:Canvas>

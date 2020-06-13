@@ -1,0 +1,66 @@
+﻿* {margin:0;padding:0;font-size:12px;}
+.clear{clear:both;}
+body{ font-size:12px; font-family:Arial, Helvetica, sans-serif;color:#000;}
+ul,li{ list-style:none;}
+a{ color:#000; text-decoration:none;} 
+
+
+#top{border:1px solid #59a8e2; height:110px;background:#fff;}/*顶部框架*/
+#myinfo{ float:left; width:266px; height:108px; background-color:#E8EFF7; position:relative;   border:1px solid #4DA2E2;}
+#s_nav{ float:left;     height:110px;}
+
+#myinfo .face{ float:left; width:67px; height:67px; margin:10px;}
+#myinfo p{ float:left; width:140px; line-height:25px; padding-top:10px;	}
+#myinfo span{ float:left; display:block; margin-top:10px; height:25px; margin-left:10px;}
+#myinfo .u_online{ padding-left:20px; background:url(../images/skin/1/l_ico.gif) no-repeat 0 -160px;}
+#myinfo .u_msg{ padding-left:20px; background:url(../images/skin/1/l_ico.gif) no-repeat 0 -133px;}
+#myinfo .u_purse{ padding-left:10px; background:url(../images/skin/1/l_ico.gif) no-repeat 0 -182px;}
+#s_nav ul{ padding:10px;}
+#s_nav li{ float:left; width:60px; height:90px;margin-left:20px;}
+#s_nav li a{ display:block;width:60px; height:90px;background:#9CF url(../images/skin/1/nav.png) no-repeat; }
+#s_nav li a:hover{ background:#9CF url(../images/skin/1/nav.png) no-repeat 0 -100px;}
+#s_nav .home a{ background-position:0 0;}
+#s_nav .video a{ background-position:-60px 0 ;}
+#s_nav .shop a{ background-position:-120px 0 ;}
+#s_nav .message a{ background-position:-180px 0 ;}
+#s_nav .order a{ background-position:-240px 0 ;}
+#s_nav .exit a	{ background-position:-300px 0 ;}
+#s_nav .home a:hover { background-position:0 -100px;}
+#s_nav .video a:hover { background-position:-60px -100px;}
+#s_nav .shop a:hover { background-position:-120px -100px;}
+#s_nav .message a:hover { background-position:-180px -100px;}
+#s_nav .order a:hover { background-position:-240px -100px;}
+#s_nav .exit a:hover{ background-position:-300px -100px;}
+/*顶部框架结束*/
+
+#search{ background:#B5D9F1;height: 80px;}/*左框架*/
+.linenum{ height:25px; line-height:25px; padding-left:10px; padding-right:10px;}
+.linenum span{ float:right; }
+.ssform{height:21px;  padding-left:5px; }
+.selm{ float:left; display:block; width:30px;height:21px;background:url(../images/skin/1/frm_ico.gif) no-repeat 0px 0px; }
+.key{ border:none; border:1px solid #73AAD3; height:18px; width:170px;}
+.ss_btn{ background:none; border:none; width:50px; height:21px; background:url(../images/skin/1/frm_ico.gif) no-repeat 0px -25px; }
+.myroom{ height:24px; line-height:24px; margin-top:5px;  background:url(../images/skin/1/frm_ico.gif) repeat-x 0px -182px; }
+.myroom b{display:block; padding-left:60px; height:24px;background:url(../images/skin/1/l_ico.gif) no-repeat 30px 5px;color:#1870AF;}
+.info li{ height:30px;line-height:30px;  background:url(../images/skin/1/l_ico.gif) no-repeat 20px -103px; padding-left:40px; }
+.info li a{ color:#f00; font-weight:bold;}
+.info li span{ float:left; display:block;height:30px;}
+.info li .w20{ width:20px; }
+.info li .jia{ background:url(../images/skin/1/l_ico.gif) no-repeat 2px -310px;}
+.info li .hico{background:url(../images/skin/1/l_ico.gif) no-repeat 2px -110px;}
+.leftmeu .tab{ display:block; height:20px; padding-left:60px; background:url(../images/skin/1/l_ico.gif) no-repeat 30px -25px;font-weight:bold; color:#1870AF;}
+
+/*右侧框架*/
+#Rooms  ul{ padding:20px;}
+#Rooms li{ float:left;  line-height:30px; margin-left:20px; text-align:center;  }
+#Rooms li a{ display:block; width:61px; height:30px; padding-top:63px; background:url(../images/skin/1/room_ent.gif) no-repeat;}
+.m_tab{ height:30px; line-height:30px; padding-left:10px; padding-top:5px;border-bottom:1px solid #4CA1E1; }
+.m_tab b{ display:block; width:59px; height:31px; line-height:30px;  text-align:center; background:url(../images/skin/1/frm_ico.gif) no-repeat 0 -293px; margin-bottom:-1px;}
+.active_t{ height:25px; line-height:25px; background:url(../images/skin/1/act_tbg.jpg) repeat-x ; padding-left:10px;}
+.active_t a{ float:left;display:block;width:20px; height:20px; margin-left:10px;}
+.m_left{  background:url(../images/skin/1/r_ico.gif) no-repeat 0px 5px;}
+.m_right {  background:url(../images/skin/1/r_ico.gif) no-repeat 0px -20px;}
+.m_close  {  background:url(../images/skin/1/r_ico.gif) no-repeat 0px -42px;}
+.m_reset {  background:url(../images/skin/1/r_ico.gif) no-repeat 0px -64px;}
+.m_home {  background:url(../images/skin/1/r_ico.gif) no-repeat 0px -88px;}
+.m_speak{  background:url(../images/skin/1/r_ico.gif) no-repeat 0px -110px;}

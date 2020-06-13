@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fxpProperties abbreviated="false" authoringTool="Flex Builder" compiles="true" parentProject="8f37ec4a-0583-4b6c-bb2d-a8389994f2a3" projectUUID="8f37ec4a-0583-4b6c-bb2d-a8389994f2a3" sdkVersion="3.5.0" uuid="66597596-0dc5-4119-a338-7af3a089acef" version="4">
+  <projects/>
+  <src/>
+  <swc>
+    <linked location="sdkPlaceHolder" path="sdkPlaceHolder" position="0" uuid="66597596-0dc5-4119-a338-7af3a089acef"/>
+    <linked location="E:/tech03/VideoChat/ZoomLa.WebSite/User/VideoChat/TV2/libs" path="/libs" position="1" uuid="511d7915-133e-4407-b828-838d01c7b802"/>
+  </swc>
+  <misc/>
+  <theme/>
+</fxpProperties>

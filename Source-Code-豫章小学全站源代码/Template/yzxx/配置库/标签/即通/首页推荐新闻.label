@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>444</LabelID>
+    <LabelName>首页推荐新闻</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|TitleNum,25,1,标题长|ShowNum,10,1,显示数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel</LabelTable>
+    <LabelField>GeneralID,NodeID</LabelField>
+    <LabelWhere>ModelID=2 and status=99 and inputer='{ZL.Label id="子站网站用户"/}'</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;div id="eliteM"&gt;
+&lt;div class="elitm_t"&gt;推荐信息&lt;/div&gt;
+&lt;ul class="eliteR1_c"&gt;
+{ZL.Label id="推荐新闻" NodeID="@NodeID" ShowNum="@ShowNum" TitleNum="@TitleNum" /}
+&lt;/ul&gt; 
+ &lt;/div&gt;</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

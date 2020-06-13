@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>392</LabelID>
+    <LabelName>商品评价调用标签</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>互动标签</LabelCate>
+    <LabelDesc>ZL_Pub_SPPJ分页标签</LabelDesc>
+    <LabelParam />
+    <LabelTable>ZL_Pub_SPPJ left join ZL_Pub on ZL_Pub_SPPJ.Pubupid=ZL_Pub.Pubid</LabelTable>
+    <LabelField>ZL_Pub_SPPJ.*,ZL_Pub.*</LabelField>
+    <LabelWhere>ZL_Pub_SPPJ.Pubupid=1 And ZL_Pub_SPPJ.PubContentid={$GetRequest(ItemID)$} And ZL_Pub_SPPJ.Pubstart=1</LabelWhere>
+    <LabelOrder>ZL_Pub_SPPJ.ID DESC</LabelOrder>
+    <LabelContent>&lt;ul&gt;
+{Repeate}
+&lt;li&gt;
+&lt;p class="listHeader"&gt;&lt;em&gt;{ZL:FormatDate({Field="PubAddTime"/},yyyy-MM-dd)/}&lt;/em&gt;&lt;span class="ConUser"&gt;{Field="PubUserName"/}：&lt;/span&gt;&lt;span class="ConTitle"&gt;{Field="PubTitle"/}&lt;/span&gt;&lt;/p&gt;
+&lt;p class="ConNei"&gt;{Field="PubContent"/}&lt;/p&gt;
+&lt;/li&gt;
+{/Repeate}
+&lt;/ul&gt;
+{ZL.Page/}</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

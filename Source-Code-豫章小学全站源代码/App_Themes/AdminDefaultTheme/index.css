@@ -1,0 +1,75 @@
+﻿*{padding: 0px;margin: 0px;}
+body{font-size:12px;}
+#Indexbody{background: url(Images/topbg1.jpg) #fff repeat-x left top;padding: 0px;margin: 0px;}
+a:link, a:visited{color: #000;text-decoration: none;}
+a:active, a:hover{color: #000;text-decoration: none;}
+ul{list-style-type: none;}
+.clear{clear:both;}
+.clearbox2 { CLEAR: both; BORDER-TOP: 0px; MARGIN-TOP: 0px; FONT-SIZE: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; VISIBILITY: hidden; OVERFLOW: hidden; WIDTH: 700px; HEIGHT: 0px }
+
+/* 顶部右侧链接样式定义 */
+#Announce{ width:100%; height:44px; color: #fff; clear:both;}
+#Announce .logoAdmin{width:230px; height:42px;}
+#Announce p {COLOR: #2b6ab3; POSITION: absolute; TOP:10px;RIGHT: 15px;}
+#Announce a{color:#3CC;}
+
+#content{width:100%;   background: url(Images/logo.jpg) no-repeat 5px -42px;clear:both;}
+
+#ChannelMenuItems{height:30px; margin-left:210px; overflow:hidden;  }
+#ChannelMenuItems li{ float:left; width:80px;height:30px; line-height:30px;text-align:center;cursor:pointer; font-weight:bold; color:#fff;}
+#ChannelMenuItems li a{display:block;width:80px;height:30px;color:#fff; text-align:center;}
+#ChannelMenuItems li a:hover{text-decoration:none;}
+
+.Main_2{font-weight:bold;background:url(images/top_mouseon.gif) no-repeat;}
+
+.digitaltext{color: #fff;}
+.segtext{color: #1e860b;}
+
+/* 顶部横向子菜单样式定义 */
+#SubMenu{ height:24px; clear:both; }
+#SubMenu li{float: left;height:24px; line-height:24px;margin-left:5px; padding-left:15px;background: url(Images/tree_list.gif) no-repeat left center;}
+#SubMenu li a{color: #f2f2f2;}
+
+/* 菜单样式 */
+.menuskin {	background-image:url('/Images/menubg.gif');	background-repeat: repeat-y;	background-color: #FFFFFF;	position: absolute;	visibility:hidden;	z-index:1;	border: 1px solid #8EC1EE;}
+.menuskin div {	margin: 2px;	font-size:9pt;	line-height:14pt;}
+.menuitems {padding-right: 1px;	padding-top: 2px;padding-left: 1px;	padding-bottom: 2px;}
+.mouseoverstyle {padding-right: 0px;padding-top: 1px;padding-left: 0px;	padding-bottom: 1px;border: 1px solid #8EC1EE;background: #E8F4FF;}
+.menuskin A {padding-right:10px;padding-left:20px;}
+
+#help_Label{ cursor:pointer;}/*help's hand*/
+.C_input{background: url(images/input_bg.gif) repeat-x scroll center;margin: 2px;overflow: visible;border: 1px solid #8EC1EE;cursor: pointer; padding-top:3px;_padding-top:0px;  padding-left: 13px;padding-right: 14px;padding-bottom: 3px;_padding-bottom:0px; }
+.C_input:hover{	background: url(images/input_hover.gif) repeat-x scroll center;	border: 1px solid #8EC1EE; font-size:12px;}
+.l_input{  height:18px;line-height:18px;border:1px solid #8EC1EE;  font-size:12px;}
+.tblModelFiled{}
+.tblModelFiled input[type=text] { height:18px;line-height:18px;border:1px solid #8EC1EE;  font-size:12px;}
+
+.x_input{ border:1px solid #8EC1EE; font-size:12px; }
+.l_input:hover,.x_input:hover{background:#E8F4FF; font-size:12px;}
+
+#login li{ height:26px; line-height:26px;}
+.horizontal li{ float:left}
+#logged li{ margin-right:5px;}
+
+/*文本框修改样式*/
+.text_blur{text-align:center; height:18px;width:80px;line-height:18px;border:1px solid Transparent; background-color:Transparent;  font-size:12px;}
+.text_blur:hover{background-color:#FFFFFF;border:1px solid #8DC2EE;}
+.text_focus{text-align:center;  height:18px;width:80px;line-height:18px;border:1px solid Transparent; background-color:Transparent;  font-size:12px;background-color:#FFFFFF;border:1px solid #8DC2EE;}
+
+.but { CURSOR: pointer }
+#FrameTabs {BACKGROUND: url(/images/tab-strip-bg.gif) #d4e4f6 repeat-x 50% top; PADDING-BOTTOM: 1px; PADDING-TOP: 2px; POSITION: relative; HEIGHT: 28px! important }
+#FrameTabs UL { PADDING-RIGHT: 4px; DISPLAY: block; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 24px }
+#FrameTabs LI { BACKGROUND: url(/images/tabs-sprite.gif) repeat-x left -201px; FLOAT: left; LINE-HEIGHT: 21px; MARGIN-RIGHT: 2px; HEIGHT: 21px }
+#FrameTabs LI A { DISPLAY: block; PADDING-LEFT: 8px; FONT-SIZE: 12px; BACKGROUND: url(/images/tabs-sprite.gif) no-repeat left -51px; FLOAT: left; COLOR: #416aa3; LINE-HEIGHT: 21px; HEIGHT: 21px; TEXT-DECORATION: none }
+#FrameTabs LI A.closeTab { PADDING-RIGHT: 6px; PADDING-LEFT: 5px; BACKGROUND: url(/images/tabs-sprite.gif) no-repeat right -351px; PADDING-BOTTOM: 6px; CURSOR: pointer; PADDING-TOP: 4px; HEIGHT: 11px }
+#FrameTabs LI.FrameTabs_hover { BACKGROUND-POSITION: left -251px }
+#FrameTabs LI.FrameTabs_hover A { BACKGROUND-POSITION: left -101px }
+#FrameTabs LI.FrameTabs_hover A.closeTab { BACKGROUND-POSITION: right -401px }
+#FrameTabs LI.current { BACKGROUND-POSITION: left -151px; LINE-HEIGHT: 24px; HEIGHT: 24px }
+#FrameTabs LI.current A { BACKGROUND-POSITION: left 0px; FONT-WEIGHT: bold }
+#FrameTabs LI.current A.closeTab { BACKGROUND-POSITION: right -301px }
+#FrameTabs LI#newFrameTab { PADDING-LEFT: 2px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 4px; HEIGHT: 15px }
+#FrameTabs LI#newFrameTab A { BACKGROUND: url(/images/FrameTabs_Add.gif) no-repeat left top; WIDTH: 15px; HEIGHT: 15px }
+#FrameTabs LI#newFrameTab A:hover { BACKGROUND-POSITION: 0px -15px }
+/*查找在线好友*/
+.friends{ line-height:30px; padding-left:20px; padding-bottom:20px; BACKGROUND:#e8f5ff}

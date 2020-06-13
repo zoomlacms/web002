@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>367</LabelID>
+    <LabelName>父节点下子节点列表（导航）</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>列表专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>ParentID,默认值,1,ParentID|ShowNum,默认值,1,ShowNum</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Node</LabelTable>
+    <LabelField>NodeID,NodeName</LabelField>
+    <LabelWhere>ParentID=@ParentID</LabelWhere>
+    <LabelOrder>NodeID ASC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}" title="{Field="NodeName"/}" target="_blank"&gt;{Field="NodeName"/}&lt;/a&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+  </Table>
+</NewDataSet>

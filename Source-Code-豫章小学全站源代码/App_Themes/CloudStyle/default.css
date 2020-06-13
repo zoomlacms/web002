@@ -1,0 +1,730 @@
+/*
+SimpleBits master styles for screen media
+Dan Cederholm
+dan@simplebits.com
+Updated: Aug 17 2004
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif; 
+	line-height: 1.5em;
+	color: #333;
+	background: white;
+	font-size: x-small; /* IE5 Win */
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	font-size: small;
+	}
+
+html>body { /* be nice to Opera */
+	font-size: small;
+	}
+
+/* ---( text )------------------------------- */
+
+a:link {
+	color: #5b80b2;
+	}
+
+a:visited {
+	color: #969;
+	}
+
+a:hover {
+	color: #036;
+	}
+
+p {
+	margin: 1em 0 1em;
+	padding: 0;
+	}
+
+h1 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 110%;
+	font-weight: bold;
+	color: #069;
+	padding: 0;
+	margin: 0;
+	}
+
+h2 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 105%;
+	color: #069;
+	padding: 0;
+	margin: 0 0 1em 0;
+	}
+
+h2 a:link, h2 a:visited {
+	font-size: 110%;
+	text-decoration: none;
+	color: #069;
+	}
+
+h2 a:hover {
+	color: #600;
+	}
+	
+h2.sub {
+	color: #999;
+	font-size: 90%;
+	font-weight: normal;
+	padding-bottom: 2px;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid #ddd;
+	}
+
+h2.sub a {
+	font-size: 100%;
+	color: #999;
+	text-decoration: underline;
+	}
+
+h3 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, sans-serif;
+	font-size: 105%;
+	font-weight: bold;
+	color: #963;
+	padding: 0 0 2px 0;
+	margin: 1.2em 0 -.2em 0;
+	border-bottom: 1px solid #eee;
+	}
+
+h1 span, h2 span, h3 span {
+	color: #999;
+	}
+
+blockquote {
+	font-size: 88%;
+	color: #777;
+	padding-left: 23px;
+	}
+
+code {
+	color: #c63;
+	font-size: 110%;
+	line-height: 1.2em;
+	text-align: left;
+	}
+
+code strong {
+	color: #069;
+	}
+
+abbr, acronym, .popup {
+	font-style: normal;
+	border-bottom: 1px dotted;
+	}
+
+em {
+	font-style: italic;
+	}
+
+strong {
+	font-weight: bold;
+	}
+
+strike {
+	text-decoration: line-through;
+	}
+
+/* ---( top )------------------------------- */
+
+#wrap {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 16px;
+	font-size: 95%;
+	text-align: left;
+	background: white;
+	width: 782px;
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	width: 750px;
+	}
+
+html>body #wrap {
+  	width: 750px;
+	} 
+
+#logo {
+	/*background: #069 url(images/logo2.gif) no-repeat top left;*/
+	background: #069;
+	background-repeat: no-repeat;
+	height: 63px;
+	padding: 0px;
+	margin: 0;
+	}
+
+#logo a  {
+	border-style: none;
+	display: block;
+	width: 118px;
+	}
+
+#logo h1
+{
+    margin:5px 5px 2px 0px;
+    padding: 5px  0px 0px 10px;
+    color: #FFF;
+    font-size:24px;
+}
+
+#logo h2
+{
+     margin:5px 5px 2px 0px;
+    padding:0 0px 0px 10px;
+    color: #FFF;
+    font-size:18px;
+}
+
+#logo img  {
+	display: block;
+	width: 0;
+	}
+
+#logo span {
+	position: absolute;
+	top: 18px;
+	left: 34px;
+	width: 118px;
+	height: 29px;
+	background: no-repeat;
+	}
+
+html>body #logo span {
+	top: 19px;
+	}
+
+/* navigation */
+
+#nav {
+	float: left;
+	width: 750px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 80%;
+	background: #069 repeat-x bottom left;
+	}
+	
+#nav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-right: 1px solid #ddd;
+	}
+
+#nav a {
+	float: left;
+	padding: 6px 10px 6px 30px;
+	text-decoration: none;
+	color: white;
+	background: no-repeat 10px 55%;
+	}
+
+#nav a:hover, #nav a.active {
+	color: #fff;
+		text-decoration: underline;
+	/*background-color: #fff;*/
+	}
+	
+#nav a.active {
+	font-weight: bold;
+	}
+
+/* ---( main column )----------------------------- */
+
+/* Commented Backslash Hack
+     hides rule from IE5-Mac \*/
+#main-body {clear:left;}
+/* End IE5-Mac hack */
+
+#main-body {
+	background: no-repeat top left;
+	}
+
+#content {
+	float: left;
+	margin: 24px 0 0 0;
+	padding: 0 5px;
+	width: 542px; /* for IE5/Win */
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	width: 502px;
+  	
+	}
+
+html>body #content { /* be nice to Opera */
+	width: 502px;
+	}
+
+#content .entry {
+	margin: 0;
+	padding-top: 12px;
+	border-top: 1px solid #ddd;
+	}
+
+#content .single {
+	border-top: none;
+	padding-top: 0;
+	}
+
+/* lists */
+
+#content ul {
+	margin: 1em 0 1em 0;
+	padding-left: 24px;
+	}
+
+#content ul li {
+	padding: 0 0 4px 0px;
+	line-height: 1.3em;
+
+	}
+
+#content dl dd {
+	margin: 0;
+	padding: 0 0 1em 0;
+	}
+
+#content dl dt {
+	font-weight: bold;
+	}
+
+#content dl dt span {
+	font-weight: normal;
+	}
+
+
+p.posted {
+	color: #999;
+	font-size: 90%;
+	margin: 0;
+	padding: 0 0 12px 0;
+	}
+
+p.posted img {
+	vertical-align: middle;
+	}
+
+a.plink {
+	padding-left: 16px;
+	color: #999;
+	text-decoration: none;
+	}
+
+a:hover.plink {
+	color: #333;
+	}
+
+.clink {
+	padding: 0 0 0 17px;
+	background:  no-repeat 0 1px;
+	}
+
+.commoff {
+	padding: 0 0 0 17px;
+	color: #ccc;
+	background: no-repeat 0 1px;
+	}
+
+/* ---( comments )--------------------------------- */
+
+#comments {
+	font-size: 90%;
+	}
+
+#comments textarea {
+	width: 350px;
+	}
+
+#comments h3 {
+	font-size: 105%;
+	padding: 0 0 4px 19px;
+	margin-bottom: 10px;
+	color: #069;
+	border-bottom: 2px solid #ddd;
+	background: no-repeat 0 2px;
+	}
+
+#comments h3#chead {
+	margin-bottom: 0;
+	border-bottom: none;
+	}
+	
+#comments code {
+	font-size: 118%;
+	}
+
+#comments span {
+	color: #999;
+	}
+
+#comments dl {
+	margin-top: 0;
+	color: #666;
+	}
+
+#comments dl dt {
+	font-weight: normal;
+	color: #333;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+	}
+
+#comments dl dt img {
+	vertical-align: middle;
+	}
+
+#comments dl dd {
+	color: #666;
+	padding: 0 0 0 16px;
+	margin: 0 0 10px 0;
+	}
+
+#comments dl dd p {
+	margin-top: 0;
+	}
+
+#comments input {
+	vertical-align: middle;
+	}
+
+#comments textarea {
+	width: 325px;
+	}
+
+/* ---( right column )----------------------------- */
+
+#sidebar {
+	position: relative;
+	font-size: 90%;
+	line-height: 1.5em;
+	margin: 0 0 0 509px;
+	padding: 15px 15px 0 20px;
+	color: #937966;
+	}
+
+#sidebar a:link {
+	color: #6E5C4F;
+	}
+
+#sidebar a:visited {
+	color: #9D9187;
+	}
+
+#sidebar a:hover {
+	color: #333;
+	}
+
+#sidebar h3 {
+	font-size: 100%;
+	padding: 0 0 4px 0px;
+	margin: 0 0 8px 0;
+	color: #069;
+	border: none;
+	}
+
+/* sub nav icons */
+
+#sidebar #sub-serv, #sidebar #sub-port {
+	padding: 7px 0 8px 36px;
+	}
+
+#sidebar #sub-pub {
+	padding: 7px 0 8px 36px;
+	}
+
+#sidebar #sub-note {
+	padding: 10px 0 10px 34px;
+	}
+
+#sidebar #sub-about {
+	padding: 8px 0 8px 36px;
+	}
+
+#sidebar #sub-cont {
+	padding: 4px 0 8px 36px;
+	}
+
+#sidebar h4 {
+	font-size: 92%;
+	font-weight: normal;
+	margin: 0;
+	}
+	
+#sidebar p {
+	margin-top: 4px;
+	margin-bottom: 20px;
+	}
+
+#sidebar ul, #sidebar dl {
+	margin: 4px 0 20px 0;
+	padding: 0;
+	list-style: none;
+	}
+
+#sidebar li {
+	margin: 0 0 .5em 0;
+	padding: 0 0 0 13px;
+	line-height: 1.4em;
+	background: url(images/blt.gif) no-repeat 0 5px;
+	}
+	
+	#sidebar li.clean
+	{
+	    padding: 0 0 0 0px;
+	    background: white;
+	}
+
+#sidebar #quickbits li.last {
+	background: none;
+	}
+	
+#featured dd, #featured dt {
+	margin: 0;
+	}
+
+#sidebar #featured dt {
+	margin: 0;
+	padding: 0 0 0 15px;
+	}
+
+#sidebar img {
+	vertical-align: middle;
+	}
+
+#sidebar #photoBox {
+	margin-bottom: 20px;
+	padding: 7px;
+	border-bottom: 1px #ddd0b9 solid;
+	border-right: 1px #ddd0b9 solid;
+	background: #fff;
+	overflow: hidden;
+	}
+
+
+
+#sidebar ul.none li {
+	margin-bottom: 2px;
+	padding-left: 0;
+	background: none;
+	}
+	
+/* switcher */
+
+#theme {
+	position: absolute;
+	top: 68px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	}
+
+#theme a img {
+	margin: 2px 5px 0 0;
+	}
+
+/* ---( footer )----------------------------------- */
+
+#footer {
+	position: relative;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	font-size: 90%;
+	color: #666;
+/*	background: #333; */
+	border-top: 1px solid #069;
+	}
+	
+#footer p {
+	margin: 0;
+	padding: 8px 20px;
+	}
+
+/* Fixes float escaping bug in IE/Win, hides from IE Mac \*/
+* html #footer p { height: 1%; }
+/* End hide from IE Mac */
+
+#footer a {
+	color: #888;
+	}
+
+#footer a:hover {
+	color: #ccc;
+	}
+
+/* ---( contact form )------------------------------------ */
+
+#contactform {
+	padding: 15px;
+	background: #fff;
+	/*border: 1px solid #ddd;*/
+	}
+
+#contactform dl {
+	margin: 0;
+	padding: 0;
+	}
+
+#contactform dt {
+	color: #333;
+	}
+
+#contactform dt em {
+	color: #999;
+	font-weight: normal;
+	font-style: normal;
+	}
+ 
+#contactform .smallbox {
+	width: 300px;
+	border: 1px solid #ccc;
+	padding: 2px;
+	color: #444;
+	}
+	
+#contactform #realname, #contactform #email, #contactform #url {
+	width: 200px;
+	border: 1px solid #ccc;
+	padding: 2px;
+	color: #444;
+	}
+
+#contactform textarea {
+	width: 400px;
+	height: 180px;
+	}
+	
+
+/* ---( homepage boxes )-------------------------------- */
+
+#content .hp {
+	width: 140px;
+	float: left;
+	margin: 0 20px 12px 0;
+	padding: 0;
+	font-size: 85%;
+	line-height: 1.5em;
+	color: #666;
+	}
+
+#content #hp-last {
+	margin-right: 0;
+	}
+
+#content .hp dt {
+	margin: 0 0 6px 0;
+	padding: 0;
+	font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+	font-size: 105%;
+	}
+
+#content .hp dt a {
+	padding-right: 7px;
+	color: #963;
+	text-decoration: none;
+	background: url(../img/home_arrow.gif) no-repeat 100% 4px;
+	}
+
+#content .hp dt a:hover {
+	color: #630;
+	}
+
+#content .hp dd {
+	margin: 0;
+	padding: 0;
+	}
+
+#content .hp dd a {
+	color: #856E5D;
+	text-decoration: none;
+	}
+
+#content .hp img {
+	float: left;
+	margin: 2px 6px 0 0;
+	}
+
+#content .first {
+	clear: left;
+	padding-top: 12px;
+	border-top: 1px solid #ddd;
+	}
+
+/* ---( misc. )------------------------------------------ */
+
+#search {
+	margin-top: .5em;
+	}
+
+hr {
+	border-top: 1px dashed #ccc;
+	color: #fff;
+	background-color: #fff;
+	height: 1px;
+	}	
+
+#logo a, #nav a, a.noline:link, a.noline:visited, .photoBox a:link, .photoBox a:visited {
+	border-style: none;
+	}
+
+h3 img {
+	vertical-align: middle;
+	}
+
+ul.noBullet li {
+	list-style-type: none;
+	}
+
+ul.fiveent em {
+	color: #999;
+	font-style: normal;
+	}
+
+.more {
+	padding-right: 7px;
+	}
+
+.center {
+	text-align: center;
+	}
+
+a img {
+	border: none;
+	}
+
+.hide {
+	display: none;
+	}
+pre.ShowCode
+{
+	width: 502px; /* for IE5/Win */
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	width: 462px;
+    font-family:Courier;
+    color: #069;
+	font-size: 110%;
+	line-height: 1.2em;
+	text-align: left;
+}
+
+pre
+{
+	width: 502px; /* for IE5/Win */
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	width: 462px;
+    font-family:Courier;
+    color: #069;
+	font-size: 110%;
+	line-height: 1.2em;
+	text-align: left;
+}

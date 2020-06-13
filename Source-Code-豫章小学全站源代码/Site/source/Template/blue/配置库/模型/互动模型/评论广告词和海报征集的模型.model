@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>89</ModelID>
+    <ModelName>评论广告词和海报征集的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_GGCHHBZJ</TableName>
+    <ItemName>评论</ItemName>
+    <ItemUnit>条</ItemUnit>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <ModelType>7</ModelType>
+    <ContentModule>/互动模板/默认评论广告词和海报征集模板.html</ContentModule>
+    <MultiFlag>false</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

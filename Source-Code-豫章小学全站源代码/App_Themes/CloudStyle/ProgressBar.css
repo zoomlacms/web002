@@ -1,0 +1,66 @@
+﻿		#root { 
+		WIDTH: 320px; 
+		BORDER-BOTTOM: #5373AD 2px solid; 
+		border-left:gray 1px solid; 
+		POSITION: absolute;
+		HEIGHT: 160px; 
+		background-color:#EBF1FE;
+		FILTER:progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135,strength=3); 	
+		Z-INDEX: 999;
+		} 
+		#handle {
+		FONT-SIZE: 5pt;
+		WIDTH: 320px; 	
+		background-image:url(images/bar_bg.gif);	
+		background-repeat:repeat-x;
+		} 
+		
+		.progressBar
+		{
+			WIDTH: 300px;
+			HEIGHT: 15px;
+			BACKGROUND-COLOR: #ECF3E1;
+			BORDER: solid 1px #5373AD;
+		}
+		
+		.indicator
+		{		
+			float: left;
+			HEIGHT: 15px;		
+			background-image:url(images/Indicatorbg.gif);	
+			background-repeat:repeat-x;
+		}
+		
+		.info
+		{
+			text-align: left;
+			font-size:10pt;
+			font-family: MS Sans Serif;
+			text-overflow:ellipsis;
+			overflow:hidden;
+			WIDTH: 300px;
+			padding-top:2px;
+		}
+		
+		#btn_cancel
+		{
+			float:right;
+			font-size:10pt;
+			font-family: MS Sans Serif;
+		}
+		
+		#root a 
+		{
+			color:#6B92F4;
+			text-decoration: none;
+		}
+		#root a:visited 
+		{
+			color:#6B92F4;
+		}
+		#root a:hover 
+		{
+			color:#6B92F4;
+			text-decoration: underline;
+		}
+		

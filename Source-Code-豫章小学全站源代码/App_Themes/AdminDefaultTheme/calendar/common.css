@@ -1,0 +1,31 @@
+/*============================= Date ActiveX start====================================================*/
+.com_cbox{position:relative;border:#aaaaaa solid 1px; padding:1px; background:#FFF; width:300px; min-height:155px;}
+.com_cbox .mf_lr_d,.com_cbox .mf_lr_a,.com_cbox .mf_rr_a,.com_cbox .mf_rr_d{border: none;margin:0 2px;width:10px;height:10px;background: transparent url(../pic/bg_com.gif) no-repeat;vertical-align: middle;cursor:pointer;}
+.com_cbox .mf_rr_d{background-position: 0 -26px;}
+.com_cbox .mf_lr_a{background-position: 0 -13px;}
+.com_cbox .mf_lr_d{background-position: 0 -39px;}
+.com_cbox a.ac_close_t{float: right;margin:2px 0 0;text-indent: -9999em;display: block;width:11px;font:1px/1px arial;height:11px;background: url(../pic/bg_com.gif) no-repeat 0 -99px;overflow:hidden; }
+.com_cbox a.ac_close_t:hover{background-position: 0 -116px;}
+.com_cbox .c_green {color:#1c95c4;}
+.com_cbox .calendar_year a:link{text-decoration:none; width:12px; height:12px; display:block; font-size:30px;}
+.com_cbox .calendar_year a:visited{text-decoration:none;width:12px; height:12px; display:block;font-size:30px;}
+.com_cbox .calendar_year a:hover{text-decoration: none;width:12px; height:12px; display:block;font-size:30px;}
+.com_cbox .calendar_year a.cu_n:link{text-decoration:none; cursor:default;width:12px; height:12px; display:block;}
+.com_cbox .calendar_year a.cu_n:visited{text-decoration:none;cursor:default;cursor:default;width:12px; height:12px; display:block;}
+.com_cbox .calendar_year a.cu_n:hover{text-decoration: none;cursor:default;cursor:default;width:12px; height:12px; display:block;}
+.com_cbox .calendar_year {background:#e8eff5;width:300px;font-weight:bold;height:22px;font-size:12px;position:relative;line-height:22px; z-index:100;}
+.com_cbox .calendar_year .h{margin-left:47px;_margin-left:24px; display:block; float:left; font-family:Arial;}
+.com_cbox .calendar_year .m{margin-right:55px;display:block; text-align:right; float:right;_float:none; font-family:Arial;}
+.com_cbox .calendar_year .year {left:28px;position:absolute;top:6px;_height:12px;_overflow:hidden;}
+.com_cbox .calendar_year .month {position:absolute;top:3px;right:6px;}
+.com_cbox .calendar_year .month_1 {position:absolute;right:36px;top:6px;height:10px;overflow:hidden;}
+.com_cbox .date_box table {font-size:12px; font-family:Arial; float:left; margin-top:10px;}
+.com_cbox .date_box .family{font-family:ËÎÌו;}
+.com_cbox .date_box .hr{width:1px; height:120px; line-height:0; font-size:1px; border-left:#aaaaaa solid 1px; float:left; margin:8px 8px 0 8px;}
+.com_cbox .date_box td{text-align:center;vertical-align:middle;width:14%;cursor:pointer;font-weight:bold;}
+.com_cbox .date_box th {text-align:center;vertical-align:middle;width:14%;color:#777777; font-weight:bold}
+.com_cbox .date_box .Close{font-weight:normal; color:#777777; cursor:auto;}
+.com_cbox .date_box td.hover {background:#1c95c4 none repeat scroll 0 0;font-weight:bold;color:#FFFFFF;}
+.com_cbox .date_box td.newdate{color:#BB0000; font-weight:bold;}
+.com_cbox .date_box td.selected{background:#777777; none repeat scroll 0 0;font-weight:bold;color:#FFFFFF;}
+/*============================= Date ActiveX end====================================================*/

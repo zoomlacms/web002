@@ -1,0 +1,483 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <ModelID>92</ModelID>
+    <ModelName>留言论坛发帖的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_LTFT</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>留言</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\留言论坛发帖的模型.model</FileUrl>
+    <CreateTime>2011/8/17 17:31:39</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>68</ModelID>
+    <ModelName>评论sdad的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_sdad</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\评论sdad的模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:47</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>88</ModelID>
+    <ModelName>评论会员登记表的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_HYDJB</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\评论会员登记表的模型.model</FileUrl>
+    <CreateTime>2011/8/17 17:21:06</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>91</ModelID>
+    <ModelName>评论客户反馈的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_KHFK</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\评论客户反馈的模型.model</FileUrl>
+    <CreateTime>2011/8/17 17:21:06</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>87</ModelID>
+    <ModelName>评论市场调查问卷的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_SCDCWJ</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\评论市场调查问卷的模型.model</FileUrl>
+    <CreateTime>2011/8/17 17:21:06</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>89</ModelID>
+    <ModelName>评论广告词和海报征集的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_GGCHHBZJ</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\评论广告词和海报征集的模型.model</FileUrl>
+    <CreateTime>2011/8/17 17:21:06</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>84</ModelID>
+    <ModelName>评论空白表单的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_KBBD</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\评论空白表单的模型.model</FileUrl>
+    <CreateTime>2011/8/17 17:21:06</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>86</ModelID>
+    <ModelName>评论网站用户调查问卷的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_WZYHDCWJ</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\评论网站用户调查问卷的模型.model</FileUrl>
+    <CreateTime>2011/8/17 17:21:06</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>90</ModelID>
+    <ModelName>评论询价单的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_XJD</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\评论询价单的模型.model</FileUrl>
+    <CreateTime>2011/8/17 17:21:06</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>85</ModelID>
+    <ModelName>评论酒店客房预订单的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_JDKFYDD</TableName>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>评论</ItemName>
+    <ModelType>互动模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\互动模型\评论酒店客房预订单的模型.model</FileUrl>
+    <CreateTime>2011/8/17 17:21:06</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>81</ModelID>
+    <ModelName>a</ModelName>
+    <Description>a</Description>
+    <TableName>ZL_U_a</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>a</ItemName>
+    <ModelType>会员模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\会员模型\a.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>83</ModelID>
+    <ModelName>fe</ModelName>
+    <Description>fefe</Description>
+    <TableName>ZL_U_feef</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>feef</ItemName>
+    <ModelType>会员模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\会员模型\fe.model</FileUrl>
+    <CreateTime>2011/8/17 17:21:06</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>82</ModelID>
+    <ModelName>h</ModelName>
+    <Description />
+    <TableName>ZL_U_h</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName />
+    <ModelType>会员模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\会员模型\h.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>15</ModelID>
+    <ModelName>个人简历</ModelName>
+    <Description>提供给个人用户录入</Description>
+    <TableName>ZL_U_jl</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>信息</ItemName>
+    <ModelType>会员模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\会员模型\个人简历.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>16</ModelID>
+    <ModelName>企业信息</ModelName>
+    <Description>仅提供企业发布自我介绍等信息</Description>
+    <TableName>ZL_U_comp</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>信息</ItemName>
+    <ModelType>会员模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\会员模型\企业信息.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>14</ModelID>
+    <ModelName>招聘信息</ModelName>
+    <Description>提供给企业用户发布招聘信息</Description>
+    <TableName>ZL_U_ZP</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>信息</ItemName>
+    <ModelType>会员模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\会员模型\招聘信息.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>47</ModelID>
+    <ModelName>asd</ModelName>
+    <Description>asd</Description>
+    <TableName>ZL_C_asd</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>asd</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\asd.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>59</ModelID>
+    <ModelName>dff</ModelName>
+    <Description />
+    <TableName>ZL_C_dff</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>商品</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\dff.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>58</ModelID>
+    <ModelName>jjjj</ModelName>
+    <Description />
+    <TableName>ZL_C_jjjj</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>商品</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\jjjj.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>73</ModelID>
+    <ModelName>ZL_C_fh323</ModelName>
+    <Description />
+    <TableName>ZL_C_fh323</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>fg</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\ZL_C_fh323.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>4</ModelID>
+    <ModelName>下载模型</ModelName>
+    <Description>基于文件发布与资源共享的功能，并可进行下载收费等二次开发。</Description>
+    <TableName>ZL_C_soft</TableName>
+    <ItemIcon>Soft.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>软件</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\下载模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>1</ModelID>
+    <ModelName>公告</ModelName>
+    <Description>发布简明信息</Description>
+    <TableName>ZL_C_Announce</TableName>
+    <ItemIcon>Announce.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>公告</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\公告.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>48</ModelID>
+    <ModelName>内容模型</ModelName>
+    <Description>内容模型</Description>
+    <TableName>ZL_C_nrmx</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>文章</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\内容模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>8</ModelID>
+    <ModelName>友情链接</ModelName>
+    <Description>通过与网民交换友情链接，提升网站PR值和友好的互访机制。</Description>
+    <TableName>ZL_C_FriendSite</TableName>
+    <ItemIcon>FriendSite.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>网站</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\友情链接.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>3</ModelID>
+    <ModelName>图库模型</ModelName>
+    <Description>可发布图文并茂的信息，并通过丰富的图片展示分享网络的乐趣。</Description>
+    <TableName>ZL_C_Photo</TableName>
+    <ItemIcon>Photo.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>图片</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\图库模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>45</ModelID>
+    <ModelName>按时大撒</ModelName>
+    <Description />
+    <TableName>ZL_C_asds</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>商品</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\按时大撒.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>2</ModelID>
+    <ModelName>文章模型</ModelName>
+    <Description>用于装载常见的文章信息，如文章、新闻、资讯等。</Description>
+    <TableName>ZL_C_Article</TableName>
+    <ItemIcon>Article.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>文章</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\文章模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>43</ModelID>
+    <ModelName>模型测试</ModelName>
+    <Description>模型测试</Description>
+    <TableName>ZL_C_mxcs</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>文章</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\模型测试.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>46</ModelID>
+    <ModelName>测试模型</ModelName>
+    <Description>测试模型</Description>
+    <TableName>ZL_C_csmx</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>文章</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\测试模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>7</ModelID>
+    <ModelName>视频模型</ModelName>
+    <Description>基于FLV等类型的视频发布系统，高速视频抢占信息时代之商机。</Description>
+    <TableName>ZL_C_video</TableName>
+    <ItemIcon>video.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>视频</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\视频模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>5</ModelID>
+    <ModelName>转向链接模型</ModelName>
+    <Description>访客点击此模型下信息，则跳入指定第三方链接，便于流量管理。</Description>
+    <TableName>ZL_C_RedirectLink</TableName>
+    <ItemIcon>RedirectLink.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>跳转</ItemName>
+    <ModelType>内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\内容模型\转向链接模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>6</ModelID>
+    <ModelName>商品模型</ModelName>
+    <Description>建立起商品模型用于销售，开展网上电子业务。</Description>
+    <TableName>ZL_P_Shop</TableName>
+    <ItemIcon>Product.gif</ItemIcon>
+    <SysModel>1</SysModel>
+    <ItemName>商品</ItemName>
+    <ModelType>商品模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\商品模型\商品模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:48</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>69</ModelID>
+    <ModelName>店铺商品</ModelName>
+    <Description />
+    <TableName>ZL_S_shop</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>商品</ItemName>
+    <ModelType>店铺商品模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\店铺商品模型\店铺商品.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:47</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>42</ModelID>
+    <ModelName>鲜花店模型</ModelName>
+    <Description />
+    <TableName>ZL_S_Flower</TableName>
+    <ItemIcon>Default.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>商品</ItemName>
+    <ModelType>店铺商品模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\店铺商品模型\鲜花店模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:47</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>36</ModelID>
+    <ModelName>鲜花店申请</ModelName>
+    <Description />
+    <TableName>ZL_Store_Flower</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName />
+    <ModelType>店铺模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\店铺模型\鲜花店申请.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:49</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>70</ModelID>
+    <ModelName>组件模型</ModelName>
+    <Description>组件模型</Description>
+    <TableName>ZL_C_Plugins</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>组件模型</ItemName>
+    <ModelType>项目模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\项目模型\组件模型.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:47</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>72</ModelID>
+    <ModelName>网页剪刀</ModelName>
+    <Description>上的</Description>
+    <TableName>ZL_C_Plugins</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>上的</ItemName>
+    <ModelType>项目模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\项目模型\网页剪刀.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:47</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>63</ModelID>
+    <ModelName>车大</ModelName>
+    <Description>测试</Description>
+    <TableName>ZL_C_Plugins</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName>测试</ItemName>
+    <ModelType>项目模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\项目模型\车大.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:47</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>12</ModelID>
+    <ModelName>企业信息</ModelName>
+    <Description />
+    <TableName>ZL_Page_Content</TableName>
+    <ItemIcon>Article.gif</ItemIcon>
+    <SysModel>0</SysModel>
+    <ItemName>信息</ItemName>
+    <ModelType>黄页内容模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\黄页内容模型\企业信息.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:47</CreateTime>
+  </Table1>
+  <Table1>
+    <ModelID>11</ModelID>
+    <ModelName>默认申请样式</ModelName>
+    <Description>默认申请样式</Description>
+    <TableName>ZL_Reg_Page</TableName>
+    <ItemIcon />
+    <SysModel>0</SysModel>
+    <ItemName />
+    <ModelType>黄页模型</ModelType>
+    <FileUrl>E:\tech04\ZoomLaCMS5.0\ZoomLa.WebSite\Template\blue\配置库\模型\黄页模型\默认申请样式.model</FileUrl>
+    <CreateTime>2011/8/7 14:32:47</CreateTime>
+  </Table1>
+</NewDataSet>

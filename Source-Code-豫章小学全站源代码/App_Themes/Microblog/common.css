@@ -1,0 +1,54 @@
+﻿@charset "utf-8";
+html { color:#000; font-family:Arial, Helvetica, sans-serif, "宋体"; font-size:12px; }
+*{ margin:0; padding:0; border:0; outline:0; }
+img{border:none;}
+a{text-decoration:none;}
+
+
+.layerBoxTop a.close { float:right; background:url('images/sicon.gif') no-repeat -18px 0; width:7px; height:8px; margin-top:9px; overflow:hidden; }
+.layerBoxTop a.close:hover { background:url('images/sicon.gif') no-repeat -18px -8px; overflow:hidden; }
+.layerBtn a { margin:0 5px; }
+.rightBtn { clear:both; margin:9px auto 0 auto; }
+.rTopAdd { clear:both; margin:9px auto 0; width:120px; text-align:center; }
+.PY_tr { width:0; height:0; background-image:url('images/transparent.gif'); }
+
+
+
+.blogPicOri .videoLink { clear:both; }
+.blogPicOri .videotitle { padding-top:6px; zoom:1; overflow:hidden; }
+.MIB_list_c .blogPicOri .videotitle p { padding:0; }
+.SG_icon { background:url('images/sicon.gif') no-repeat 0 -74px; width:8px; height:8px; overflow:hidden; }
+.small_icon { background:url('images/sicon.gif') no-repeat 0 0; overflow:hidden; }
+.male, .man { background-position:0 -20px; width:9px; height:12px; margin-right:10px; }
+.female, .sicon_female { width:9px; height:12px; margin-right:10px; background-position:0 0; }
+.phone { background-position:-32px 0; width:11px; height:16px; }
+.vip { background-position:-32px -20px; width:11px; height:10px; }
+.refresh { background-position:0 -105px; width:12px; height:14px; margin-right:3px; }
+.videoicon { background-position:0 -120px; width:12px; height:12px; margin-right:4px; }
+.mobileicon1 { background-position:0 -135px; width:12px; height:16px; }
+.mobileicon2 { background-position:-13px -135px; width:12px; height:16px; }
+.mobileicon3 { background-position:0 -154px; width:14px; height:14px; }
+.mobileicon4 { background-position:-15px -154px; width:14px; height:14px; }
+.level7 { background-position:0 -171px; width:11px; height:14px; vertical-align:-2px; }
+.recall { background-position:-13px -109px; width:7px; height:9px; margin-right:3px; }
+.sicon_atteo { width:43px; height:13px; background-position:0 -48px; }
+.returntop { background-position:0 -188px; width:11px; height:12px; margin-right:4px; }
+.cls { background-position:-64px 0; width:7px; height:9px; margin:0 5px 0 0; }
+.original { background-position:-87px 0; width:9px; height:9px; margin-right:3px; }
+.turn_l { background-position:-24px -109px; width:7px; height:8px; margin-right:4px; }
+.turn_r { background-position:-36px -109px; width:7px; height:8px; margin:0 4px 0 0; }
+.star { background-position:-49px -12px; width:15px; height:15px; vertical-align:-2px; margin-right:4px; }
+.star1 { background-position:-66px -29px; width:16px; height:16px; margin-right:4px; }
+.mobileicon5 { background-position:-66px -12px; width:9px; height:14px; margin:0 10px; cursor:pointer; }
+.collecticon { background-position:-28px -119px; width:15px; height:14px; margin-right:4px; vertical-align:-2px; }
+
+
+
+.MIB_assign .MIB_asarrow_l { position:absolute; top:-10px; left:53px; width:19px; height:11px; overflow:hidden; }
+.MIB_assign .MIB_asarrow_r { position:absolute; top:-10px; right:8px; width:14px; height:11px; overflow:hidden; }
+.MIB_assign .MIB_assign_t, .MIB_assign .MIB_assign_b { height:5px; width:474px; overflow:hidden; }
+.MIB_assign .MIB_assign_b { background-position:-474px 0; }
+.MIB_assign .MIB_assign_c { background-position:-948px 0; background-repeat:repeat-y; padding:6px 17px; line-height:1.7em; zoom:1; overflow:hidden; _overflow:visible; }
+.MIB_assign .MIB_assign_c .PL { display:inline; padding:0 0 0 18px; }
+.MIB_assign .MIB_assign_c .MIB_linedot_l1 { margin:8px 0; }
+.list_head { text-align:right; }

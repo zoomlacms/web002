@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>87</LabelID>
+    <LabelName>①查询友情链接</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>[黄页模板一]</LabelCate>
+    <LabelDesc>①查询友情链接</LabelDesc>
+    <LabelParam>ItemID,默认值,2,参数说明</LabelParam>
+    <LabelTable>ZL_CommonModel Inner join ZL_Page_link on ZL_CommonModel.ItemID=ZL_Page_link.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_CommonModel.ModelID,ZL_CommonModel.ItemID,ZL_CommonModel.TableName,ZL_CommonModel.Title,ZL_CommonModel.Inputer,ZL_CommonModel.Hits,ZL_CommonModel.CreateTime,ZL_CommonModel.Status,ZL_CommonModel.EliteLevel,ZL_CommonModel.InfoID,ZL_CommonModel.SpecialID,ZL_CommonModel.IsCreate,ZL_CommonModel.HtmlLink,ZL_CommonModel.Template,ZL_Page_link.ID,ZL_Page_link.linkname,ZL_Page_link.linkurl</LabelField>
+    <LabelWhere>ZL_CommonModel.GeneralID=@ItemID</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;script language="javascript"&gt;location.href='{Field="linkurl"/}';&lt;/script&gt;</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <IsOpen>0</IsOpen>
+  </Table>
+</NewDataSet>

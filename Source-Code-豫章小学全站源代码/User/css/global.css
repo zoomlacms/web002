@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* Powered by ZoomlaCMS */
+
+*{ margin:0; padding:0;}
+body{ font-size:12px;}
+li { list-style-type:none;}
+img{ border:none;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:}
+.clear{ clear:both;}
+
+/*登入*/
+#loginPage{ background:url(../UserCenter/css/Images/login_bg.jpg) no-repeat top;width:1000px;clear:both; margin:auto; }
+#login_top{ height:250px;}
+#login{width:1000px; height:150px; clear:both; margin:auto; text-align:center;}
+#loginPad_b{ padding-top:20px;}
+#loginPad_b li{ height:30px; line-height:30px;}
+#L_main li{ float:left; width:100px;}
+#L_main ul{ text-align:center;}
+#mk1{ float:left;}
+#mk1_r{ width:260px; height:50px; float:left; margin-left:10px; line-height:50px;  font-size:25px; color:#5089A4; margin-top:30px;}
+

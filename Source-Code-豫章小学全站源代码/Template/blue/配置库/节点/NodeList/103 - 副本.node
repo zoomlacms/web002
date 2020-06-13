@@ -1,0 +1,54 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <NodeID>103</NodeID>
+    <NodeName>1</NodeName>
+    <NodeType>5</NodeType>
+    <NodeDir>1</NodeDir>
+    <NodeUrl />
+    <NodeListUrl />
+    <Tips />
+    <ParentID>0</ParentID>
+    <OrderID>0</OrderID>
+    <Child>5</Child>
+    <Depth>1</Depth>
+    <NodePicUrl />
+    <Description />
+    <Meta_Keywords />
+    <Meta_Description />
+    <OpenType>false</OpenType>
+    <PurviewType>false</PurviewType>
+    <CommentType>false</CommentType>
+    <HitsOfHot>0</HitsOfHot>
+    <ListTemplateFile />
+    <IndexTemplate />
+    <LastinfoTemplate />
+    <HotinfoTemplate />
+    <ProposeTemplate />
+    <ContentModel />
+    <ItemOpenType>false</ItemOpenType>
+    <ContentHtmlRule>0</ContentHtmlRule>
+    <ListPageHtmlEx>0</ListPageHtmlEx>
+    <ContentFileEx>0</ContentFileEx>
+    <HtmlPosition>0</HtmlPosition>
+    <NodeListType>0</NodeListType>
+    <ConsumePoint>0</ConsumePoint>
+    <ConsumeType>0</ConsumeType>
+    <ConsumeTime>0</ConsumeTime>
+    <ConsumeCount>0</ConsumeCount>
+    <Shares>0</Shares>
+    <Custom />
+    <OpenTypeTrue />
+    <ItemOpenTypeTrue />
+    <SafeGuard>0</SafeGuard>
+    <NodeBySite>5</NodeBySite>
+    <SiteConfige>&lt;SiteConfig&gt;&lt;FrontTemplateList /&gt;&lt;IPLockConfig&gt;&lt;AdminLockIPBlack /&gt;&lt;AdminLockIPType&gt;0&lt;/AdminLockIPType&gt;&lt;AdminLockIPWhite /&gt;&lt;LockIPBlack /&gt;&lt;LockIPType&gt;0&lt;/LockIPType&gt;&lt;LockIPWhite /&gt;&lt;/IPLockConfig&gt;&lt;MailConfig&gt;&lt;AuthenticationType&gt;Basic&lt;/AuthenticationType&gt;&lt;EnabledSsl&gt;false&lt;/EnabledSsl&gt;&lt;MailFrom&gt;web@zoomla.cn&lt;/MailFrom&gt;&lt;MailServer&gt;mail.zoomla.cn&lt;/MailServer&gt;&lt;MailServerPassWord&gt;web@zoomla.cn&lt;/MailServerPassWord&gt;&lt;MailServerUserName&gt;tech@zoomla.cn&lt;/MailServerUserName&gt;&lt;Port&gt;25&lt;/Port&gt;&lt;/MailConfig&gt;&lt;DeliverConfig&gt;&lt;City&gt;上海&lt;/City&gt;&lt;/DeliverConfig&gt;&lt;ShopConfig&gt;&lt;Unit&gt;e&lt;/Unit&gt;&lt;EnableCoupon&gt;false&lt;/EnableCoupon&gt;&lt;EnableGuestBuy&gt;false&lt;/EnableGuestBuy&gt;&lt;EnablePartPay&gt;false&lt;/EnablePartPay&gt;&lt;MoneyPresentPoint&gt;1&lt;/MoneyPresentPoint&gt;&lt;TaxRate&gt;0&lt;/TaxRate&gt;&lt;TaxRateType&gt;0&lt;/TaxRateType&gt;&lt;/ShopConfig&gt;&lt;SiteInfo&gt;&lt;BannerUrl&gt;images/bannaer.jpg&lt;/BannerUrl&gt;&lt;Copyright&gt;版权信息&lt;/Copyright&gt;&lt;LogoUrl&gt;/images/logo.gif&lt;/LogoUrl&gt;&lt;MetaDescription&gt;META网页描述&lt;/MetaDescription&gt;&lt;MetaKeywords&gt;META关键字&lt;/MetaKeywords&gt;&lt;SiteName&gt;1的网站&lt;/SiteName&gt;&lt;SiteTitle&gt;1&lt;/SiteTitle&gt;&lt;SiteUrl&gt;http://www.jx15.com/Dev/1&lt;/SiteUrl&gt;&lt;VirtualPath&gt;/&lt;/VirtualPath&gt;&lt;Webmaster&gt;站长&lt;/Webmaster&gt;&lt;WebmasterEmail&gt;web@zoomla.cn&lt;/WebmasterEmail&gt;&lt;/SiteInfo&gt;&lt;SiteOption&gt;&lt;SendTime&gt;0001-01-01T00:00:00&lt;/SendTime&gt;&lt;OpenSendMessage&gt;false&lt;/OpenSendMessage&gt;&lt;G_content&gt;订单号:{m:orderno},{m:username},{m:sendTime},中国最美乡村婺源旅游8折消费,行程变更或取消请致电021-8888888&lt;/G_content&gt;&lt;G_uid&gt;txjly&lt;/G_uid&gt;&lt;G_eid&gt;10640&lt;/G_eid&gt;&lt;G_pwd&gt;830874&lt;/G_pwd&gt;&lt;G_gate_id&gt;300&lt;/G_gate_id&gt;&lt;IsSMSNotice&gt;false&lt;/IsSMSNotice&gt;&lt;IsEmailNotice&gt;false&lt;/IsEmailNotice&gt;&lt;IsFlashPaper&gt;false&lt;/IsFlashPaper&gt;&lt;Videourl&gt;rtmp://127.0.0.1:1935/live/&lt;/Videourl&gt;&lt;freedomain /&gt;&lt;SiteManageMode&gt;1&lt;/SiteManageMode&gt;&lt;AdvertisementDir&gt;/AD&lt;/AdvertisementDir&gt;&lt;EnableSiteManageCode&gt;false&lt;/EnableSiteManageCode&gt;&lt;MastMoney&gt;0&lt;/MastMoney&gt;&lt;UrlWrite&gt;false&lt;/UrlWrite&gt;&lt;EnableSoftKey&gt;false&lt;/EnableSoftKey&gt;&lt;EnableHuShenHe&gt;false&lt;/EnableHuShenHe&gt;&lt;EnableUploadFiles&gt;true&lt;/EnableUploadFiles&gt;&lt;IsAbsoluatePath&gt;true&lt;/IsAbsoluatePath&gt;&lt;IsZone&gt;true&lt;/IsZone&gt;&lt;IsMall&gt;true&lt;/IsMall&gt;&lt;ManageDir&gt;/ManageSite&lt;/ManageDir&gt;&lt;SiteManageCode&gt;8888&lt;/SiteManageCode&gt;&lt;TemplateDir&gt;\Dev\1\Template&lt;/TemplateDir&gt;&lt;ProjectServer&gt;http://updata.zoomla.cn&lt;/ProjectServer&gt;&lt;ShopTemplate /&gt;&lt;IndexTemplate&gt;/全站首页.html&lt;/IndexTemplate&gt;&lt;GeneratedDirectory&gt;html&lt;/GeneratedDirectory&gt;&lt;PdfDirectory /&gt;&lt;IndexEx&gt;3&lt;/IndexEx&gt;&lt;CssDir&gt;/Template/blue/style&lt;/CssDir&gt;&lt;StylePath&gt;\Dev\1\Skin&lt;/StylePath&gt;&lt;UploadDir&gt;\Dev\1\UserUpload&lt;/UploadDir&gt;&lt;UploadFileExts&gt;gif|jpg|jpeg|jpe|bmp|png|rar|flv|doc|csv|ppt|xls|docx&lt;/UploadFileExts&gt;&lt;UploadFileMaxSize&gt;204800&lt;/UploadFileMaxSize&gt;&lt;UploadPicExts&gt;gif|jpg|jpeg|jpe|bmp|png|flv|doc|ppt|xls|docx&lt;/UploadPicExts&gt;&lt;UploadPicMaxSize&gt;204800&lt;/UploadPicMaxSize&gt;&lt;UploadMdaExts&gt;avi|rm|real|mpge|mpg|swf|flv|doc|ppt|xls|docx&lt;/UploadMdaExts&gt;&lt;UploadMdaMaxSize&gt;204800&lt;/UploadMdaMaxSize&gt;&lt;UploadFlhMaxSize&gt;204800&lt;/UploadFlhMaxSize&gt;&lt;MssUser&gt;tech@zoomla.cn&lt;/MssUser&gt;&lt;MssPsw&gt;web@zoomla.cn&lt;/MssPsw&gt;&lt;Sensitivity&gt;臺獨,藏獨,法車侖功,臺犭蟲,藏犭蟲&lt;/Sensitivity&gt;&lt;SiteServer&gt;1&lt;/SiteServer&gt;&lt;ServerType&gt;Server&lt;/ServerType&gt;&lt;ServerApiUrl /&gt;&lt;SiteLicense /&gt;&lt;OpenLog&gt;1&lt;/OpenLog&gt;&lt;Savadaylog&gt;1&lt;/Savadaylog&gt;&lt;EditVer&gt;1&lt;/EditVer&gt;&lt;Savanumlog&gt;1000&lt;/Savanumlog&gt;&lt;ContentConfig&gt;1&lt;/ContentConfig&gt;&lt;OpenMessage&gt;0&lt;/OpenMessage&gt;&lt;FlexKey&gt;wer123124564578&lt;/FlexKey&gt;&lt;MoveFile&gt;0&lt;/MoveFile&gt;&lt;JS&gt;\Dev\1\JS&lt;/JS&gt;&lt;RegPageStart&gt;false&lt;/RegPageStart&gt;&lt;Desk&gt;All|11111|111111|111111|1111|111|111&lt;/Desk&gt;&lt;SendNum&gt;0&lt;/SendNum&gt;&lt;/SiteOption&gt;&lt;ThumbsConfig&gt;&lt;AddBackColor&gt;#EE1169&lt;/AddBackColor&gt;&lt;ThumbsHeight&gt;130&lt;/ThumbsHeight&gt;&lt;ThumbsMode&gt;1&lt;/ThumbsMode&gt;&lt;ThumbsWidth&gt;99&lt;/ThumbsWidth&gt;&lt;/ThumbsConfig&gt;&lt;UserConfig&gt;&lt;PresentPointAll&gt;5&lt;/PresentPointAll&gt;&lt;PresentPointTg&gt;6&lt;/PresentPointTg&gt;&lt;AdminCheckReg&gt;false&lt;/AdminCheckReg&gt;&lt;EmailCheckReg&gt;false&lt;/EmailCheckReg&gt;&lt;EmailRegis&gt;true&lt;/EmailRegis&gt;&lt;EmailTell&gt;false&lt;/EmailTell&gt;&lt;EmailOfRegCheck&gt;      欢迎您注册成为本站会员！&amp;lt;br /&amp;gt;</SiteConfige>
+    <Contribute>0</Contribute>
+    <SiteContentAudit>0</SiteContentAudit>
+    <ClickTimeout>1</ClickTimeout>
+    <ListPageEx>0</ListPageEx>
+    <LastinfoPageEx>0</LastinfoPageEx>
+    <HotinfoPageEx>0</HotinfoPageEx>
+    <ProposePageEx>0</ProposePageEx>
+  </Table>
+</NewDataSet>

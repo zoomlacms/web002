@@ -1,0 +1,40 @@
+以下是生成的HTML文件
+===================================================================================
+			"src", "Video?NodeID=1",
+			"width", "962",
+			"height", "615",
+			"align", "middle",
+			"id", "Video",
+			"quality", "high",
+			"bgcolor", "#869ca7",
+			"name", "Video",
+			"allowScriptAccess","sameDomain",
+			"type", "application/x-shockwave-flash",
+			"pluginspage", "http://www.adobe.com/go/getflashplayer"
+===================================================================================
+Flex中通过 var rid:String = Application.application.parameters["NodeID"];调用下面的NodeID;这里是等于1
+===================================================================================
+
+1、获得KEY：/API/trials.aspx?menu=getkey
+
+2、获得商品详细信息：/API/Trials.aspx?apiKey=密匙&pid=商品ID
+
+3、获得历史浏览商品记录：/API/TryList.aspx?apiKey=密匙&pid=商品ID【当pid=0时不写入Session,返回列表】【当pid大于0时，即写入Session又返回列表】
+
+4、根据节点ID返回商品列表:ShowTria.aspx?apiKey=密匙&NodeID=节点ID&CurrentPage=当前页数
+
+【注明】
+
+Pageinfo-分页信息节点
+
+allnum-当前节点所有商品数量
+
+nowpage-当前页数
+
+PageSize-设置页面商品数量
+
+topnum-当前分页起始条数
+
+nowpagenum-当前分页结束条数
+
+pagenum-总共页数

@@ -1,0 +1,65 @@
+@charset "utf-8";
+*{margin:0px; padding:0px}
+body { width:100%; font-size:12px; color:#4D4D4D;}
+img{border:none;}
+li{ list-style-type:none; line-height:24px;}
+a{text-decoration: none; color:#70BFFA;}
+.clear{clear:both;}
+
+#main,#bottom{ margin:auto; width:950px; clear:both;}
+.f_input{ border:1px solid #71B2CE}
+#main{margin-top:140px;}
+#main_l{float:left; width:500px; margin-left:80px; background:url(images/login.gif) no-repeat 0px 10px; margin-top:40px;}
+#main_l h1{font-size:16px; height:42px; line-height:42px;}
+#main_l ul{padding-left:120px;}
+
+#main_s{float:left; width:500px;height:200px; margin-left:80px; background:url(images/succ.gif) no-repeat 0px 10px; margin-top:40px;}
+#main_s h1{font-size:16px; height:42px; line-height:42px;}
+#main_s ul{padding-left:120px;}
+
+#main_k{float:left; width:500px;height:200px; margin-left:80px;  margin-top:40px;}
+#main_k h1{font-size:16px; height:42px; line-height:42px;}
+#main_k ul{padding-left:120px;}
+
+#main_r{float:right; width:238px; height:320px; background:url(images/l_nav.jpg); margin-right:80px;  _margin-right:42px;}
+#main_r h2{ font-size:14px; margin-top:60px; margin-left:25px;}
+#main_r ul{padding-left:25px; padding-top:20px;}
+
+.bu_bottom{line-height:25px; background:url(images/l_bottom.jpg); text-align:center; border:none; color:#656766; cursor:pointer;}
+.i_bottom{ width:68px; height:25px; line-height:25px; background:url(images/l_bottom.jpg); text-align:center; border:none; color:#656766; cursor:pointer;}
+#bottom{border-top:1px solid #D1D7DC; height:100px; margin-top:90px;}
+#bottom img{float:left; margin-top:20px;}
+#bottom p{float:left; margin-top:60px;}
+
+.reg {}
+.reg h1{font-size:16px; height:60px; line-height:60px; padding-left:60px; background:url(/App_Themes/images/ico.gif) no-repeat;}
+.rsubmit{margin-top:10px; width:100%; text-align:center; clear:both;}
+.reg_sub{margin-top:10px;}
+.reg_title{font-size:16px; font-weight:bold; border-bottom:1px solid #007BBB; clear:both; color: #007BBB; height:28px; line-height:28px; padding-left:20px;}
+.reg_sub ul{padding:10px;}
+.reg_sub li{ color:#000; font-size:14px; text-align:right; clear:both;}
+.reg_sub li b{ font-size:16px;color:#E64800;}
+.reg_sub .reg_put{float:right; width:80%; text-align:left; padding-left:10px;}
+.reg_sub reg_put　span{float:left;}
+#CheckUserName{float:left; width:40px; height:24px; width:40px; background:#FAFAFA; border:1px solid ##C3C4C8; display:block;}
+
+.input_on{padding:2px 8px 0pt 3px;height:18px;border:1px solid #A0B4C5;background-color:#FFF;}
+.input_off{padding:2px 8px 0pt 3px;height:18px;border:1px solid #727272;background-color:#FFFBD5;}
+.input_move{padding:2px 8px 0pt 3px;height:18px;border:1px solid #727272;background-color:#FFFBD5;}
+.input_out{padding:2px 8px 0pt 3px;height:18px;border:1px solid #A0B4C5;background-color:#FFF;}
+
+.reg_sub tr{height:24px; line-height:24px; font-size:14px; color:#000; font-weight:normal; margin-left:180px;}
+
+/*textbox*/
+.l_input{ height:18px; line-height:18px;border:2px solid #D4D0C8; width:150px; margin-top:2px;}
+.x_input{ border:1px solid #0c6; }
+.l_input:hover,.x_input:hover{background:#FFFFD8;}
+
+.g_bottom{width:120px; height:25px; line-height:25px; border: #FFF solid 1px; background-color:#9DC8E8;}
+
+
+.spantxt{display:inline; width:auto; line-height:15px; height:15px;}
+.atxt{ display:block; width:auto; line-height:15px; height:15px; font-size:12px; color:#666;}
+.a_bor{ display:block; float:left; width:20px; height:4px; border:1px #060 solid; margin-left:3px;}
+.a_man{ display:block; float:left; width:20px; height:4px; border:1px #060 solid; margin-left:3px; background-color:#0F0;}
+#alipayDIV{ position:absolute; left:180px; top:185px;background:url(images/icon_alipay.jpg) no-repeat left center; height:20px; line-height:20px; width:80px; padding-left:20px;  }/*支付宝登录*/

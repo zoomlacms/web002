@@ -1,0 +1,39 @@
+/* CSS Document */
+*{ margin:0; padding:0; font-size:12px;}
+img{ border:0;}
+
+.bodybg{ background:url(../Images/bg/gray123.gif) repeat;}
+
+.addBorder{ border:1px dashed #000;}
+.rleftUp{position:absolute; left:-5px; top:-8px; cursor:se-resize; }
+.rleftDown{position:absolute; left:-5px; bottom:-10px;cursor:sw-resize;}
+.rrightUp{position:absolute; right:-5px; top:-8px;cursor:ne-resize;}
+.rrightDown{position:absolute; right:-5px; bottom:-10px; cursor:nw-resize;}
+
+.pophead{ width:100%; height:20px; line-height:20px; cursor:move; position:absolute; } 
+.pophead .lefthead{ float:left; }
+.pophead .righthead{ float:right; margin-right:10px; cursor:pointer;}
+
+.mask{border:1px #333 dashed;position:absolute; top:-0px; left:-0px; bottom:-0px;right:-0px;}
+.boxMsg{ border:1px solid #000; line-height:25px; background-color:#FF0; height:25px; position:absolute; top:0px; left:0px; z-index:100; }
+
+#operation{position:relative; margin:auto;height:20px;}
+#main{position:relative; margin:auto;}
+.popmenu{ width:100px;  height:auto; background-color:#fff; border:#ccc 1px solid; position:absolute; top:0px; left:0px; z-index:1000;}
+.popmenu ul{  width:100%; list-style:none; }
+.popmenu li{ padding-left:10px;line-height:20px;background-color:#fff; cursor:pointer; }
+.popmenu li:hover{background-color:#ccc;}
+
+.divbg0{ background:url(/User/Develop/Images/bg/default.gif);}
+.divbg1{ background:url(/User/Develop/Images/bg/1.gif);}
+.divbg2{ background:url(/User/Develop/Images/bg/2.gif);}
+.divbg3{ background:url(/User/Develop/Images/bg/3.gif);}
+.divbg4{ background:url(/User/Develop/Images/bg/4.gif);}
+.divbg5{ background:url(/User/Develop/Images/bg/5.gif);}
+.divbg7{ background:url(/User/Develop/Images/bg/7.gif);}
+.divbg8{ background:url(/User/Develop/Images/bg/8.gif);}
+
+.editDiv{position:absolute; top:200px; left:300px; width:400px; margin:auto; height:200px;  background:#DDD; }
+
+.poptitle{ width:100%;  line-height:20px; position:relative;}
+.popcontent{ width:100%; height:auto; position:relative;}

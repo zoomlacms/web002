@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+#top { height:60px;}
+#top h1 {float:left; width:214px; margin-top:10px;}
+#top h1 img{ width:251px; height:42px;}
+#top_login { float:right; margin-top:26px; padding:2px 0 0 24px; text-align:right; background:url(/images/home_down.gif) 0 0 no-repeat;}
+#nav { height:33px; background:#1a58cf url(/images/nav_bg.gif) 0 -36px repeat-x; margin-bottom:3px;}
+#nav_l { float:left; height:33px; width:7px; background:url(/images/nav_bg.gif) 0 0; overflow:hidden;}
+#nav_r { float:right; height:33px; width:7px; background:url(/images/nav_bg.gif) -7px 0; overflow:hidden;}
+#nav ul li { float:left; height:33px; width:78px;}
+#nav ul li a { display:block; color:#fff; width:75px; height:22px; padding-top:4px; margin:4px 0 0 9px; text-align:center;}
+#nav ul li a:hover { background:url(/images/nav_bg.gif) -26px 0 no-repeat; text-decoration:none;}
+#nav ul li a#nav_current { background:url(/images/nav_bg.gif) -26px 0 no-repeat; font-weight:bold;}
+.reg_btn { background:url(/user/css/images/reg_btn.gif) 0 0 no-repeat; border:0; width:42px; cursor:pointer;}
+.login_btn { background:url(/user/css/images/login_btn.gif) 0 0 no-repeat; border:0; width:42px; color:#fff; cursor:pointer;}
+.user_txt { border:1px solid #aaa; width:88px;}
+
+#foot { border-top:1px dashed #9eccf5; padding:18px 0 12px 0; text-align:center;}
+#foot_ico img { margin:0px 5px; border:1px solid #ccc;}

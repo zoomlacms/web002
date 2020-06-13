@@ -1,0 +1,67 @@
+/* CSS Document */
+html, body { font-size: 14px; margin: 0px; padding: 0px; }
+.HeadDiv { width: 100%; }
+.HeadDiv .ThisADiv { float: right; margin-top: 10px; }
+.HeadDiv .ThisADiv a { font-size: 14px; text-decoration: none; color: #666; }
+.fenge { background: #ccc; width: 100%; height: 40px; line-height: 40px; margin-top: 0px; }
+.commercialDiv { height: 665px; overflow: hidden; }
+.SayDiv { }
+.SayDiv .KeFu { height: 400px; width: 100%; word-break: break-all; overflow: hidden; overflow-x: hidden; overflow-y: scroll; text-align: left; }
+.SayDiv .zhongjian { width: 100%; height: 40px; line-height: 40px; background-color: #dcdfe4; text-align: left; }
+.button { border: 2px solid #eeeeee; height: 20px; background-color: #000000; filter: alpha(opacity=30); opacity: 0.3; -moz-opacity: 0.3; -moz-border-radius: 4px; cursor: pointer; color: #FFFFFF; }
+.SayDiv .Kehu { width: 100%; height: 170px; text-align: left; }
+.fasong { background-color: #b3e1f8; width: 100%; height: 32px; line-height: 32px; text-align: right; }
+.MyFriend { width: 180px; height: 650px; background: #ccc; float: right; margin-top: 0px; display: block; }
+.MyFriend table { width: 170px; }
+.MyFriend table td { background-color: transparent; }
+.MyFriend table td .MyFriendList { width: 170px; overflow-x: hidden; overflow-y:scroll; }
+.MyFriendListAdd { display: block; height: 100%; width: 165px; padding-left:5px; border: 1px solid #9CF; overflow-x: hidden; overflow-y:scroll; background-color:White; scrollbar-face-color: #9CF; scrollbar-shadow-color: #F5F6F5; scrollbar-3dlight-color: #F5F6F5;  scrollbar-arrow-color: #4C6081;  scrollbar-track-color: #F5F6F5;  scrollbar-darkshadow-color: #F5F6F5;  scrollbar-hightlight-color: #F5F6F5;  *margin-left: 0px;}
+.MyFriendListAdd a { cursor:pointer;}
+.pFriend { color:Black; text-align: left; right: 0px; font-size:12px; line-height:15px; line-height:20px; }
+.pFriend img { margin-right:5px; }
+.pFriend:hover { background-color: #000000; color: #FFFFFF; filter: alpha(opacity=30); opacity: 0.3; -moz-opacity: 0.3; cursor: pointer; }
+.pFitem { margin-left:18px; display:block; width:110px; color: Black; text-align: left; font-size:12px; line-height:20px; }
+.pFitem img { margin-right:5px; vertical-align:middle; }
+.pFitem:hover { background-color: #000000; color: #FFFFFF; filter: alpha(opacity=30); opacity: 0.3; -moz-opacity: 0.3; cursor: pointer; }
+.downClass { width: 100%; height: 15px; position: relative; margin-top: -15px; }
+.ContentTable { text-align: center; width: 100%; height: auto; margin-top: 15px; margin-bottom: 15px; }
+.bodyDiv { width: 100%; height: 500px; }
+.ColorTable { height: 50px; width: 100px; top: 0px; left: 0px; display: none; position: absolute; }
+.ColorTable tr td { cursor: hand; }
+div { border: 0px solid black; background-color: transparent; padding: 0px; margin: 0px; }
+td { background-color: transparent; }
+table { background-color: transparent; }
+
+.leftdiv { position:absolute;right:0px;left:170px; background: url(image/back.jpg) 0px -94px; z-index: 1000; width: 13px; margin-top: 270px; height: 100px; cursor: pointer; top: 49px; }
+
+.leftdivDisplay { position:absolute;left:0px; right:170px; background: url(image/back.jpg) -20px -94px; z-index: 1000; width: 13px; margin-top: 270px; height: 100px; cursor: pointer;top: 49px; }
+
+.tranDiv { position: absolute; width: 100%; height: 100%; right: 0px; background-color: #000000; z-index: -1; filter: alpha(opacity=30); opacity: 0.3; border: 4px solid #FFFFFF; -moz-opacity: 0.3; -moz-border-radius: 4px; }
+.tranDivCenter { position: absolute; width: 100%; height: 100%; right: 0px; background-color: #FFFFFF; z-index: -1; filter: alpha(opacity=50); opacity: 0.5; border: 4px solid #000000; -moz-opacity: 0.5; -moz-border-radius: 4px; }
+.tran { position: absolute; left:0px; top:-2px; bottom:690px; background-color: #000000; width: 100%; height: 40px; z-index: -1; filter: alpha(opacity=50); opacity: 0.5; -moz-opacity: 0.5; }
+.tranDivBorder { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: transparent; z-index: -1; filter: alpha(opacity=30); opacity: 0.3; -moz-opacity: 0.3; -moz-border-radius: 4px; }
+.main { background-color: #004587; }
+#MyFriendsMessageBox p { margin: 0px; padding-left: 5px; }
+#txt_Content p { margin: 0px; }
+.style1 { width: 84px; }
+.style2 { width: 24px; }
+.divContentMain { background-color: #eeeeee; }
+* { margin: 0; padding: 0; border: 0; }
+.leftDivContent table { width: 100%; text-align: left; }
+.leftDivContent table tr td { width: 30px; height: 30px; }
+.TreeViewimage { width: 100%; text-align: left; padding-top: 6px; }
+.TreeViewimage image { width: 20px; height: 20px; }
+.tcontent { height: 420px; width: 605px; overflow-x: auto; overflow-y: scroll; word-break: break-all; text-align: left; margin-top: 4px; scrollbar-face-color: #9CF; /*滚动条滑块颜色*/ scrollbar-shadow-color: #F5F6F5; /*滚动条暗边框颜色*/ scrollbar-3dlight-color: #F5F6F5; /*滚动条亮边框颜色*/ scrollbar-arrow-color: #4C6081; /*箭头颜色*/ scrollbar-track-color: #F5F6F5; /*滚动条底色*/ scrollbar-darkshadow-color: #F5F6F5; /*滚动条3D界面的亮边颜色*/ scrollbar-hightlight-color: #F5F6F5; /*滚动条3D界面的暗边颜色*/ }
+.tucontent { outline: 0; height: 150px; overflow-x: auto; overflow-y: scroll; word-spacing: 0px; word-break: break-all; text-align: left; word-wrap: break-word; padding: 5px; border-bottom: 1px solid #999999; scrollbar-face-color: #9CF; /*滚动条滑块颜色*/ scrollbar-shadow-color: #F5F6F5; /*滚动条暗边框颜色*/ scrollbar-3dlight-color: #F5F6F5; /*滚动条亮边框颜色*/ scrollbar-arrow-color: #4C6081; /*箭头颜色*/ scrollbar-track-color: #F5F6F5; /*滚动条底色*/ scrollbar-darkshadow-color: #F5F6F5; /*滚动条3D界面的亮边颜色*/ scrollbar-hightlight-color: #F5F6F5; /*滚动条3D界面的暗边颜色*/ }
+.DrpBtn { width:100px; height:22px; line-height:22px; float:left; }
+.drpDiv { width:18px; height:20px; background:url(image/ico_drp_btn.gif) no-repeat; position:absolute; top:12px; left:65px; right: 518px; background-color:White; }
+.divSeach { width:162px; height:19px; line-height:20px; padding:0px; margin:0px 5px; background-color:#f6f6f6; text-align:left; display:block; }
+.txtSeach { width:135px; height:19px; line-height:19px; border:1px solid #9cf; border-right:none; display:inline-block; float:left; margin:0px; padding:0px; margin-left:0px; background-color:#f6f6f6; display:inline; color:#ccc; }
+.btnimg { background:url(image/Seachcut.jpg) no-repeat; width:19px; height:19px; line-height:19px; display:inline-block; float:left; cursor:pointer; }
+.szFimg { display:block; position:absolute; right:2px; top:6px; width:20px; height:20px; cursor:pointer; }
+.szFdiv { width:135px; height:40px; line-height:20px; font-size:12px; position:absolute; top:2px; background-color:#F5F6F5; left:600px; z-index:100; text-align:left; }
+.szFspan { width:100%; display:block; cursor:pointer }
+.szsfont { display:block; display:block; width:15px; height:20px; float:left; font-weight:bolder; color:red; text-align:center; }
+.btnImgWj { border: 0px; margin-top: 7px; width:19px; height:19px; background-image:url(image/wenjian.jpg); background-repeat:no-repeat; }
+.bodyp { margin:auto; padding:auto; width:auto; height:auto; position:relative; background-color:#f0f0f0; }
+.divall { margin:auto; padding:auto; position:relative; background:transparent; width: 1000px; height: 730px; z-index: -3; }

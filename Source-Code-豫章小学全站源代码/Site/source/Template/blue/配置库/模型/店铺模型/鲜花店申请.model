@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>36</ModelID>
+    <ModelName>鲜花店申请</ModelName>
+    <Description />
+    <TableName>ZL_Store_Flower</TableName>
+    <ItemName />
+    <ItemUnit />
+    <ItemIcon />
+    <ModelType>6</ModelType>
+    <ContentModule />
+    <MultiFlag>false</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

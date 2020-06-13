@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="wap_Content, App_Web_e5odawuu" enableEventValidation="false" viewStateEncryptionMode="Never" %>

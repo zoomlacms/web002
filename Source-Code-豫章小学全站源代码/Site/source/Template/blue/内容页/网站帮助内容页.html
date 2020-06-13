@@ -1,0 +1,124 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_帮助中心</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="description" content="{SField sid="文章模型数据源标签" FD="synopsis" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#Menu{ZL.Label id="抽取父节点ID" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /} a span:hover{ text-decoration:underline;}
+#Menu{ZL.Label id="抽取父节点ID" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /} a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+</style>
+</head>
+<body>
+<div id="WebTop">
+    <p id="logo"><a href="/" target="_blank">  <img src="{$LogoUrl/}" border="0" /></a></p>
+    <ul id="TopNavBar">
+    	<li><iframe src="../Search/indexSearch.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" frameborder="0" width="480px" height="28px"></iframe></li>
+        <li><a href="../../User/Register.aspx" target="_blank"><strong>注册会员</strong></a>|</li>
+        <li><a href='#' onclick="javascript:window.open('{$SiteURL/}','_blank','left=280,top=250,width=439,height=282,scrollbars=yes')">推荐好友 </a>|</li>
+        <li><a href="{$SiteURL/}" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage(document.location.href);"> 设为首页</a>|</li>
+        <li><a href="{$SiteURL/}" onclick="bookmarkit()">加入收藏</a></li>
+    </ul>
+ <ul id="Menu">
+        <li id="Menu0"><a href="{$SiteURL/}" target="_blank"><span>首页</span></a></li>
+		{ZL.Label id="蓝色经典_顶部节点列表" ParentID="0" ShowNum="7" /}
+    </ul>
+</div>
+
+<div id="WebSer">
+<a href="/user/" target="_blank">社区空间精彩导航：</a>
+<a href="/User/UserZone/Parking/Default.aspx">抢车位</a>
+<a href="/User/UserZone/Book/BookList.aspx">读书</a>
+<a href="/User/UserZone/LogManage/SelfLogManage.aspx">日记</a>
+<a href="/User/UserZone/Memo/MemoList.aspx">备忘</a>
+<a href="/User/UserZone/Pic/CategList.aspx">相册</a>
+<a href="/User/UserFriend/">好友</a>
+<a href="/User/UserZone/Book/MusicList.aspx">音乐</a>
+<a href="/User/UserZone/Book/MovieList.aspx">电影</a>
+<a href="/User/UserZone/Home/MyHome.aspx">小屋</a>
+<a href="/User/userzone/GatherStrainManage/GSManage.aspx">族群</a>
+<a href="/User/UserZone/Message/MyMessage.aspx">留言板</a>
+<a href="/User/UserZone/ChitChat.aspx">蒙面聊</a>
+<a href="/User/UserZone/Book/ItineraryList.aspx">旅途</a>
+<a href="/User/UserZone/School/MySchoolList.aspx">班级</a>
+<a href="/guestbook/">问答</a>
+<a href="/User/UserZone/School/AddRessList.aspx">通讯录</a>
+</div>
+
+<div id="topbanner"><img src="{$CssDir/}Images/bannertop.jpg" /></div><!-- 通栏广告位 -->
+
+<div id="WebAd001">
+<p>您的位置：<a href="/">{$SiteName/}</a> >>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}>>栏目列表</p>
+</div>
+
+<!--内容主体开始 -->
+<div id="main">
+<div id="main_l">
+<div id="menuLeft">
+<dl>
+<dt onClick="showdd(0)"><A href="{ZL:GetNodeLinkUrl(105)/}">新手上路</A></dt>
+<dd  id="mdd_0" >
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="105" TitleNum="30" ShowNum="10" /}
+</dd>
+</dl>
+<dl>
+<dt  onClick="showdd(1)"><A href="{ZL:GetNodeLinkUrl(106)/}" >专有名词</A></dt>
+<dd style="display:none;" id="mdd_1">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="106" TitleNum="30" ShowNum="10" /}
+</dd>
+</dl>
+<dl>
+<dt  onClick="showdd(2)"><A href="{ZL:GetNodeLinkUrl(107)/}" >常见问题</A></dt>
+<dd style="display:none;" id="mdd_2"> 
+{ZL.Label id="输出子栏目列表" ParentID="107" ShowNum="10" /}
+</dd>
+</dl>
+<dl>
+<dt><A href="{ZL:GetNodeLinkUrl(108)/}">教学视频</A></dt>
+</dl>
+<dl>
+<dt><A href="{ZL:GetNodeLinkUrl(109)/}">案例详解</A></dt>
+</dl>
+</div>
+ 
+ <!--循环块之一结束 -->
+
+<div class="main_l_ad"><img src="{$CssDir/}Images/213X70.gif" /></div>
+ 
+</div><!--左 -->
+
+<div id="main_r">
+<div id="main_r_class">
+ <h1>{SField sid="文章模型数据源标签" FD="Title" page="0"/}</h1>
+ {SField sid="文章模型数据源标签" FD="content" page="0"/}
+</div>
+
+</div><!--右 -->
+</div>
+<!--内容主体结束 --> 
+<div style="clear:both;"></div>
+{ZL.Label id="蓝色底部"/}
+<script language="javascript" type="text/javascript">
+function showdd(id){
+var obgdt=document.getElementById("menuLeft").getElementsByTagName("dd");	
+if(obgdt.length>0){
+	for(var i=0; i<obgdt.length; i++)
+	{ 
+		if(i==id)
+	{
+		document.getElementById("mdd_"+i).style.display="block";
+	
+		}
+		else{
+		document.getElementById("mdd_"+i).style.display="none";
+		}
+}
+}
+}
+ 
+</script>
+</body>
+</html>

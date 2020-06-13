@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>93</LabelID>
+    <LabelName>top</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>       &lt;div id="top"&gt;
+       &lt;div id="logo"&gt;&lt;a href="/"&gt;&lt;img src="/skin/default/logo.jpg" title="网站首页" /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div id="ilogo"&gt;&lt;a href="http://subject.csdn.net/zoomla_cms/" target="_blank"&gt;&lt;img src="/skin/default/ilogo.jpg" alt="点击进入专题报道|世界第一中文开发门户强烈推荐Zoomla逐浪CMS！" /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div id="top2"&gt;
+          &lt;!--文字背景--&gt;
+          &lt;div id="top_1"&gt;
+            &lt;!--文字--&gt;
+            &lt;div class="top_w"&gt; &lt;a href="/ColumnList.aspx?NodeID=34"&gt;客服中心&lt;/a&gt; &lt;a href="/ColumnList.aspx?NodeID=32"&gt;商业订制&lt;/a&gt; &lt;a href="/ColumnList.aspx?NodeID=33"&gt;模板开发&lt;/a&gt; &lt;a href="http://www.hx008.cn/" target="_blank"&gt;主机域名&lt;/a&gt;&lt;/div&gt;
+            &lt;!--文字结束--&gt;
+          &lt;/div&gt;
+          &lt;!--文字背景END--&gt;
+          &lt;div id="top_2"&gt;
+            &lt;div class="top_p"&gt;&lt;a href="/ColumnList.aspx?NodeID=45"&gt;购买&lt;/a&gt;| &lt;a href="/ColumnList.aspx?NodeID=20" target="_blank"&gt;演示&lt;/a&gt;| &lt;a href="/ColumnList.aspx?NodeID=30"&gt;博客&lt;/a&gt;| &lt;a href="/ColumnList.aspx?NodeID=31"&gt;开发者俱乐部&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+
+         &lt;div style="clear:both"&gt;&lt;/div&gt;
+         &lt;!--顶部导航开始 --&gt;
+        &lt;div id="topmenu"&gt;
+          &lt;div id="topmenu_left"&gt;&lt;/div&gt;
+          &lt;div id="topmenu_gg"&gt;&lt;!--公告区：--&gt;&lt;/div&gt;
+          &lt;div id="topmenu_mid"&gt;
+          &lt;div style="float:left;width:500px; margin-top:5px; "&gt;
+          &lt;iframe src="../Search/indexSearch.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" frameborder="0" width="500px" height="28px"&gt;&lt;/iframe&gt;
+           &lt;div style="margin-top:2px;float:left;width:500px; height:16px; line-height:16px; color:#FFFFFF"&gt;
+           &lt;img src="../../skin/default/btn_best_key.gif" /&gt;&amp;nbsp;模板&amp;nbsp;节点&amp;nbsp;模型&amp;nbsp;智能替换&amp;nbsp;采集
+           &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div style="width:200px; margin-left:520px;"&gt;
+          &lt;a href="#" target="_blank"&gt;&lt;img src="../../skin/default/top_ask.gif" /&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div id="top_6"&gt;
+    &lt;div id="nav"&gt;
+      &lt;ul&gt;
+        &lt;li id="nav_l"&gt;&lt;a id="aa"  class="aa" href="/"&gt;网站首页&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a id="bb1" class="bb1" href="/ColumnList.aspx?NodeID=3"&gt;走进逐浪&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a id="bb2" class="bb2" href="/ColumnList.aspx?NodeID=2"&gt;产品中心&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a id="bb3" class="bb3" href="/ColumnList.aspx?NodeID=9"&gt;成功案例&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a id="bb4" class="bb4" href="/ColumnList.aspx?NodeID=24"&gt;解决方案&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a id="bb5" class="bb5" href="/ColumnList.aspx?NodeID=25"&gt;模板中心&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a id="bb6" class="bb6" href="http://bbs.zoomla.cn" target="_blank"&gt;技术社区&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id="topmenu_right"&gt;&lt;img src="/skin/default/h.jpg" /&gt;&lt;/div&gt;
+		&lt;/div&gt;
+        &lt;!--顶部导航结束 --&gt;
+
+</LabelContent>
+    <LabelCount />
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <IsOpen>0</IsOpen>
+  </Table>
+</NewDataSet>

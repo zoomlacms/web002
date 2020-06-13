@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>385</LabelID>
+    <LabelName>黄页头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>网即通</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div id="top_box"&gt;
+&lt;span&gt;欢迎您，{ZL:IPcity()/}的{ZL:GetuserName()/}&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#"&gt;购物车&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;|&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;我要买&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(140)/}"&gt;我要开店&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="/user"&gt;会员中心&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(170)/}"&gt;帮助中心&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;官方网店&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li&gt;&lt;a href="/"&gt;论坛&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

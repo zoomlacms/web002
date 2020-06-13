@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <NodeID>2640</NodeID>
+    <NodeName>休闲鞋</NodeName>
+    <NodeType>1</NodeType>
+    <NodeDir>XXX</NodeDir>
+    <NodeUrl />
+    <NodeListUrl />
+    <Tips />
+    <ParentID>22</ParentID>
+    <OrderID>3</OrderID>
+    <Child>0</Child>
+    <Depth>4</Depth>
+    <NodePicUrl />
+    <Description />
+    <Meta_Keywords />
+    <Meta_Description />
+    <OpenType>false</OpenType>
+    <PurviewType>false</PurviewType>
+    <CommentType>false</CommentType>
+    <HitsOfHot>0</HitsOfHot>
+    <ListTemplateFile />
+    <IndexTemplate />
+    <LastinfoTemplate />
+    <HotinfoTemplate />
+    <ProposeTemplate />
+    <ContentModel>11</ContentModel>
+    <ItemOpenType>false</ItemOpenType>
+    <ContentHtmlRule>2</ContentHtmlRule>
+    <ListPageHtmlEx>3</ListPageHtmlEx>
+    <ContentFileEx>3</ContentFileEx>
+    <HtmlPosition>1</HtmlPosition>
+    <NodeListType>5</NodeListType>
+    <ConsumePoint>0</ConsumePoint>
+    <ConsumeType>0</ConsumeType>
+    <ConsumeTime>0</ConsumeTime>
+    <ConsumeCount>0</ConsumeCount>
+    <Shares>0</Shares>
+    <Custom />
+    <OpenTypeTrue>0</OpenTypeTrue>
+    <ItemOpenTypeTrue>0</ItemOpenTypeTrue>
+    <SafeGuard>0</SafeGuard>
+    <NodeBySite>0</NodeBySite>
+    <SiteConfige />
+    <Contribute>0</Contribute>
+    <SiteContentAudit>0</SiteContentAudit>
+    <AuditNodeList />
+    <AddPoint>0</AddPoint>
+    <AddMoney>0.0000</AddMoney>
+    <ClickTimeout>1</ClickTimeout>
+    <Purview />
+    <AddUserExp>0</AddUserExp>
+    <DeducUserExp>0</DeducUserExp>
+    <ListPageEx>0</ListPageEx>
+    <LastinfoPageEx>0</LastinfoPageEx>
+    <HotinfoPageEx>0</HotinfoPageEx>
+    <ProposePageEx>0</ProposePageEx>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>94</LabelID>
+    <LabelName>bottom</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>      &lt;div id="bottom"&gt; &lt;a href="/ColumnList.aspx?NodeID=21"&gt;媒体报道&lt;/a&gt; | &lt;a href="/NodePage.aspx?NodeID=3"&gt;关于我们&lt;/a&gt; | &lt;a href="/Content.aspx?ItemID=93"&gt;资质证件&lt;/a&gt; | &lt;a href="/Content.aspx?ItemID=94"&gt;合同文档&lt;/a&gt; | &lt;a href="/Content.aspx?ItemID=84"&gt;汇款方式&lt;/a&gt; | &lt;a href="/Content.aspx?ItemID=83"&gt;联系我们&lt;/a&gt; | &lt;a href="/ColumnList.aspx?NodeID=27"&gt;工作机会&lt;/a&gt; | &lt;a href="http://www.hx008.cn/magazine/" target="_blank"&gt;电子会刊&lt;/a&gt; | &lt;a href="/Content.aspx?ItemID=95"&gt;版权申明&lt;/a&gt; | &lt;a href="/NodePage.aspx?NodeID=26"&gt;慈善公益&lt;/a&gt; | &lt;a href="/ColumnList.aspx?NodeID=18"&gt;参观公司&lt;/a&gt; | &lt;a href="javascript:CorrectReport();"&gt;纠错报告&lt;/a&gt; |  &lt;a href="/manage/login.aspx" target="_blank"&gt;后台管理&lt;/a&gt;
+     &lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <IsOpen>0</IsOpen>
+  </Table>
+</NewDataSet>

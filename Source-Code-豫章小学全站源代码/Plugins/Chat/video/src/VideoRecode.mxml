@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" fontSize="12" creationComplete="init()">
+	
+	<mx:Script>
+		<![CDATA[
+			
+			import mx.controls.Alert;
+			
+			private var netConnection:NetConnection;
+			private var netStream:NetStream;
+			private var saveFile:String ="rtmp://192.168.1.16/D:/xsm/Flex Project file save/123";
+			private var appServer:String;
+			private var camera:Camera;
+			private var microphone:Microphone;
+			
+			private function init():void
+			{
+				netConnection = new NetConnection();
+				appServer=getxmlData();
+				netConnection.connect(appServer);
+				netConnection.addEventListener(NetStatusEvent.NET_STATUS,netStatusHandler);
+				btn_record.addEventListener(MouseEvent.CLICK,recordFLV);
+				btn_stop.addEventListener(MouseEvent.CLICK,stopRecord);
+				btn_replay.addEventListener(MouseEvent.CLICK,replayFLV);
+				
+				initMedia();
+			}
+			
+			private function 	initMedia():void
+			{
+				btn_record.enabled=true;
+				btn_stop.enabled=true;
+				
+				camera = Camera.getCamera();
+				camera.setMode(300,180,15);
+				camera.setQuality(4000000,0);
+				vd_main.attachCamera(camera);
+				microphone = Microphone.getMicrophone();
+			}
+			
+			private function netStatusHandler(evt:NetStatusEvent):void
+			{
+				if ( evt.info.code=="NetConnection.Connect.Success" )
+				{
+					txt_status.text="fms连接成功";
+					netStream = new NetStream(netConnection);
+					
+					
+				}
+				else
+				{
+					Alert.show("fms连接失败");
+				}
+				
+				
+				
+				while (netStream.time==10) {
+					Alert.show("12346");
+				}
+			}
+			
+			private function recordFLV(evt:MouseEvent):void
+			{
+				txt_status.text="开始录制";
+				netStream.attachCamera(camera);
+				netStream.attachAudio(microphone);
+				netStream.publish(txt_filename.text,"record");
+				netStream.addEventListener(NetStatusEvent.NET_STATUS,changeTime);
+				
+				
+			}
+			
+			private function changeTime(evt:NetStatusEvent):void{
+				while(netStream.time==10){
+					netStream.close();
+					Alert.show("123456");
+				}
+			}
+			
+			
+			private function stopRecord(evt:MouseEvent):void
+			{
+				txt_status.text="停止录制";
+				btn_replay.enabled=true;
+				netStream.close();
+			}
+			
+			private function replayFLV(evt:MouseEvent):void
+			{
+				txt_status.text="正在回放";
+				vd_main.source=appServer+"/"+txt_filename.text;
+				vd_main.play();
+			}
+			
+			private function changeinput():void{
+				txt_filename.text="";								
+			}
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			private var responder:String;
+			public  function getxmlData():String{
+				var i:int=0;
+				//服务器配置信息
+				for each(var value:XML in servers.host)
+				{
+					if(servers.attribute("value")==(i+1).toString()){
+						responder=value;
+					}
+					i++;
+				}
+				//Alert.show(responder);
+				return responder;
+			}
+			
+		]]>
+	</mx:Script>
+	
+	<!--<mx:VideoDisplay x="34" y="10" height="200" width="360" id="vd_main"/>
+	<mx:TextInput x="34" y="224" text="te" width="208" id="txt_filename"/>
+	<mx:Button x="250" y="224" label="record" id="btn_record"/>
+	<mx:Button x="327" y="224" label="stop" id="btn_stop"/>
+	<mx:Button x="250" y="256" label="replay" id="btn_replay"/>
+	<mx:Label x="34" y="288" text="状态提示:" width="362" id="txt_status"/>-->
+	
+	<mx:XML id="servers" source="../config.xml"/>
+	<mx:Canvas x="11" y="10" width="330" height="334" borderStyle="inset">
+		<mx:Button x="2" y="2" label="链接为服务器" height="25" width="110" click="init()"/>
+		<mx:Label x="148" y="5" text="状态提示:" width="110" id="txt_status"  height="21"/>
+		<mx:Button x="0" y="275" label="开始录制" id="btn_record" enabled="false"/>
+		<mx:VideoDisplay x="0" y="33" height="234" width="326" id="vd_main"/>
+		<mx:Button x="86" y="275" label="停止" id="btn_stop" width="65" enabled="false"/>
+		<mx:Button x="159" y="275" label="播放" id="btn_replay" width="66" enabled="false"/>
+		<mx:Label x="10" y="303" text="文件名" width="51" height="22"/>
+		
+		<mx:TextInput x="57" y="299" text="输入文件名" width="168" id="txt_filename" click="changeinput()"/>
+	</mx:Canvas>
+	
+</mx:Application>

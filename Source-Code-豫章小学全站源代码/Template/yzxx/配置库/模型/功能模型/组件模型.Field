@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <FieldID>1088</FieldID>
+    <IsView>false</IsView>
+    <ModelID>15</ModelID>
+    <FieldName>jj</FieldName>
+    <FieldAlias>简介</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>false</IsNotNull>
+    <IsSearchForm>false</IsSearchForm>
+    <FieldType>MultipleHtmlType</FieldType>
+    <Content>Width=715,Height=400,IsEditor=2</Content>
+    <OrderID>1</OrderID>
+    <ShowList>true</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>true</IsShow>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <IsCopy>0</IsCopy>
+    <Islotsize>false</Islotsize>
+    <Sys_type>false</Sys_type>
+  </Table>
+  <Table>
+    <FieldID>1089</FieldID>
+    <IsView>False</IsView>
+    <ModelID>15</ModelID>
+    <FieldName>xxjs</FieldName>
+    <FieldAlias>详细介绍</FieldAlias>
+    <FieldTips />
+    <Description />
+    <IsNotNull>False</IsNotNull>
+    <IsSearchForm>False</IsSearchForm>
+    <FieldType>MultipleHtmlType</FieldType>
+    <Content>Width=715,Height=400,IsEditor=2</Content>
+    <OrderID>2</OrderID>
+    <ShowList>False</ShowList>
+    <ShowWidth>0</ShowWidth>
+    <IsShow>True</IsShow>
+    <IsDownField>0</IsDownField>
+    <DownServerID>0</DownServerID>
+    <RestoreField>0</RestoreField>
+    <IsCopy>0</IsCopy>
+    <Islotsize>False</Islotsize>
+    <Sys_type>False</Sys_type>
+  </Table>
+</NewDataSet>

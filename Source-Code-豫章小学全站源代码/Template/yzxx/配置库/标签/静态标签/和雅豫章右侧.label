@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>516</LabelID>
+    <LabelName>和雅豫章右侧</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div id="mainr"&gt;
+&lt;div class="mainr4"&gt;
+&lt;div class="title2" style=" text-align:center;"&gt;&lt;b class="ineractive"&gt;更多关于【{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}】&lt;/b&gt;&lt;/div&gt;
+&lt;ul&gt;
+{ZL.Label id="指定节点下子栏目列表1" ShowNum="10" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" /}
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="mainr1" style=" margin-top:10px;"&gt;
+&lt;b class="ineractive"&gt;互动&lt;/b&gt;
+&lt;ul&gt;
+&lt;li style="padding-top:10px;"&gt;&lt;a href="mailto:jiang@hx008.com"&gt;&lt;img src="{$CssDir/}images/messenge.jpg" class="way"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/guestbook/"&gt;&lt;img src="{$CssDir/}images/interactive.jpg" class="way"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="mainr3"&gt;
+&lt;div class="title3"&gt;&lt;span class="more"&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}"&gt;更多&gt;&gt;&lt;/a&gt;&lt;/span&gt;&lt;b class="ineractive"&gt;办事指南&lt;/b&gt;&lt;/div&gt;
+&lt;ul&gt;
+{ZL.Label id="输出指定节点标题列表_无时间属性" NodeID="6" TitleNum="30" ShowNum="4" /}
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

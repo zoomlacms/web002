@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>17</ModelID>
+    <ModelName>留言文章投票的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_WZTP</TableName>
+    <ItemName>留言</ItemName>
+    <ItemUnit>条</ItemUnit>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <ModelType>7</ModelType>
+    <ContentModule>/互动模板/默认留言文章投票模板.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

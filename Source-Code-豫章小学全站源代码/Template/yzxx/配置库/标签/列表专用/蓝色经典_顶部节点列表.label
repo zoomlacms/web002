@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>355</LabelID>
+    <LabelName>蓝色经典_顶部节点列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>列表专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>ParentID,0,1,父节点ID|ShowNum,100,1,调用信息数</LabelParam>
+    <LabelTable>ZL_Node</LabelTable>
+    <LabelField>NodeID,NodeName</LabelField>
+    <LabelWhere>ParentID=@ParentID</LabelWhere>
+    <LabelOrder>OrderID ASC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li id="Menu{Field="NodeID"/}"&gt;&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}" title="{Field="NodeName"/}" target="{ZL:GetNodeOpen({Field="NodeID"/})/}"&gt;&lt;span&gt;{Field="NodeName"/}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+{/Repeate}
+
+</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelIdentity />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <IsOpen>0</IsOpen>
+  </Table>
+</NewDataSet>

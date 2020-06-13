@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>395</LabelID>
+    <LabelName>输出黄页商家相册左</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>即通</LabelCate>
+    <LabelDesc />
+    <LabelParam>UserName,默认值,1,用户名|ShowNum,10,1,显示数|TilteNum,25,1,标题长</LabelParam>
+    <LabelTable>ZL_CommonModel left join ZL_Page_photo on ZL_CommonModel.ItemID=ZL_Page_photo.ID</LabelTable>
+    <LabelField>generalid,NodeID,tu</LabelField>
+    <LabelWhere>ZL_CommonModel.Inputer='@UserName' And ZL_CommonModel.TableName like '%ZL_Page_photo%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime ASC</LabelOrder>
+    <LabelContent>{Repeate}&lt;li&gt;
+&lt;a href="/Page/PageContent.aspx?ItemID={Field="GeneralID"/}"&gt; &lt;img src="/UploadFiles{ZL:GetPicUrl({Field="tu"/})/}"&gt;&lt;/a&gt;
+&lt;br/&gt;
+&lt;a href="/Page/PageContent.aspx?ItemID={Field="GeneralID"/}"&gt;
+{ZL:CutText({Field="Title"/},@TilteNum,..)/}&lt;/a&gt;
+&lt;/li&gt;
+{/Repeate}
+</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

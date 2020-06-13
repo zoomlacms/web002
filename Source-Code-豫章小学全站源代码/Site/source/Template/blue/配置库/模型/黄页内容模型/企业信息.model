@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>12</ModelID>
+    <ModelName>企业信息</ModelName>
+    <Description />
+    <TableName>ZL_Page_Content</TableName>
+    <ItemName>信息</ItemName>
+    <ItemUnit>条</ItemUnit>
+    <ItemIcon>Article.gif</ItemIcon>
+    <ModelType>4</ModelType>
+    <ContentModule />
+    <MultiFlag>false</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

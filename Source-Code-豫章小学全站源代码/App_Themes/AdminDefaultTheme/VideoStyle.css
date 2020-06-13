@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+body {font-size:12px;margin:0px; padding:0px; background: url(images/Video/Vhead_bg.jpg) repeat-x #F9EFCA; color:#824900;}
+a:link, a:visited{color: #824900;text-decoration: none;}
+a:active, a:hover{color: #000;text-decoration: underline;}
+ul{list-style-type: none;}
+.greybor{ border:1px solid #EAEAEA;}
+.none{ display:none;}
+.wid225{ width:225px;}
+.wid200{ width:200px;}
+img{ border:none;}
+.fr{ float:right;}
+
+/*视频头部定义*/
+#VideoHead,#Videomain{ margin:0px auto; width:100%;}
+#VideoHead{ height:50px;}
+#VideoLogo{ float:left; width:220px;height:50px;}
+#Videonav{ float:left;}
+#Videonav li{ float:left; width:100px; margin-top:10px; margin-left:10px;}
+#Videonav a{ display:block;background: url(images/Video/btn_home.png) no-repeat; width:55px; height:20px; line-height:20px; padding:10px 0 0 35px;}
+#Videonav .Vhome{ background-position:0 -33px; }
+#Videonav .Vmai{background-position:0  0; }
+#Videonav .Vph{ background-position:0 -100px; }
+#Videonav .Vjy{background-position:0 -133px;  }
+#Videonav .Vyj{  background-position:0 -68px; }
+/*视频头部定义*/
+
+/*视频主体定义*/
+.Witebg{ background:url(images/Video/leftBtn_bg.jpg) repeat-y center;}
+.Lmenu{ width:30px; height:auto; background:#FDFDFD;}/*左侧导航*/
+.Lmenu li{ text-align:center; padding:5px;width:20px; height:54px; background:url(images/Video/Lmenu_btn.jpg) no-repeat;}
+.Lmenu li a{ display:block;}
+.Lmenu a:hover{ text-decoration:none;}
+.Lmenu .menuHover{background:url(images/Video/Lmenu2_btn.jpg) no-repeat;}
+
+#Videomain{ margin-left: auto; margin-right: auto; text-align: left; }
+.Vtable{ width:100%;}
+.Vleft{ width:225px;  }
+.videoTd{width:220px; border:1px solid #854700;  height:160px;background:url(images/Video/video_no.png) no-repeat;} 
+.Vleft_div{ float:left; width:220px;border:1px solid #854700; margin-bottom:5px; }
+.Vleft_div span{ float:left; width:15px; height:16px; display:block; margin:2px; }
+.mai_btn{ background:url(images/Video/chk_audio.png) no-repeat;}
+.Show_btn{background:url(images/Video/chk_video.png) no-repeat;}
+.zoomin_btn{background:url(images/Video/btn_zoomin.png) no-repeat; }
+.photo_btn{ background:url(images/Video/btn_camera.png) no-repeat;}
+.hart_btn{background:url(images/Video/btn_vote.png) no-repeat;  }
+
+.videoList { width:100%;}
+.videoList td{ border:1px solid #854700;  }
+
+.video_hos{ position:absolute; top:0px; right:0px; background:#F9EFCA;}/*主视频*/
+
+.VRig_div{ width:225px;}/*右侧*/
+.VRig_div span{ float:left; width:15px; height:16px; display:block; margin:2px; }
+
+.menber ul{ clear:both; height:20px;}/*人员列表*/
+.menber li{ float:left; background:url(images/Video/list_tit.gif) no-repeat;width:46px; height:21px; text-align:center; line-height:21px; cursor:pointer;}
+.menber li{ background-position:-47px 0;}
+.menber li.active{background-position:0 0;}
+.menberList{ border:1px solid #854700; height:550px; background:#FFF; }
+.menberList th{ border-right:1px solid #E3DCBF; background:#FAF9E4; height:20px; border-bottom: 1px solid #E3DCBF; color:#930; font-weight:normal;}
+.menberList td{ line-height:25px;}
+.Vface{ width:18px; height:18px;}
+.ShowType1_btn{background:url(images/Video/guest.gif) no-repeat;width:15px; height:15px;}
+
+
+/*大厅信息*/
+.person_Info{ background:url(images/Video/Vperson_bg.jpg) no-repeat; width:171px; height:190px; padding-top:40px;}
+.person_face{ height:70px;}
+.person_face img{ float:left; width:54px; height:54px; border:1px solid #666; margin:5px;}
+.person_face p,.Person_center p{ float:right; width:100px; line-height:20px;}
+.Person_center{ height:85px;}
+.Person_center span{ float:left; display:block; line-height:30px; width:60px; text-align:center;}
+.Person_center a{ text-decoration:underline;}
+.person_set{ clear:both; padding:0 5px;}
+.person_set span{ float:left; width:55px; line-height:28px; padding-left:22px; display:block; }
+ 
+.Video_type li{ background:url(images/Video/type_bg.jpg) no-repeat; width:170px; height:26px; text-align:center; line-height:26px; margin-top:5px;}
+
+.Video_hotel{}/*大厅列表*/
+.Video_hotel li{ float:left; margin:10px; width:180px; height:120px; border:1px solid #CCC; background:#FFF; padding:5px;}
+ .hotelPic{ float:left; width:80px;}
+.hotelPic img{border:1px solid #999;}
+.hotelPic b{ width:80px;display:block; line-height:20px; text-align:center; }
+.Video_hotel b{ float:left;}
+.Video_hotel p{ float:right; width:90px; line-height:25px;}
+.star1{ width:65px; height:12px; display:block; margin:5px;background:url(images/Video/star.jpg) no-repeat;}
+
+/*登录*/
+.loginmain{ border:1px solid #C7A028; background:#F1D77D; width:342px; padding:2px; height:240px; position:relative; left:0px; top:0px;}
+.loginbg{ background:#FBF2D4;}
+#loginm_con{ background:#FFF; padding:10px 40px; }
+#loginm_con input{ border:1px solid #C7A028; }
+#loginm_con  a{ text-decoration:underline;}
+#loginm_con .checkbox{  border:none; border:1px solid #C7A028; background:url(images/Video/dlg_max.png) no-repeat;}
+.login_tit{ line-height:25px;}
+.login_bot{ background:url(images/Video/loginBot_bg.jpg) repeat-x; height:33px; padding:10px 20px 0;}
+.loginBtn{  margin-left:10px; background:url(images/Video/login_Btn.gif) no-repeat; width:76px; height:24px; line-height:76px; line-height:24px; border:none;}
+
+/*聊天用户管理*/
+.Umenu{ float:left; left:0px; top:0px; position:relative; width:215px; height:460px; border:1px solid #C7A028; background:url(images/Video/Umain_bg.jpg) repeat-x;}
+#Uface{ float:left; background:url(images/Video/photo_frame.png) no-repeat; width:40px; height:40px; padding:10px;}
+.Uinfo{ float:left; margin-left:10px; line-height:20px; height:70px; }
+.Uinfo span{ float:left; margin-top:5px; margin-right:20px; display:block; background:url(images/Video/icon_12_state.png) no-repeat; width:12px; height:12px;}
+#status2{ background-position:-12px 0;}
+.uMenber{ clear:both; margin-top:10px;}
+.Left_menu{ float:left; width:35px; padding-left:5px;}
+.Left_menu li{ background:url(images/Video/Unav.gif) no-repeat; width:31px; height:31px; text-align:center; padding-top:2px;} 
+.Rig_menu{ float:left; background:#FFF; width:170px; height:330px; border:#F1D895 1px solid;}
+.Rig_menu li{line-height:28px;}
+.menu1{ display:block; background:url(images/Video/Umenu1.jpg) no-repeat; height:28px; width:170px; text-align:center; }
+.nodelist{ text-align:left; padding-left:40px;}
+.menu2{display:block; background:url(images/Video/menu_ico2.gif) no-repeat left center; padding-left:15px;  }
+
+.uBot_menu{ clear:both; padding-top:5px;}
+.uBot_menu li{ float:left; padding-left:20px; margin-left:10px; height:20px; padding-top:5px; background:url(images/Video/icon_main.png) no-repeat;}
+.uBot_menu .bm1{ background-position:0 0px;}
+.uBot_menu .bm2{ background-position:-58px 0;}
+.uBot_menu .bm3{ background-position:-115px 0;}
+/*窗口操作按钮*/
+.dlg_div{ position:absolute; right:4px; 
+top:1px;
+}
+.dlg_min{ background:url(images/Video/dlg_min.png) no-repeat; border:none; width:25px; height:18px;}
+.dlg_max{ background:url(images/Video/dlg_max.png) no-repeat; border:none; width:25px; height:18px;}
+.dlg_close{ background:url(images/Video/dlg_close.png) no-repeat; border:none; width:25px; height:18px;}
+.dlg_primitive{ background:url(images/Video/dlg_primitive.png) no-repeat; border:none; width:25px; height:18px;}

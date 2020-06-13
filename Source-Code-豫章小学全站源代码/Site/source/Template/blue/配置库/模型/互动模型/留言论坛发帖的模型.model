@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>92</ModelID>
+    <ModelName>留言论坛发帖的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_LTFT</TableName>
+    <ItemName>留言</ItemName>
+    <ItemUnit>条</ItemUnit>
+    <ItemIcon>GuestBook.gif</ItemIcon>
+    <ModelType>7</ModelType>
+    <ContentModule>/互动模板/默认留言论坛发帖模板.html</ContentModule>
+    <MultiFlag>false</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>
